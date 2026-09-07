@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: big-brother-stats
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    healthCheckPath: /health
+    envVars:
+      - key: FLASK_SECRET_KEY
+        generateValue: true
+      - key: PUBLIC_EDITING_ENABLED
+        value: "false"

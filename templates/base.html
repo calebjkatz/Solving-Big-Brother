@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore recurring Big Brother competitions, season appearances, mechanics, and strategic analysis.">
+  <meta name="theme-color" content="#161616">
+  <meta property="og:title" content="Big Brother Stats">
+  <meta property="og:description" content="A research archive for recurring Big Brother competitions and strategy.">
+  <meta property="og:type" content="website">
+  <title>{% block title %}Big Brother Stats{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ url_for('index') }}"><span>BB</span> Big Brother Stats</a>
+    <nav><a href="{{ url_for('index') }}">Competitions</a><a href="{{ url_for('seasons') }}">Seasons</a>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_competition') }}">Add competition</a>{% endif %}</nav>
+  </header>
+  <main>
+    {% for category, message in get_flashed_messages(with_categories=true) %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer>Independent research database · U.S. civilian seasons · Not affiliated with CBS or the Big Brother franchise</footer>
+</body>
+</html>

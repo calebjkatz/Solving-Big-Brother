@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %}Add appearance · Big Brother Stats{% endblock %}
+{% block content %}<section class="page-title"><p class="eyebrow">Season record</p><h1>Add a {{ competition.name }} appearance</h1></section>
+<form class="entry-form" method="post"><label>Season *<select name="season_id" required>{% for season in seasons %}<option value="{{ season.id }}">BB{{ season.season_number }} · {{ season.title }}</option>{% endfor %}</select></label>
+<div class="form-row"><label>Episode<input name="episode" type="number" min="1"></label><label>Competition type<input name="competition_type" placeholder="HoH, Power of Veto…"></label></div>
+<label>Variation name<input name="variation_name"></label><label>Rules and mechanics<textarea name="rules_notes"></textarea></label><label>Winner<input name="winner"></label><label>Outcome notes<textarea name="outcome_notes"></textarea></label>
+<label>Verification status<select name="verification_status"><option>needs verification</option><option>partially verified</option><option>verified</option></select></label><button>Save appearance</button></form>{% endblock %}

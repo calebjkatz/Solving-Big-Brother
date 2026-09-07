@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{ competition.name }} · Big Brother Stats{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('index') }}">← Competition directory</a>
+<section class="detail-hero"><div><span class="pill">{{ competition.category }}</span><h1>{{ competition.name }}</h1><p>{{ competition.description }}</p></div><div class="status">{{ competition.verification_status }}</div></section>
+<div class="detail-grid">
+  <article class="panel"><p class="eyebrow">Format</p><h2>How it works</h2><p>{{ competition.format or 'Not recorded' }}</p><h3>Aliases</h3><p>{{ competition.aliases or 'None recorded' }}</p><h3>Skills tested</h3><div class="tags">{% for tag in format_tags(competition.skills) %}<span>{{ tag }}</span>{% endfor %}</div></article>
+  <article class="panel strategy"><p class="eyebrow">Strategic read</p><h2>Best approach</h2><p>{{ competition.strategy or 'Analysis not recorded yet.' }}</p><h3>Evidence note</h3><p>{{ competition.strategy_evidence or 'No supporting evidence recorded.' }}</p></article>
+</div>
+<div class="section-heading"><div><p class="eyebrow">Across the years</p><h2>Season appearances</h2></div>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_appearance', competition_id=competition.id) }}">Add appearance</a>{% endif %}</div>
+<div class="table-wrap"><table><thead><tr><th>Season</th><th>Type</th><th>Variation</th><th>Winner</th><th>Status</th></tr></thead><tbody>
+{% for item in appearances %}<tr><td><a href="{{ url_for('season_detail', season_id=item.season_id) }}">BB{{ item.season_number }} <small>({{ item.year }})</small></a></td><td>{{ item.competition_type or '—' }}</td><td>{{ item.variation_name or '—' }}</td><td>{{ item.winner or '—' }}</td><td>{{ item.verification_status }}</td></tr>{% else %}<tr><td colspan="5">No appearances recorded.</td></tr>{% endfor %}
+</tbody></table></div>
+<article class="panel sources"><p class="eyebrow">Research trail</p><h2>Sources</h2>{% for source in sources %}<p><a href="{{ source.url }}">{{ source.title }}</a> · {{ source.source_type }}</p>{% else %}<p>No sources attached yet. Treat this record as provisional.</p>{% endfor %}</article>
+{% endblock %}

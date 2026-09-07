@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Competition intelligence archive</p>
+  <h1>Every repeat. Every variation.<br><em>A better way to study the game.</em></h1>
+  <p>Track recurring competitions across seasons, compare mechanics, and turn results into evidence-backed strategy.</p>
+</section>
+<section class="stats">
+  <div><strong>{{ stats.competitions }}</strong><span>competition families</span></div>
+  <div><strong>{{ stats.appearances }}</strong><span>season appearances</span></div>
+  <div><strong>{{ stats.seasons }}</strong><span>seasons represented</span></div>
+</section>
+<form class="filters" method="get">
+  <input type="search" name="q" value="{{ filters.get('q', '') }}" placeholder="Search name, alias, or description">
+  <select name="category"><option value="">All categories</option>{% for row in categories %}<option {% if filters.get('category') == row.category %}selected{% endif %}>{{ row.category }}</option>{% endfor %}</select>
+  <select name="skill"><option value="">All skills</option>{% for item in skill_options %}<option {% if filters.get('skill') == item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select>
+  <button>Filter</button>
+</form>
+<div class="section-heading"><div><p class="eyebrow">The archive</p><h2>Competition families</h2></div><a href="{{ url_for('export_competitions') }}">Export CSV ↓</a></div>
+<section class="card-grid">
+{% for competition in competitions %}
+  <a class="card" href="{{ url_for('competition_detail', competition_id=competition.id) }}">
+    <div class="card-top"><span class="pill">{{ competition.category }}</span><span>{{ competition.appearance_count }} appearance{{ '' if competition.appearance_count == 1 else 's' }}</span></div>
+    <h3>{{ competition.name }}</h3><p>{{ competition.description }}</p>
+    <div class="tags">{% for tag in format_tags(competition.skills) %}<span>{{ tag }}</span>{% endfor %}</div>
+    <div class="seasons">Tracked seasons: {{ competition.seasons or 'None yet' }}</div>
+  </a>
+{% else %}<div class="empty">No competitions match those filters.</div>{% endfor %}
+</section>
+{% endblock %}

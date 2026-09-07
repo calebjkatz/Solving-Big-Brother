@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block title %}Seasons · Big Brother Stats{% endblock %}
+{% block content %}<section class="page-title"><p class="eyebrow">Chronology</p><h1>Season index</h1><p>See which recurring competitions have been documented for each season.</p></section>
+<section class="card-grid seasons-grid">{% for season in seasons %}<a class="card season-card" href="{{ url_for('season_detail', season_id=season.id) }}"><span class="season-number">{{ season.season_number }}</span><div><p class="eyebrow">{{ season.year }} · {{ season.franchise_name }}</p><h3>{{ season.title }}</h3><p>{{ season.tracked_competitions }} tracked competitions</p></div></a>{% endfor %}</section>{% endblock %}

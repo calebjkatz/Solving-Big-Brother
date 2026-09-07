@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% block title %}{{ season.title }} · Big Brother Stats{% endblock %}
+{% block content %}<a class="back" href="{{ url_for('seasons') }}">← Season index</a><section class="page-title"><p class="eyebrow">{{ season.franchise_name }} · {{ season.year }}</p><h1>{{ season.title }}</h1><p>{{ season.notes or 'Competition records currently included in the research database.' }}</p></section>
+<div class="table-wrap"><table><thead><tr><th>Competition</th><th>Type</th><th>Episode</th><th>Winner</th><th>Skills</th></tr></thead><tbody>{% for item in appearances %}<tr><td><a href="{{ url_for('competition_detail', competition_id=item.competition_id) }}">{{ item.name }}</a></td><td>{{ item.competition_type or '—' }}</td><td>{{ item.episode or '—' }}</td><td>{{ item.winner or '—' }}</td><td>{{ item.skills }}</td></tr>{% else %}<tr><td colspan="5">No competitions recorded.</td></tr>{% endfor %}</tbody></table></div>{% endblock %}

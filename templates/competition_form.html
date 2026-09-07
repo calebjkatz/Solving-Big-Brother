@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Add competition · Big Brother Stats{% endblock %}
+{% block content %}<section class="page-title"><p class="eyebrow">Research entry</p><h1>Add a competition family</h1><p>Create the reusable concept here; individual season versions are added afterward.</p></section>
+<form class="entry-form" method="post">
+  <label>Name *<input name="name" required value="{{ values.get('name', '') }}"></label><label>Aliases<input name="aliases" value="{{ values.get('aliases', '') }}" placeholder="Comma-separated"></label>
+  <div class="form-row"><label>Category *<input name="category" required value="{{ values.get('category', '') }}" placeholder="Recurring format"></label><label>Format<input name="format" value="{{ values.get('format', '') }}" placeholder="memory, timed, puzzle"></label></div>
+  <label>Description *<textarea name="description" required>{{ values.get('description', '') }}</textarea></label><label>Skills<input name="skills" value="{{ values.get('skills', '') }}" placeholder="Comma-separated"></label>
+  <label>Best-strategy analysis<textarea name="strategy">{{ values.get('strategy', '') }}</textarea></label><label>Evidence and limitations<textarea name="strategy_evidence">{{ values.get('strategy_evidence', '') }}</textarea></label>
+  <label>Verification status<select name="verification_status"><option>needs verification</option><option>partially verified</option><option>verified</option></select></label><button>Save competition</button>
+</form>{% endblock %}
