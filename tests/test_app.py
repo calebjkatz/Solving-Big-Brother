@@ -49,6 +49,8 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Taylor", response.data)
         self.assertIn(b"BB24", response.data)
         self.assertIn(b"documented wins", response.data)
+        self.assertIn(b"Taylor memory-wall photo", response.data)
+        self.assertIn(b"static.wikia.nocookie.net", response.data)
 
         connect = self.app.extensions["connect_db"]
         with connect() as db:
@@ -61,6 +63,7 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Competitions won", profile.data)
         self.assertIn(b"Strengths", profile.data)
         self.assertIn(b"Weaknesses", profile.data)
+        self.assertIn(b"Memory-wall image source", profile.data)
 
     def test_season_competition_shows_spaced_family_name(self):
         connect = self.app.extensions["connect_db"]

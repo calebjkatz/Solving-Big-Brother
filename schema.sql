@@ -55,6 +55,8 @@ CREATE TABLE IF NOT EXISTS houseguests (
     strengths TEXT NOT NULL DEFAULT '',
     weaknesses TEXT NOT NULL DEFAULT '',
     notes TEXT NOT NULL DEFAULT '',
+    image_url TEXT NOT NULL DEFAULT '',
+    image_source TEXT NOT NULL DEFAULT '',
     UNIQUE(season_id, name)
 );
 

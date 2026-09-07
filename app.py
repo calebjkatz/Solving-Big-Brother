@@ -43,7 +43,7 @@ def create_app(test_config=None):
             houseguest_columns = {
                 row["name"] for row in db.execute("PRAGMA table_info(houseguests)")
             }
-            for column in ("bio", "strengths", "weaknesses", "notes"):
+            for column in ("bio", "strengths", "weaknesses", "notes", "image_url", "image_source"):
                 if column not in houseguest_columns:
                     db.execute(
                         f"ALTER TABLE houseguests ADD COLUMN {column} TEXT NOT NULL DEFAULT ''"
@@ -98,13 +98,15 @@ def create_app(test_config=None):
                     """, (franchise_id, player["season"])).fetchone()[0]
                     db.execute("""
                         INSERT INTO houseguests
-                        (season_id, name, bio, strengths, weaknesses, notes)
-                        VALUES (?, ?, ?, ?, ?, ?)
+                        (season_id, name, bio, strengths, weaknesses, notes, image_url, image_source)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                         ON CONFLICT(season_id, name) DO UPDATE SET
                             bio=excluded.bio, strengths=excluded.strengths,
-                            weaknesses=excluded.weaknesses, notes=excluded.notes
+                            weaknesses=excluded.weaknesses, notes=excluded.notes,
+                            image_url=excluded.image_url, image_source=excluded.image_source
                     """, (season_id, player["name"], player["bio"], player["strengths"],
-                          player["weaknesses"], player["notes"]))
+                          player["weaknesses"], player["notes"], player.get("image_url", ""),
+                          player.get("image_source", "")))
                 for appearance in catalog.get("appearances", []):
                     competition_id = db.execute(
                         "SELECT id FROM competitions WHERE name = ?", (appearance["competition"],)
