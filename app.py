@@ -430,27 +430,11 @@ def create_app(test_config=None):
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE ci.season_id = ? AND cp.placement = 1 ORDER BY h.name
             """, (season_id,)).fetchall()
-            participant_rows = db.execute("""
-                SELECT cp.instance_id, h.id, h.name, cp.placement
-                FROM competition_participants cp
-                JOIN houseguests h ON h.id = cp.houseguest_id
-                JOIN competition_instances ci ON ci.id = cp.instance_id
-                WHERE ci.season_id = ?
-                  AND EXISTS (
-                      SELECT 1 FROM competition_participants documented
-                      WHERE documented.instance_id = cp.instance_id
-                        AND documented.notes = 'source indexed participant'
-                  )
-                ORDER BY cp.placement IS NOT NULL DESC, h.name COLLATE NOCASE
-            """, (season_id,)).fetchall()
         winners = {}
         for row in winner_rows:
             winners.setdefault(row["instance_id"], []).append(row)
-        participants = {}
-        for row in participant_rows:
-            participants.setdefault(row["instance_id"], []).append(row)
         return render_template("season.html", season=season, appearances=appearances,
-                               winners=winners, participants=participants)
+                               winners=winners)
 
     @app.get("/export/competitions.csv")
     def export_competitions():
