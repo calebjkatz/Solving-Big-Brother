@@ -131,6 +131,19 @@ class BigBrotherStatsTests(unittest.TestCase):
         profile = self.client.get(f"/houseguests/{kelley['id']}")
         self.assertIn(b"Block Buster <b>3</b>", profile.data)
 
+    def test_battle_of_the_block_credits_both_safe_nominees(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            events, winner_credits = db.execute("""
+                SELECT COUNT(DISTINCT ci.source_event_key),
+                       COUNT(DISTINCT ci.source_event_key || ':' || cp.houseguest_id)
+                FROM competition_instances ci
+                JOIN competition_participants cp ON cp.instance_id = ci.id
+                WHERE ci.competition_type = 'BOB' AND cp.placement = 1
+            """).fetchone()
+            self.assertEqual(events, 13)
+            self.assertEqual(winner_credits, 26)
+
     def test_season_competition_shows_spaced_family_name(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:

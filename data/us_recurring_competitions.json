@@ -9580,7 +9580,10 @@
       "type": "BOB",
       "variation": "The Pouring 20s",
       "result": "Brittany & Victoria are saved",
-      "winners": [],
+      "winners": [
+        "Brittany",
+        "Victoria"
+      ],
       "event_key": "bb16-event-03"
     },
     {
@@ -9591,8 +9594,11 @@
       "type": "BOB",
       "variation": "The Pouring 20s",
       "result": "Frankie is dethroned",
-      "winners": [],
-      "event_key": "bb16-event-04"
+      "winners": [
+        "Brittany",
+        "Victoria"
+      ],
+      "event_key": "bb16-event-03"
     },
     {
       "competition": "Spelling Search",
@@ -9629,7 +9635,10 @@
       "type": "BOB",
       "variation": "We Did What?!",
       "result": "Amber is dethroned",
-      "winners": [],
+      "winners": [
+        "Hayden",
+        "Nicole"
+      ],
       "event_key": "bb16-event-07"
     },
     {
@@ -9667,7 +9676,10 @@
       "type": "BOB",
       "variation": "Abraca-BOB-ra",
       "result": "Amber & Donny are saved",
-      "winners": [],
+      "winners": [
+        "Amber",
+        "Donny"
+      ],
       "event_key": "bb16-event-10"
     },
     {
@@ -9678,8 +9690,11 @@
       "type": "BOB",
       "variation": "Abraca-BOB-ra",
       "result": "Nicole is dethroned",
-      "winners": [],
-      "event_key": "bb16-event-11"
+      "winners": [
+        "Amber",
+        "Donny"
+      ],
+      "event_key": "bb16-event-10"
     },
     {
       "competition": "Tumblin' Dice",
@@ -9716,7 +9731,10 @@
       "type": "BOB",
       "variation": "Knight Moves",
       "result": "Frankie is dethroned",
-      "winners": [],
+      "winners": [
+        "Amber",
+        "Jocasta"
+      ],
       "event_key": "bb16-event-14"
     },
     {
@@ -9754,7 +9772,10 @@
       "type": "BOB",
       "variation": "Wedding Cake Take",
       "result": "Zach is dethroned",
-      "winners": [],
+      "winners": [
+        "Christine",
+        "Nicole"
+      ],
       "event_key": "bb16-event-17"
     },
     {
@@ -9792,7 +9813,10 @@
       "type": "BOB",
       "variation": "Domino Effect",
       "result": "Donny is dethroned",
-      "winners": [],
+      "winners": [
+        "Caleb",
+        "Victoria"
+      ],
       "event_key": "bb16-event-20"
     },
     {
@@ -9856,7 +9880,10 @@
       "type": "BOB",
       "variation": "Thursday Night Football",
       "result": "Caleb & Frankie are saved",
-      "winners": [],
+      "winners": [
+        "Caleb",
+        "Frankie"
+      ],
       "event_key": "bb16-event-25"
     },
     {
@@ -9867,8 +9894,11 @@
       "type": "BOB",
       "variation": "Thursday Night Football",
       "result": "Nicole is dethroned",
-      "winners": [],
-      "event_key": "bb16-event-26"
+      "winners": [
+        "Caleb",
+        "Frankie"
+      ],
+      "event_key": "bb16-event-25"
     },
     {
       "competition": "OTEV",
@@ -9905,7 +9935,10 @@
       "type": "BOB",
       "variation": "The Black Box",
       "result": "Derrick is dethroned",
-      "winners": [],
+      "winners": [
+        "Christine",
+        "Donny"
+      ],
       "event_key": "bb16-event-29"
     },
     {
@@ -10175,7 +10208,10 @@
       "type": "BOB",
       "variation": "Du-BOB",
       "result": "Jason is dethroned",
-      "winners": [],
+      "winners": [
+        "Becky",
+        "John"
+      ],
       "event_key": "bb17-event-03"
     },
     {
@@ -10213,7 +10249,10 @@
       "type": "BOB",
       "variation": "Give Me Props",
       "result": "Becky is dethroned",
-      "winners": [],
+      "winners": [
+        "Jason",
+        "Steve"
+      ],
       "event_key": "bb17-event-06"
     },
     {
@@ -10251,7 +10290,10 @@
       "type": "BOB",
       "variation": "Gronk's A-maze-ing Foam Party",
       "result": "Austin is dethroned",
-      "winners": [],
+      "winners": [
+        "Jason",
+        "Meg"
+      ],
       "event_key": "bb17-event-09"
     },
     {
@@ -10302,7 +10344,10 @@
       "type": "BOB",
       "variation": "Grunge BOB",
       "result": "Liz is dethroned",
-      "winners": [],
+      "winners": [
+        "Jackie",
+        "James"
+      ],
       "event_key": "bb17-event-13"
     },
     {
@@ -10340,7 +10385,10 @@
       "type": "BOB",
       "variation": "Splashy Headlines",
       "result": "Jackie is dethroned",
-      "winners": [],
+      "winners": [
+        "James",
+        "Liz"
+      ],
       "event_key": "bb17-event-16"
     },
     {
