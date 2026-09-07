@@ -15061,7 +15061,9 @@
       "type": "AI Arena",
       "variation": "Glitch in the System",
       "result": "Kimo is saved",
-      "winners": [],
+      "winners": [
+        "Kimo"
+      ],
       "event_key": "bb26-event-07"
     },
     {
@@ -15098,7 +15100,9 @@
       "type": "AI Arena",
       "variation": "Security Race",
       "result": "Tucker is saved",
-      "winners": [],
+      "winners": [
+        "Tucker"
+      ],
       "event_key": "bb26-event-10"
     },
     {
@@ -15135,7 +15139,9 @@
       "type": "AI Arena",
       "variation": "Data Dump",
       "result": "Tucker is saved",
-      "winners": [],
+      "winners": [
+        "Tucker"
+      ],
       "event_key": "bb26-event-13"
     },
     {
@@ -15172,7 +15178,9 @@
       "type": "AI Arena",
       "variation": "Upload, Download",
       "result": "Makensy is saved",
-      "winners": [],
+      "winners": [
+        "Makensy"
+      ],
       "event_key": "bb26-event-16"
     },
     {
@@ -15209,7 +15217,9 @@
       "type": "AI Arena",
       "variation": "Digital Decryption",
       "result": "Chelsie is saved",
-      "winners": [],
+      "winners": [
+        "Chelsie"
+      ],
       "event_key": "bb26-event-19"
     },
     {
@@ -15259,7 +15269,9 @@
       "type": "AI Arena",
       "variation": "Puzzling Password",
       "result": "Makensy is saved",
-      "winners": [],
+      "winners": [
+        "Makensy"
+      ],
       "event_key": "bb26-event-22"
     },
     {
@@ -15296,7 +15308,9 @@
       "type": "AI Arena",
       "variation": "Bandwidth Boosters",
       "result": "Rubina is saved",
-      "winners": [],
+      "winners": [
+        "Rubina"
+      ],
       "event_key": "bb26-event-25"
     },
     {
@@ -15578,7 +15592,9 @@
       "type": "Block Buster",
       "variation": "Ransom Note",
       "result": "Kelley is saved",
-      "winners": [],
+      "winners": [
+        "Kelley"
+      ],
       "event_key": "bb27-event-05"
     },
     {
@@ -15665,7 +15681,9 @@
       "type": "Block Buster",
       "variation": "Puzzling Prints",
       "result": "Adrian is saved",
-      "winners": [],
+      "winners": [
+        "Adrian"
+      ],
       "event_key": "bb27-event-12"
     },
     {
@@ -15702,7 +15720,9 @@
       "type": "Block Buster",
       "variation": "Study The Study",
       "result": "Kelley is saved",
-      "winners": [],
+      "winners": [
+        "Kelley"
+      ],
       "event_key": "bb27-event-15"
     },
     {
@@ -15752,7 +15772,9 @@
       "type": "Block Buster",
       "variation": "Safe Crackers",
       "result": "Rylie is saved",
-      "winners": [],
+      "winners": [
+        "Rylie"
+      ],
       "event_key": "bb27-event-18"
     },
     {
@@ -15802,7 +15824,9 @@
       "type": "Block Buster",
       "variation": "Jumbo Gemstones",
       "result": "Keanu is saved",
-      "winners": [],
+      "winners": [
+        "Keanu"
+      ],
       "event_key": "bb27-event-21"
     },
     {
@@ -15839,7 +15863,9 @@
       "type": "Block Buster",
       "variation": "Settle the Score",
       "result": "Mickey is saved",
-      "winners": [],
+      "winners": [
+        "Mickey"
+      ],
       "event_key": "bb27-event-24"
     },
     {
@@ -15876,7 +15902,9 @@
       "type": "Block Buster",
       "variation": "Hilltop Heist",
       "result": "Kelley is saved",
-      "winners": [],
+      "winners": [
+        "Kelley"
+      ],
       "event_key": "bb27-event-27"
     },
     {
@@ -15913,7 +15941,9 @@
       "type": "Block Buster",
       "variation": "Forensic Frenzy",
       "result": "Vince is saved",
-      "winners": [],
+      "winners": [
+        "Vince"
+      ],
       "event_key": "bb27-event-30"
     },
     {
@@ -15974,7 +16004,9 @@
       "type": "Block Buster",
       "variation": "Key to Safety",
       "result": "Keanu is saved",
-      "winners": [],
+      "winners": [
+        "Keanu"
+      ],
       "event_key": "bb27-event-35"
     },
     {
@@ -16024,7 +16056,9 @@
       "type": "Block Buster",
       "variation": "Steal Power Orbs for the Mastermind So He Can Bring His Lair On-Line",
       "result": "Lauren is saved",
-      "winners": [],
+      "winners": [
+        "Lauren"
+      ],
       "event_key": "bb27-event-38"
     },
     {

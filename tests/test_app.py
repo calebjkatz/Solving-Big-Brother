@@ -97,6 +97,27 @@ class BigBrotherStatsTests(unittest.TestCase):
         response = self.client.get(f"/houseguests/{jag['id']}")
         self.assertIn(b'<strong>12</strong>', response.data)
 
+    def test_ai_arena_and_block_buster_safety_results_count_as_wins(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            credited = dict(db.execute("""
+                SELECT ci.competition_type,
+                       COUNT(DISTINCT ci.source_event_key) AS credited_wins
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE cp.placement = 1
+                  AND ci.competition_type IN ('AI Arena', 'Block Buster')
+                GROUP BY ci.competition_type
+            """).fetchall())
+            self.assertEqual(credited, {"AI Arena": 7, "Block Buster": 10})
+
+            kelley = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.name = 'Kelley' AND s.season_number = 27
+            """).fetchone()
+        profile = self.client.get(f"/houseguests/{kelley['id']}")
+        self.assertIn(b"Block Buster <b>3</b>", profile.data)
+
     def test_season_competition_shows_spaced_family_name(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
