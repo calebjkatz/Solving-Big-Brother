@@ -40,10 +40,13 @@ def create_app(test_config=None):
                 db.execute("ALTER TABLE competition_instances ADD COLUMN week TEXT NOT NULL DEFAULT ''")
             if "day" not in instance_columns:
                 db.execute("ALTER TABLE competition_instances ADD COLUMN day TEXT NOT NULL DEFAULT ''")
+            if "source_event_key" not in instance_columns:
+                db.execute("ALTER TABLE competition_instances ADD COLUMN source_event_key TEXT NOT NULL DEFAULT ''")
             houseguest_columns = {
                 row["name"] for row in db.execute("PRAGMA table_info(houseguests)")
             }
-            for column in ("bio", "strengths", "weaknesses", "notes", "image_url", "image_source"):
+            for column in ("bio", "strengths", "weaknesses", "notes", "image_url",
+                           "image_source", "person_key", "profile_url"):
                 if column not in houseguest_columns:
                     db.execute(
                         f"ALTER TABLE houseguests ADD COLUMN {column} TEXT NOT NULL DEFAULT ''"
@@ -98,15 +101,18 @@ def create_app(test_config=None):
                     """, (franchise_id, player["season"])).fetchone()[0]
                     db.execute("""
                         INSERT INTO houseguests
-                        (season_id, name, bio, strengths, weaknesses, notes, image_url, image_source)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                        (season_id, name, bio, strengths, weaknesses, notes, image_url,
+                         image_source, person_key, profile_url)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                         ON CONFLICT(season_id, name) DO UPDATE SET
                             bio=excluded.bio, strengths=excluded.strengths,
                             weaknesses=excluded.weaknesses, notes=excluded.notes,
-                            image_url=excluded.image_url, image_source=excluded.image_source
+                            image_url=excluded.image_url, image_source=excluded.image_source,
+                            person_key=excluded.person_key, profile_url=excluded.profile_url
                     """, (season_id, player["name"], player["bio"], player["strengths"],
                           player["weaknesses"], player["notes"], player.get("image_url", ""),
-                          player.get("image_source", "")))
+                          player.get("image_source", ""), player.get("person_key", player["name"]),
+                          player.get("profile_url", "")))
                 for appearance in catalog.get("appearances", []):
                     competition_id = db.execute(
                         "SELECT id FROM competitions WHERE name = ?", (appearance["competition"],)
@@ -116,11 +122,12 @@ def create_app(test_config=None):
                     """, (franchise_id, appearance["season"])).fetchone()[0]
                     cursor = db.execute("""
                         INSERT INTO competition_instances
-                        (competition_id, season_id, week, day, competition_type,
+                        (competition_id, season_id, week, day, source_event_key, competition_type,
                          variation_name, outcome_notes, verification_status)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, 'source indexed')
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'source indexed')
                     """, (competition_id, season_id, appearance["week"], appearance["day"],
-                          appearance["type"], appearance["variation"], appearance["result"]))
+                          appearance["event_key"], appearance["type"], appearance["variation"],
+                          appearance["result"]))
                     instance_id = cursor.lastrowid
                     for winner in appearance.get("winners", []):
                         houseguest = db.execute("""
@@ -289,11 +296,14 @@ def create_app(test_config=None):
         query = request.args.get("q", "").strip()
         season_number = request.args.get("season", "").strip()
         sql = """
-            SELECT h.*, s.season_number, s.year, COUNT(cp.id) AS competition_wins
+            SELECT h.*, s.season_number, s.year,
+                   COUNT(DISTINCT CASE WHEN cp.id IS NOT NULL THEN
+                       COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS competition_wins
             FROM houseguests h
             JOIN seasons s ON s.id = h.season_id
             LEFT JOIN competition_participants cp
               ON cp.houseguest_id = h.id AND cp.placement = 1
+            LEFT JOIN competition_instances ci ON ci.id = cp.instance_id
             WHERE 1 = 1
         """
         params = []
@@ -323,22 +333,48 @@ def create_app(test_config=None):
             if not player:
                 abort(404)
             wins = db.execute("""
-                SELECT ci.*, c.id AS competition_id, c.name AS family_name
+                SELECT ci.*, MIN(c.id) AS competition_id,
+                       GROUP_CONCAT(DISTINCT c.name) AS family_name
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 JOIN competitions c ON c.id = ci.competition_id
                 WHERE cp.houseguest_id = ? AND cp.placement = 1
+                GROUP BY COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)
                 ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
             """, (houseguest_id,)).fetchall()
             type_counts = db.execute("""
-                SELECT ci.competition_type, COUNT(*) AS total
+                SELECT ci.competition_type,
+                       COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)) AS total
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE cp.houseguest_id = ? AND cp.placement = 1
                 GROUP BY ci.competition_type ORDER BY total DESC
             """, (houseguest_id,)).fetchall()
+            other_seasons = db.execute("""
+                SELECT other.id, other.name, s.season_number, s.year,
+                       COUNT(DISTINCT CASE WHEN cp.id IS NOT NULL THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins
+                FROM houseguests other
+                JOIN seasons s ON s.id = other.season_id
+                LEFT JOIN competition_participants cp
+                  ON cp.houseguest_id = other.id AND cp.placement = 1
+                LEFT JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE other.person_key = ?
+                GROUP BY other.id ORDER BY s.season_number
+            """, (player["person_key"],)).fetchall()
+            career_types = db.execute("""
+                SELECT ci.competition_type,
+                       COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)) AS total
+                FROM houseguests career
+                JOIN competition_participants cp ON cp.houseguest_id = career.id AND cp.placement = 1
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE career.person_key = ?
+                GROUP BY ci.competition_type ORDER BY total DESC
+            """, (player["person_key"],)).fetchall()
+            career_total = sum(row["wins"] for row in other_seasons)
         return render_template("houseguest.html", player=player, wins=wins,
-                               type_counts=type_counts)
+                               type_counts=type_counts, other_seasons=other_seasons,
+                               career_types=career_types, career_total=career_total)
 
     @app.get("/seasons/<int:season_id>")
     def season_detail(season_id):
@@ -350,9 +386,13 @@ def create_app(test_config=None):
             if not season:
                 abort(404)
             appearances = db.execute("""
-                SELECT ci.*, c.name, c.category, c.skills FROM competition_instances ci
+                SELECT ci.*, MIN(c.id) AS competition_id, MIN(c.name) AS name,
+                       GROUP_CONCAT(DISTINCT c.name) AS family_names,
+                       MIN(c.category) AS category, MIN(c.skills) AS skills
+                FROM competition_instances ci
                 JOIN competitions c ON c.id = ci.competition_id
                 WHERE ci.season_id = ?
+                GROUP BY COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)
                 ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
             """, (season_id,)).fetchall()
             winner_rows = db.execute("""

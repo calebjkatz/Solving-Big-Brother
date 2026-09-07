@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS competition_instances (
     season_id INTEGER NOT NULL REFERENCES seasons(id) ON DELETE CASCADE,
     week TEXT NOT NULL DEFAULT '',
     day TEXT NOT NULL DEFAULT '',
+    source_event_key TEXT NOT NULL DEFAULT '',
     episode INTEGER,
     air_date TEXT,
     competition_type TEXT NOT NULL DEFAULT '',
@@ -57,6 +58,8 @@ CREATE TABLE IF NOT EXISTS houseguests (
     notes TEXT NOT NULL DEFAULT '',
     image_url TEXT NOT NULL DEFAULT '',
     image_source TEXT NOT NULL DEFAULT '',
+    person_key TEXT NOT NULL DEFAULT '',
+    profile_url TEXT NOT NULL DEFAULT '',
     UNIQUE(season_id, name)
 );
 

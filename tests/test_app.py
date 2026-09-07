@@ -65,6 +65,38 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Weaknesses", profile.data)
         self.assertIn(b"Memory-wall image source", profile.data)
 
+    def test_returning_player_has_season_and_combined_performance(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            janelle = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.person_key = 'Janelle Pierzina' AND s.season_number = 6
+            """).fetchone()
+            self.assertIsNotNone(janelle)
+        response = self.client.get(f"/houseguests/{janelle['id']}")
+        self.assertIn(b"Combined performance", response.data)
+        self.assertIn(b"across 4 seasons", response.data)
+        for season in (6, 7, 14, 22):
+            self.assertIn(f"BB{season}".encode(), response.data)
+
+    def test_player_win_counts_deduplicate_multi_family_events(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            jag = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.name = 'Jag' AND s.season_number = 25
+            """).fetchone()
+            raw, distinct_events = db.execute("""
+                SELECT COUNT(*), COUNT(DISTINCT ci.source_event_key)
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE cp.houseguest_id = ?
+            """, (jag["id"],)).fetchone()
+            self.assertGreater(raw, distinct_events)
+            self.assertEqual(distinct_events, 12)
+        response = self.client.get(f"/houseguests/{jag['id']}")
+        self.assertIn(b'<strong>12</strong>', response.data)
+
     def test_season_competition_shows_spaced_family_name(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
@@ -74,6 +106,7 @@ class BigBrotherStatsTests(unittest.TestCase):
         response = self.client.get(f"/seasons/{season_id}")
         self.assertIn(b"OTEV the Singing Stageroach", response.data)
         self.assertIn(b"> (OTEV)</span>", response.data)
+        self.assertEqual(response.data.count(b"OTEV the Singing Stageroach"), 1)
 
     def test_full_recurring_catalog_is_loaded(self):
         connect = self.app.extensions["connect_db"]
