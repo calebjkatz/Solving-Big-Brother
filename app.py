@@ -149,7 +149,16 @@ def create_app(test_config=None):
         skill = request.args.get("skill", "").strip()
         sql = """
             SELECT c.*, COUNT(ci.id) AS appearance_count,
-                   GROUP_CONCAT(DISTINCT s.season_number) AS seasons
+                   (
+                       SELECT GROUP_CONCAT(ordered_seasons.season_number)
+                       FROM (
+                           SELECT DISTINCT s2.season_number
+                           FROM competition_instances ci2
+                           JOIN seasons s2 ON s2.id = ci2.season_id
+                           WHERE ci2.competition_id = c.id
+                           ORDER BY s2.season_number
+                       ) AS ordered_seasons
+                   ) AS seasons
             FROM competitions c
             LEFT JOIN competition_instances ci ON ci.competition_id = c.id
             LEFT JOIN seasons s ON s.id = ci.season_id
