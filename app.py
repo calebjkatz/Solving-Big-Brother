@@ -41,6 +41,11 @@ def create_app(test_config=None):
                 franchise_id = db.execute(
                     "SELECT id FROM franchises WHERE name = 'Big Brother US'"
                 ).fetchone()[0]
+                # The modern U.S. game format begins with season 2; season 1 is intentionally out of scope.
+                db.execute(
+                    "DELETE FROM seasons WHERE franchise_id = ? AND season_number = 1",
+                    (franchise_id,),
+                )
                 for season in catalog["seasons"]:
                     db.execute("""
                         INSERT INTO seasons (franchise_id, season_number, title, year)

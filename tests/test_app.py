@@ -45,7 +45,9 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0], 80)
             self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0], 450)
             seasons = db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0]
-            self.assertEqual(seasons, 27)
+            self.assertEqual(seasons, 26)
+            season_one = db.execute("SELECT 1 FROM seasons WHERE season_number = 1").fetchone()
+            self.assertIsNone(season_one)
 
     def test_add_competition(self):
         response = self.client.post("/competitions/new", data={
