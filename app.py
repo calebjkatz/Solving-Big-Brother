@@ -129,15 +129,28 @@ def create_app(test_config=None):
                           appearance["event_key"], appearance["type"], appearance["variation"],
                           appearance["result"]))
                     instance_id = cursor.lastrowid
+                    winners = set(appearance.get("winners", []))
+                    for participant in appearance.get("participants", []):
+                        houseguest = db.execute("""
+                            SELECT id FROM houseguests WHERE season_id = ? AND name = ?
+                        """, (season_id, participant)).fetchone()
+                        if houseguest:
+                            db.execute("""
+                                INSERT OR IGNORE INTO competition_participants
+                                (instance_id, houseguest_id, placement, notes)
+                                VALUES (?, ?, ?, 'source indexed participant')
+                            """, (instance_id, houseguest["id"], 1 if participant in winners else None))
                     for winner in appearance.get("winners", []):
                         houseguest = db.execute("""
                             SELECT id FROM houseguests WHERE season_id = ? AND name = ?
                         """, (season_id, winner)).fetchone()
                         if houseguest:
                             db.execute("""
-                                INSERT OR IGNORE INTO competition_participants
+                                INSERT INTO competition_participants
                                 (instance_id, houseguest_id, placement, notes)
                                 VALUES (?, ?, 1, 'source indexed winner')
+                                ON CONFLICT(instance_id, houseguest_id) DO UPDATE SET
+                                    placement=1, notes='source indexed winner'
                             """, (instance_id, houseguest["id"]))
 
     app.extensions["connect_db"] = connect
@@ -220,11 +233,27 @@ def create_app(test_config=None):
                 WHERE ci.competition_id = ? AND cp.placement = 1
                 ORDER BY h.name
             """, (competition_id,)).fetchall()
+            participant_rows = db.execute("""
+                SELECT cp.instance_id, h.id, h.name, cp.placement
+                FROM competition_participants cp
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE ci.competition_id = ?
+                  AND EXISTS (
+                      SELECT 1 FROM competition_participants documented
+                      WHERE documented.instance_id = cp.instance_id
+                        AND documented.notes = 'source indexed participant'
+                  )
+                ORDER BY cp.placement IS NOT NULL DESC, h.name COLLATE NOCASE
+            """, (competition_id,)).fetchall()
         winners = {}
         for row in winner_rows:
             winners.setdefault(row["instance_id"], []).append(row)
+        participants = {}
+        for row in participant_rows:
+            participants.setdefault(row["instance_id"], []).append(row)
         return render_template("competition.html", competition=competition, appearances=appearances,
-                               sources=sources, winners=winners)
+                               sources=sources, winners=winners, participants=participants)
 
     @app.route("/competitions/new", methods=["GET", "POST"])
     def new_competition():
@@ -401,11 +430,27 @@ def create_app(test_config=None):
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE ci.season_id = ? AND cp.placement = 1 ORDER BY h.name
             """, (season_id,)).fetchall()
+            participant_rows = db.execute("""
+                SELECT cp.instance_id, h.id, h.name, cp.placement
+                FROM competition_participants cp
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE ci.season_id = ?
+                  AND EXISTS (
+                      SELECT 1 FROM competition_participants documented
+                      WHERE documented.instance_id = cp.instance_id
+                        AND documented.notes = 'source indexed participant'
+                  )
+                ORDER BY cp.placement IS NOT NULL DESC, h.name COLLATE NOCASE
+            """, (season_id,)).fetchall()
         winners = {}
         for row in winner_rows:
             winners.setdefault(row["instance_id"], []).append(row)
+        participants = {}
+        for row in participant_rows:
+            participants.setdefault(row["instance_id"], []).append(row)
         return render_template("season.html", season=season, appearances=appearances,
-                               winners=winners)
+                               winners=winners, participants=participants)
 
     @app.get("/export/competitions.csv")
     def export_competitions():

@@ -35,6 +35,19 @@ class BigBrotherStatsTests(unittest.TestCase):
         response = self.client.get("/competitions/1")
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Season appearances", response.data)
+
+    def test_bb25_week_four_veto_lists_all_players(self):
+        with self.app.app_context():
+            connect = self.app.extensions["connect_db"]
+            with connect() as db:
+                competition_id = db.execute(
+                    "SELECT id FROM competitions WHERE name = 'Artifact Stack'"
+                ).fetchone()[0]
+        response = self.client.get(f"/competitions/{competition_id}")
+        self.assertEqual(response.status_code, 200)
+        for name in (b"Cameron", b"Blue", b"Jag", b"Mecole", b"Jared", b"Red"):
+            self.assertIn(name, response.data)
+        self.assertIn(b"Red \xe2\x98\x85", response.data)
         self.assertIn(b"BB25", response.data)
 
     def test_season_index_and_detail(self):
@@ -90,7 +103,7 @@ class BigBrotherStatsTests(unittest.TestCase):
                 SELECT COUNT(*), COUNT(DISTINCT ci.source_event_key)
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
-                WHERE cp.houseguest_id = ?
+                WHERE cp.houseguest_id = ? AND cp.placement = 1
             """, (jag["id"],)).fetchone()
             self.assertGreater(raw, distinct_events)
             self.assertEqual(distinct_events, 12)
