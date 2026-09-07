@@ -1,5 +1,6 @@
 import csv
 import io
+import json
 import os
 import sqlite3
 from pathlib import Path
@@ -34,6 +35,52 @@ def create_app(test_config=None):
             db.executescript((BASE_DIR / "schema.sql").read_text())
             if db.execute("SELECT COUNT(*) FROM franchises").fetchone()[0] == 0:
                 db.executescript((BASE_DIR / "seed.sql").read_text())
+            catalog_path = BASE_DIR / "data" / "us_recurring_competitions.json"
+            if catalog_path.exists():
+                catalog = json.loads(catalog_path.read_text())
+                franchise_id = db.execute(
+                    "SELECT id FROM franchises WHERE name = 'Big Brother US'"
+                ).fetchone()[0]
+                for season in catalog["seasons"]:
+                    db.execute("""
+                        INSERT INTO seasons (franchise_id, season_number, title, year)
+                        VALUES (?, ?, ?, ?)
+                        ON CONFLICT(franchise_id, season_number) DO UPDATE SET
+                            title=excluded.title, year=excluded.year
+                    """, (franchise_id, season["number"], season["title"], season["year"]))
+                db.execute("DELETE FROM competition_instances WHERE variation_name = 'Starter appearance record'")
+                for item in catalog["competitions"]:
+                    db.execute("""
+                        INSERT OR IGNORE INTO competitions
+                        (name, category, format, description, verification_status)
+                        VALUES (?, 'Recurring format', 'See sourced competition record', ?, 'partially verified')
+                    """, (item["name"],
+                          "A recurring competition format documented across Big Brother US seasons."))
+                    competition_id = db.execute(
+                        "SELECT id FROM competitions WHERE name = ?", (item["name"],)
+                    ).fetchone()[0]
+                    if not db.execute(
+                        "SELECT 1 FROM sources WHERE competition_id = ? AND url = ?",
+                        (competition_id, item["source_url"]),
+                    ).fetchone():
+                        db.execute("""
+                            INSERT INTO sources (competition_id, title, url, source_type, notes)
+                            VALUES (?, ?, ?, 'community-maintained reference', ?)
+                        """, (competition_id, f"Big Brother Wiki: {item['name']}", item["source_url"],
+                              f"Season mapping derived from {catalog['source']} and U.S. season competition tables."))
+                    for season_number in item["seasons"]:
+                        season_id = db.execute("""
+                            SELECT id FROM seasons WHERE franchise_id = ? AND season_number = ?
+                        """, (franchise_id, season_number)).fetchone()[0]
+                        if not db.execute("""
+                            SELECT 1 FROM competition_instances
+                            WHERE competition_id = ? AND season_id = ?
+                        """, (competition_id, season_id)).fetchone():
+                            db.execute("""
+                                INSERT INTO competition_instances
+                                (competition_id, season_id, variation_name, verification_status)
+                                VALUES (?, ?, 'Recurring format appearance', 'partially verified')
+                            """, (competition_id, season_id))
 
     app.extensions["connect_db"] = connect
     app.extensions["initialize_database"] = initialize_database

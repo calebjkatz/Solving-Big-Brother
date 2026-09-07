@@ -11,8 +11,9 @@ A local research app for recurring competitions in the U.S. civilian edition of 
 - Adds new competition families and season appearances through the browser.
 - Exports the competition catalog to CSV.
 - Includes schema support for houseguests, participant results, and sources.
+- Loads a sourced catalog of recurring formats across all 27 completed U.S. civilian seasons.
 
-The included records are starter data and intentionally labeled `needs verification`. They demonstrate the system; they are not a completed historical dataset.
+The catalog currently contains competition-family and season-appearance mappings derived from the linked Big Brother Wiki recurring-competition index and individual U.S. season competition tables. Community-maintained sources are marked `partially verified`; episode, winner, and detailed rules research remains a separate verification step.
 
 ## Run locally
 

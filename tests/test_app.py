@@ -21,6 +21,7 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Competition analysis feed", response.data)
         self.assertIn(b"OTEV", response.data)
         self.assertIn(b"BB Comics", response.data)
+        self.assertIn(b"Pressure Cooker", response.data)
 
         response = self.client.get("/?q=OTEV")
         self.assertIn(b"OTEV", response.data)
@@ -36,6 +37,15 @@ class BigBrotherStatsTests(unittest.TestCase):
         response = self.client.get("/seasons")
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Big Brother 25", response.data)
+        self.assertIn(b"Big Brother 27", response.data)
+
+    def test_full_recurring_catalog_is_loaded(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0], 80)
+            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0], 450)
+            seasons = db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0]
+            self.assertEqual(seasons, 27)
 
     def test_add_competition(self):
         response = self.client.post("/competitions/new", data={

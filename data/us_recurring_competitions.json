@@ -1,0 +1,1278 @@
+{
+  "source": "https://bigbrother.fandom.com/wiki/List_of_Recurring_Competitions",
+  "scope": "Big Brother US civilian seasons",
+  "seasons": [
+    {
+      "number": 1,
+      "year": 2000,
+      "title": "Big Brother 1"
+    },
+    {
+      "number": 2,
+      "year": 2001,
+      "title": "Big Brother 2"
+    },
+    {
+      "number": 3,
+      "year": 2002,
+      "title": "Big Brother 3"
+    },
+    {
+      "number": 4,
+      "year": 2003,
+      "title": "Big Brother 4"
+    },
+    {
+      "number": 5,
+      "year": 2004,
+      "title": "Big Brother 5"
+    },
+    {
+      "number": 6,
+      "year": 2005,
+      "title": "Big Brother 6"
+    },
+    {
+      "number": 7,
+      "year": 2006,
+      "title": "Big Brother 7: All-Stars"
+    },
+    {
+      "number": 8,
+      "year": 2007,
+      "title": "Big Brother 8"
+    },
+    {
+      "number": 9,
+      "year": 2008,
+      "title": "Big Brother 9"
+    },
+    {
+      "number": 10,
+      "year": 2008,
+      "title": "Big Brother 10"
+    },
+    {
+      "number": 11,
+      "year": 2009,
+      "title": "Big Brother 11"
+    },
+    {
+      "number": 12,
+      "year": 2010,
+      "title": "Big Brother 12"
+    },
+    {
+      "number": 13,
+      "year": 2011,
+      "title": "Big Brother 13"
+    },
+    {
+      "number": 14,
+      "year": 2012,
+      "title": "Big Brother 14"
+    },
+    {
+      "number": 15,
+      "year": 2013,
+      "title": "Big Brother 15"
+    },
+    {
+      "number": 16,
+      "year": 2014,
+      "title": "Big Brother 16"
+    },
+    {
+      "number": 17,
+      "year": 2015,
+      "title": "Big Brother 17"
+    },
+    {
+      "number": 18,
+      "year": 2016,
+      "title": "Big Brother 18"
+    },
+    {
+      "number": 19,
+      "year": 2017,
+      "title": "Big Brother 19"
+    },
+    {
+      "number": 20,
+      "year": 2018,
+      "title": "Big Brother 20"
+    },
+    {
+      "number": 21,
+      "year": 2019,
+      "title": "Big Brother 21"
+    },
+    {
+      "number": 22,
+      "year": 2020,
+      "title": "Big Brother 22"
+    },
+    {
+      "number": 23,
+      "year": 2021,
+      "title": "Big Brother 23"
+    },
+    {
+      "number": 24,
+      "year": 2022,
+      "title": "Big Brother 24"
+    },
+    {
+      "number": 25,
+      "year": 2023,
+      "title": "Big Brother 25"
+    },
+    {
+      "number": 26,
+      "year": 2024,
+      "title": "Big Brother 26"
+    },
+    {
+      "number": 27,
+      "year": 2025,
+      "title": "Big Brother 27"
+    }
+  ],
+  "competitions": [
+    {
+      "name": "An Offer You Can't Refuse",
+      "seasons": [
+        2,
+        3,
+        4
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/An_Offer_You_Can't_Refuse"
+    },
+    {
+      "name": "As Close As You Can",
+      "seasons": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        19,
+        22,
+        23,
+        24,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/As_Close_As_You_Can"
+    },
+    {
+      "name": "Ask The Evictee",
+      "seasons": [
+        7
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Ask_The_Evictee"
+    },
+    {
+      "name": "BB Comics",
+      "seasons": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/BB_Comics"
+    },
+    {
+      "name": "BB Flix & Chill",
+      "seasons": [
+        20,
+        21,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/BB_Flix_%26_Chill"
+    },
+    {
+      "name": "BB Storm Watch",
+      "seasons": [
+        18,
+        19
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/BB_Storm_Watch"
+    },
+    {
+      "name": "Ball Roll",
+      "seasons": [
+        20,
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Ball_Roll"
+    },
+    {
+      "name": "Before or After",
+      "seasons": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Before_or_After"
+    },
+    {
+      "name": "Berry Balanced",
+      "seasons": [
+        18,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Berry_Balanced"
+    },
+    {
+      "name": "Big Top Drop",
+      "seasons": [
+        4,
+        11,
+        19,
+        20,
+        25,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Top_Drop"
+    },
+    {
+      "name": "Binary Bridge",
+      "seasons": [
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Binary_Bridge"
+    },
+    {
+      "name": "Block and Roll",
+      "seasons": [
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Block_and_Roll"
+    },
+    {
+      "name": "Blockbusters",
+      "seasons": [
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Blockbusters"
+    },
+    {
+      "name": "Bowlerina",
+      "seasons": [
+        15,
+        17,
+        19,
+        23,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Bowlerina"
+    },
+    {
+      "name": "Build the Bridge",
+      "seasons": [
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Build_the_Bridge"
+    },
+    {
+      "name": "Caged Eggs",
+      "seasons": [
+        11,
+        12,
+        15,
+        16,
+        17,
+        18,
+        21,
+        23,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Caged_Eggs"
+    },
+    {
+      "name": "Carnival Quick Shot",
+      "seasons": [
+        22,
+        23,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Carnival_Quick_Shot"
+    },
+    {
+      "name": "Coin Stacking",
+      "seasons": [
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Coin_Stacking"
+    },
+    {
+      "name": "Cover Your Days",
+      "seasons": [
+        18,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Cover_Your_Days"
+    },
+    {
+      "name": "Digital Decryption",
+      "seasons": [
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Digital_Decryption"
+    },
+    {
+      "name": "Dizzy Discs",
+      "seasons": [
+        9,
+        11,
+        14,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Dizzy_Discs"
+    },
+    {
+      "name": "Domino Effect",
+      "seasons": [
+        16,
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Domino_Effect"
+    },
+    {
+      "name": "Don't Miss A Beat",
+      "seasons": [
+        18,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Don't_Miss_A_Beat"
+    },
+    {
+      "name": "Drinks On Us",
+      "seasons": [
+        16
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Drinks_On_Us"
+    },
+    {
+      "name": "Eliminator",
+      "seasons": [
+        6,
+        7,
+        8
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Eliminator"
+    },
+    {
+      "name": "Facial Recognition",
+      "seasons": [
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Facial_Recognition"
+    },
+    {
+      "name": "Faster Than A Speeding Veto",
+      "seasons": [
+        9,
+        13,
+        16,
+        24
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Faster_Than_A_Speeding_Veto"
+    },
+    {
+      "name": "Feel The Burn",
+      "seasons": [
+        23,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Feel_The_Burn"
+    },
+    {
+      "name": "Feeling Knotty",
+      "seasons": [
+        4,
+        7,
+        24,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Feeling_Knotty"
+    },
+    {
+      "name": "Fitting In",
+      "seasons": [
+        19,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Fitting_In"
+    },
+    {
+      "name": "Foam Party",
+      "seasons": [
+        4,
+        8
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Foam_Party"
+    },
+    {
+      "name": "Gear Puzzle",
+      "seasons": [
+        24
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Gear_Puzzle"
+    },
+    {
+      "name": "Get A Grip",
+      "seasons": [
+        21
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Get_A_Grip"
+    },
+    {
+      "name": "Getting Loopy",
+      "seasons": [
+        20,
+        23,
+        25,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Getting_Loopy"
+    },
+    {
+      "name": "Giddy Up",
+      "seasons": [
+        18,
+        20,
+        22,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Giddy_Up"
+    },
+    {
+      "name": "Golf Invitational",
+      "seasons": [
+        7,
+        11,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Golf_Invitational"
+    },
+    {
+      "name": "Hide and Go Veto",
+      "seasons": [
+        8,
+        12,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Hide_and_Go_Veto"
+    },
+    {
+      "name": "Hide and Seek",
+      "seasons": [
+        25,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Hide_and_Seek"
+    },
+    {
+      "name": "Hourglass",
+      "seasons": [
+        19,
+        21,
+        23,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Hourglass"
+    },
+    {
+      "name": "HouseguestsOnly.com",
+      "seasons": [
+        20,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/HouseguestsOnly.com"
+    },
+    {
+      "name": "How Bad Do You Want It?",
+      "seasons": [
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/How_Bad_Do_You_Want_It?"
+    },
+    {
+      "name": "In The Balance",
+      "seasons": [
+        15,
+        16,
+        19,
+        21,
+        22,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/In_The_Balance"
+    },
+    {
+      "name": "It's Time to Reflect",
+      "seasons": [
+        7
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/It's_Time_to_Reflect"
+    },
+    {
+      "name": "Item Catching",
+      "seasons": [
+        20,
+        21
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Item_Catching"
+    },
+    {
+      "name": "Item Maze",
+      "seasons": [
+        19,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Item_Maze"
+    },
+    {
+      "name": "Jetpack Attack",
+      "seasons": [
+        20,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Jetpack_Attack"
+    },
+    {
+      "name": "Jury Statements",
+      "seasons": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Jury_Statements"
+    },
+    {
+      "name": "Kaitlyn's Puzzle",
+      "seasons": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Kaitlyn's_Puzzle"
+    },
+    {
+      "name": "Knight Moves",
+      "seasons": [
+        3,
+        6,
+        16,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Knight_Moves"
+    },
+    {
+      "name": "Knockout",
+      "seasons": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Knockout"
+    },
+    {
+      "name": "Laser Maze",
+      "seasons": [
+        22,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Laser_Maze"
+    },
+    {
+      "name": "Last One Standing",
+      "seasons": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Last_One_Standing"
+    },
+    {
+      "name": "Living Art",
+      "seasons": [
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Living_Art"
+    },
+    {
+      "name": "Majority Rules",
+      "seasons": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Majority_Rules"
+    },
+    {
+      "name": "Microbrews",
+      "seasons": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Microbrews"
+    },
+    {
+      "name": "Microchip Mayhem",
+      "seasons": [
+        20,
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Microchip_Mayhem"
+    },
+    {
+      "name": "Morph 'O' Matic",
+      "seasons": [
+        5,
+        6,
+        7,
+        11,
+        12,
+        16,
+        17
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Morph_'O'_Matic"
+    },
+    {
+      "name": "New Rule",
+      "seasons": [
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/New_Rule"
+    },
+    {
+      "name": "Niagara Balls",
+      "seasons": [
+        4,
+        8,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Niagara_Balls"
+    },
+    {
+      "name": "OTEV",
+      "seasons": [
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/OTEV"
+    },
+    {
+      "name": "Only One Path",
+      "seasons": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Only_One_Path"
+    },
+    {
+      "name": "Perfect Shot",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        23,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Perfect_Shot"
+    },
+    {
+      "name": "Pose In Ivy",
+      "seasons": [
+        21,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Pose_In_Ivy"
+    },
+    {
+      "name": "Pressure Cooker",
+      "seasons": [
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Pressure_Cooker"
+    },
+    {
+      "name": "Pull Some Strings",
+      "seasons": [
+        14,
+        16,
+        19,
+        20,
+        21,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Pull_Some_Strings"
+    },
+    {
+      "name": "Punch, Slap, Kick",
+      "seasons": [
+        19,
+        20
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Punch,_Slap,_Kick"
+    },
+    {
+      "name": "Pyramid",
+      "seasons": [
+        18
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Pyramid"
+    },
+    {
+      "name": "Ready, Set, Woah",
+      "seasons": [
+        17,
+        18,
+        19,
+        22,
+        24,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Ready,_Set,_Woah"
+    },
+    {
+      "name": "Reclaim the Relic",
+      "seasons": [
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Reclaim_the_Relic"
+    },
+    {
+      "name": "Relay Race",
+      "seasons": [
+        24
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Relay_Race"
+    },
+    {
+      "name": "Repeat After Me",
+      "seasons": [
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Repeat_After_Me"
+    },
+    {
+      "name": "Roll It Down",
+      "seasons": [
+        19,
+        20,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Roll_It_Down"
+    },
+    {
+      "name": "Rollerball",
+      "seasons": [
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Rollerball"
+    },
+    {
+      "name": "Rollin' in the Dough",
+      "seasons": [
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Rollin'_in_the_Dough"
+    },
+    {
+      "name": "Seesaw",
+      "seasons": [
+        16,
+        20,
+        22,
+        23,
+        25,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Seesaw"
+    },
+    {
+      "name": "Sequence Explosion",
+      "seasons": [
+        16,
+        17,
+        18,
+        19,
+        23,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Sequence_Explosion"
+    },
+    {
+      "name": "Shootout",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Shootout"
+    },
+    {
+      "name": "Sky High Memory",
+      "seasons": [
+        18,
+        20,
+        21
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Sky_High_Memory"
+    },
+    {
+      "name": "Slapshot",
+      "seasons": [
+        10
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Slapshot"
+    },
+    {
+      "name": "Slingshot Aim",
+      "seasons": [
+        19,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Slingshot_Aim"
+    },
+    {
+      "name": "Slippery Slope",
+      "seasons": [
+        8,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Slippery_Slope"
+    },
+    {
+      "name": "Snapshot Shuffle",
+      "seasons": [
+        22,
+        23,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Snapshot_Shuffle"
+    },
+    {
+      "name": "Somewhere Over The Veto",
+      "seasons": [
+        10,
+        13,
+        14,
+        16,
+        18,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Somewhere_Over_The_Veto"
+    },
+    {
+      "name": "Spelling Search",
+      "seasons": [
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Spelling_Search"
+    },
+    {
+      "name": "Stacking",
+      "seasons": [
+        24,
+        26
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Stacking"
+    },
+    {
+      "name": "Stay or Fold",
+      "seasons": [
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        24
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Stay_or_Fold"
+    },
+    {
+      "name": "Swing, Slam, Dunk",
+      "seasons": [
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Swing,_Slam,_Dunk"
+    },
+    {
+      "name": "Take It Off",
+      "seasons": [
+        18,
+        21,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Take_It_Off"
+    },
+    {
+      "name": "The Black Box",
+      "seasons": [
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/The_Black_Box"
+    },
+    {
+      "name": "The Haunting",
+      "seasons": [
+        19,
+        24,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/The_Haunting"
+    },
+    {
+      "name": "The Maze",
+      "seasons": [
+        20,
+        22
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/The_Maze"
+    },
+    {
+      "name": "The Wall",
+      "seasons": [
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/The_Wall"
+    },
+    {
+      "name": "Time Flies",
+      "seasons": [
+        14,
+        15,
+        17
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Time_Flies"
+    },
+    {
+      "name": "Time Highway",
+      "seasons": [
+        20,
+        21
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Time_Highway"
+    },
+    {
+      "name": "To Drink or to Bluff",
+      "seasons": [
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/To_Drink_or_to_Bluff"
+    },
+    {
+      "name": "Tower of Hanoi",
+      "seasons": [
+        18,
+        22,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Tower_of_Hanoi"
+    },
+    {
+      "name": "Tumblin' Dice",
+      "seasons": [
+        16,
+        17,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Tumblin'_Dice"
+    },
+    {
+      "name": "Watch Your Step",
+      "seasons": [
+        18
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Watch_Your_Step"
+    },
+    {
+      "name": "What Competition Was That?",
+      "seasons": [
+        24,
+        25
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/What_Competition_Was_That?"
+    },
+    {
+      "name": "What Did They Just Do?",
+      "seasons": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/What_Did_They_Just_Do?"
+    },
+    {
+      "name": "What The Bleep?",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/What_The_Bleep?"
+    },
+    {
+      "name": "What's The Hold Up",
+      "seasons": [
+        19,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/What's_The_Hold_Up"
+    },
+    {
+      "name": "Where Were You?",
+      "seasons": [
+        19
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Where_Were_You?"
+    },
+    {
+      "name": "Who Did What?",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Who_Did_What?"
+    },
+    {
+      "name": "Yankee Swap",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Yankee_Swap"
+    },
+    {
+      "name": "Zingbot Competition",
+      "seasons": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Zingbot_Competition"
+    }
+  ]
+}
