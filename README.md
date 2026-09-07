@@ -13,6 +13,7 @@ A local research app for recurring competitions in the U.S. civilian edition of 
 - Includes schema support for houseguests, participant results, and sources.
 - Loads a sourced catalog of competition formats across the 26 modern-format U.S. civilian seasons, BB2–BB27.
 - Stores sourced week, day, competition type, themed name, and result data from each season's competition-history table.
+- Provides a searchable Houseguests tab with season rosters, player dossiers, sourced competition wins, win-type summaries, and fields for evidence-backed strengths and weaknesses.
 
 Season 1 is intentionally excluded because its public-vote format is not comparable to the competition-driven game introduced in season 2. The catalog contains competition-family and season-appearance mappings derived from the linked Big Brother Wiki recurring-competition index and individual U.S. season competition tables. Community-maintained sources are marked `partially verified`; episode, winner, and detailed rules research remains a separate verification step.
 

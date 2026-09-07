@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}Houseguests · Big Brother Stats{% endblock %}
+{% block content %}
+<section class="page-title"><p class="eyebrow"><span class="live-dot"></span> Player database</p><h1>Houseguests</h1><p>Browse season rosters and open a player dossier to review their documented competition wins.</p></section>
+<form class="filters player-filters" method="get"><input type="search" name="q" value="{{ filters.get('q', '') }}" placeholder="Search houseguests"><select name="season"><option value="">All seasons</option>{% for item in season_options %}<option value="{{ item.season_number }}" {% if filters.get('season') == item.season_number|string %}selected{% endif %}>Big Brother {{ item.season_number }}</option>{% endfor %}</select><button>Filter players</button></form>
+<div class="section-heading"><div><p class="eyebrow">{{ players|length }} records</p><h2>Player dossiers</h2></div></div>
+<section class="player-grid">{% for player in players %}<a class="player-card" href="{{ url_for('houseguest_detail', houseguest_id=player.id) }}"><span class="player-initials">{{ player.name.split()|map('first')|join('')|upper }}</span><div><p class="eyebrow">BB{{ player.season_number }} · {{ player.year }}</p><h3>{{ player.name }}</h3><p><strong>{{ player.competition_wins }}</strong> documented win{{ '' if player.competition_wins == 1 else 's' }}</p></div><span class="open-record">Open record →</span></a>{% else %}<p>No houseguests match those filters.</p>{% endfor %}</section>
+{% endblock %}

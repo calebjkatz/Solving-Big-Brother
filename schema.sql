@@ -51,6 +51,10 @@ CREATE TABLE IF NOT EXISTS houseguests (
     id INTEGER PRIMARY KEY,
     season_id INTEGER NOT NULL REFERENCES seasons(id) ON DELETE CASCADE,
     name TEXT NOT NULL,
+    bio TEXT NOT NULL DEFAULT '',
+    strengths TEXT NOT NULL DEFAULT '',
+    weaknesses TEXT NOT NULL DEFAULT '',
+    notes TEXT NOT NULL DEFAULT '',
     UNIQUE(season_id, name)
 );
 

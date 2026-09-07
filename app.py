@@ -40,6 +40,14 @@ def create_app(test_config=None):
                 db.execute("ALTER TABLE competition_instances ADD COLUMN week TEXT NOT NULL DEFAULT ''")
             if "day" not in instance_columns:
                 db.execute("ALTER TABLE competition_instances ADD COLUMN day TEXT NOT NULL DEFAULT ''")
+            houseguest_columns = {
+                row["name"] for row in db.execute("PRAGMA table_info(houseguests)")
+            }
+            for column in ("bio", "strengths", "weaknesses", "notes"):
+                if column not in houseguest_columns:
+                    db.execute(
+                        f"ALTER TABLE houseguests ADD COLUMN {column} TEXT NOT NULL DEFAULT ''"
+                    )
             if db.execute("SELECT COUNT(*) FROM franchises").fetchone()[0] == 0:
                 db.executescript((BASE_DIR / "seed.sql").read_text())
             catalog_path = BASE_DIR / "data" / "us_recurring_competitions.json"
@@ -84,6 +92,19 @@ def create_app(test_config=None):
                             VALUES (?, ?, ?, 'community-maintained reference', ?)
                         """, (competition_id, f"Big Brother Wiki: {item['name']}", item["source_url"],
                               f"Season mapping derived from {catalog['source']} and U.S. season competition tables."))
+                for player in catalog.get("houseguests", []):
+                    season_id = db.execute("""
+                        SELECT id FROM seasons WHERE franchise_id = ? AND season_number = ?
+                    """, (franchise_id, player["season"])).fetchone()[0]
+                    db.execute("""
+                        INSERT INTO houseguests
+                        (season_id, name, bio, strengths, weaknesses, notes)
+                        VALUES (?, ?, ?, ?, ?, ?)
+                        ON CONFLICT(season_id, name) DO UPDATE SET
+                            bio=excluded.bio, strengths=excluded.strengths,
+                            weaknesses=excluded.weaknesses, notes=excluded.notes
+                    """, (season_id, player["name"], player["bio"], player["strengths"],
+                          player["weaknesses"], player["notes"]))
                 for appearance in catalog.get("appearances", []):
                     competition_id = db.execute(
                         "SELECT id FROM competitions WHERE name = ?", (appearance["competition"],)
@@ -91,13 +112,24 @@ def create_app(test_config=None):
                     season_id = db.execute("""
                         SELECT id FROM seasons WHERE franchise_id = ? AND season_number = ?
                     """, (franchise_id, appearance["season"])).fetchone()[0]
-                    db.execute("""
+                    cursor = db.execute("""
                         INSERT INTO competition_instances
                         (competition_id, season_id, week, day, competition_type,
                          variation_name, outcome_notes, verification_status)
                         VALUES (?, ?, ?, ?, ?, ?, ?, 'source indexed')
                     """, (competition_id, season_id, appearance["week"], appearance["day"],
                           appearance["type"], appearance["variation"], appearance["result"]))
+                    instance_id = cursor.lastrowid
+                    for winner in appearance.get("winners", []):
+                        houseguest = db.execute("""
+                            SELECT id FROM houseguests WHERE season_id = ? AND name = ?
+                        """, (season_id, winner)).fetchone()
+                        if houseguest:
+                            db.execute("""
+                                INSERT OR IGNORE INTO competition_participants
+                                (instance_id, houseguest_id, placement, notes)
+                                VALUES (?, ?, 1, 'source indexed winner')
+                            """, (instance_id, houseguest["id"]))
 
     app.extensions["connect_db"] = connect
     app.extensions["initialize_database"] = initialize_database
@@ -163,7 +195,18 @@ def create_app(test_config=None):
                 ORDER BY s.season_number DESC, CAST(ci.week AS INTEGER), ci.day
             """, (competition_id,)).fetchall()
             sources = db.execute("SELECT * FROM sources WHERE competition_id = ? ORDER BY title", (competition_id,)).fetchall()
-        return render_template("competition.html", competition=competition, appearances=appearances, sources=sources)
+            winner_rows = db.execute("""
+                SELECT cp.instance_id, h.id, h.name FROM competition_participants cp
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE ci.competition_id = ? AND cp.placement = 1
+                ORDER BY h.name
+            """, (competition_id,)).fetchall()
+        winners = {}
+        for row in winner_rows:
+            winners.setdefault(row["instance_id"], []).append(row)
+        return render_template("competition.html", competition=competition, appearances=appearances,
+                               sources=sources, winners=winners)
 
     @app.route("/competitions/new", methods=["GET", "POST"])
     def new_competition():
@@ -230,6 +273,62 @@ def create_app(test_config=None):
             """).fetchall()
         return render_template("seasons.html", seasons=rows)
 
+    @app.get("/houseguests")
+    def houseguests():
+        query = request.args.get("q", "").strip()
+        season_number = request.args.get("season", "").strip()
+        sql = """
+            SELECT h.*, s.season_number, s.year, COUNT(cp.id) AS competition_wins
+            FROM houseguests h
+            JOIN seasons s ON s.id = h.season_id
+            LEFT JOIN competition_participants cp
+              ON cp.houseguest_id = h.id AND cp.placement = 1
+            WHERE 1 = 1
+        """
+        params = []
+        if query:
+            sql += " AND h.name LIKE ?"
+            params.append(f"%{query}%")
+        if season_number:
+            sql += " AND s.season_number = ?"
+            params.append(season_number)
+        sql += " GROUP BY h.id ORDER BY s.season_number DESC, h.name COLLATE NOCASE"
+        with connect() as db:
+            players = db.execute(sql, params).fetchall()
+            season_options = db.execute(
+                "SELECT season_number FROM seasons ORDER BY season_number DESC"
+            ).fetchall()
+        return render_template("houseguests.html", players=players,
+                               season_options=season_options, filters=request.args)
+
+    @app.get("/houseguests/<int:houseguest_id>")
+    def houseguest_detail(houseguest_id):
+        with connect() as db:
+            player = db.execute("""
+                SELECT h.*, s.season_number, s.year, s.title
+                FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.id = ?
+            """, (houseguest_id,)).fetchone()
+            if not player:
+                abort(404)
+            wins = db.execute("""
+                SELECT ci.*, c.id AS competition_id, c.name AS family_name
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                JOIN competitions c ON c.id = ci.competition_id
+                WHERE cp.houseguest_id = ? AND cp.placement = 1
+                ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
+            """, (houseguest_id,)).fetchall()
+            type_counts = db.execute("""
+                SELECT ci.competition_type, COUNT(*) AS total
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE cp.houseguest_id = ? AND cp.placement = 1
+                GROUP BY ci.competition_type ORDER BY total DESC
+            """, (houseguest_id,)).fetchall()
+        return render_template("houseguest.html", player=player, wins=wins,
+                               type_counts=type_counts)
+
     @app.get("/seasons/<int:season_id>")
     def season_detail(season_id):
         with connect() as db:
@@ -245,7 +344,17 @@ def create_app(test_config=None):
                 WHERE ci.season_id = ?
                 ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
             """, (season_id,)).fetchall()
-        return render_template("season.html", season=season, appearances=appearances)
+            winner_rows = db.execute("""
+                SELECT cp.instance_id, h.id, h.name FROM competition_participants cp
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE ci.season_id = ? AND cp.placement = 1 ORDER BY h.name
+            """, (season_id,)).fetchall()
+        winners = {}
+        for row in winner_rows:
+            winners.setdefault(row["instance_id"], []).append(row)
+        return render_template("season.html", season=season, appearances=appearances,
+                               winners=winners)
 
     @app.get("/export/competitions.csv")
     def export_competitions():

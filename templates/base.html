@@ -10,11 +10,12 @@
   <meta property="og:type" content="website">
   <title>{% block title %}Big Brother Stats{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='houseguests.css') }}">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="{{ url_for('index') }}"><span class="brand-eye" aria-hidden="true"><i></i></span><span class="brand-copy"><b>Big Brother</b><small>Competition Intelligence</small></span></a>
-    <nav><a href="{{ url_for('index') }}">Competitions</a><a href="{{ url_for('seasons') }}">Seasons</a>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_competition') }}">Add competition</a>{% endif %}</nav>
+    <nav><a href="{{ url_for('index') }}">Competitions</a><a href="{{ url_for('seasons') }}">Seasons</a><a href="{{ url_for('houseguests') }}">Houseguests</a>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_competition') }}">Add competition</a>{% endif %}</nav>
   </header>
   <div class="signal-bar" aria-hidden="true"><span><i></i> Archive online</span><span>US // Civilian Series</span><span>Research build 01</span></div>
   <main>

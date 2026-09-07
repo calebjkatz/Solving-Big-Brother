@@ -39,6 +39,35 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Big Brother 25", response.data)
         self.assertIn(b"Big Brother 27", response.data)
 
+    def test_houseguest_directory_and_profile(self):
+        response = self.client.get("/houseguests?season=24&q=Taylor")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Taylor", response.data)
+        self.assertIn(b"BB24", response.data)
+        self.assertIn(b"documented wins", response.data)
+
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            player_id = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.name = 'Taylor' AND s.season_number = 24
+            """).fetchone()[0]
+        profile = self.client.get(f"/houseguests/{player_id}")
+        self.assertEqual(profile.status_code, 200)
+        self.assertIn(b"Competitions won", profile.data)
+        self.assertIn(b"Strengths", profile.data)
+        self.assertIn(b"Weaknesses", profile.data)
+
+    def test_season_competition_shows_spaced_family_name(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            season_id = db.execute(
+                "SELECT id FROM seasons WHERE season_number = 24"
+            ).fetchone()[0]
+        response = self.client.get(f"/seasons/{season_id}")
+        self.assertIn(b"OTEV the Singing Stageroach", response.data)
+        self.assertIn(b"> (OTEV)</span>", response.data)
+
     def test_full_recurring_catalog_is_loaded(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
