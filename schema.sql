@@ -34,6 +34,8 @@ CREATE TABLE IF NOT EXISTS competition_instances (
     id INTEGER PRIMARY KEY,
     competition_id INTEGER NOT NULL REFERENCES competitions(id) ON DELETE CASCADE,
     season_id INTEGER NOT NULL REFERENCES seasons(id) ON DELETE CASCADE,
+    week TEXT NOT NULL DEFAULT '',
+    day TEXT NOT NULL DEFAULT '',
     episode INTEGER,
     air_date TEXT,
     competition_type TEXT NOT NULL DEFAULT '',

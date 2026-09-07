@@ -33,6 +33,13 @@ def create_app(test_config=None):
     def initialize_database():
         with connect() as db:
             db.executescript((BASE_DIR / "schema.sql").read_text())
+            instance_columns = {
+                row["name"] for row in db.execute("PRAGMA table_info(competition_instances)")
+            }
+            if "week" not in instance_columns:
+                db.execute("ALTER TABLE competition_instances ADD COLUMN week TEXT NOT NULL DEFAULT ''")
+            if "day" not in instance_columns:
+                db.execute("ALTER TABLE competition_instances ADD COLUMN day TEXT NOT NULL DEFAULT ''")
             if db.execute("SELECT COUNT(*) FROM franchises").fetchone()[0] == 0:
                 db.executescript((BASE_DIR / "seed.sql").read_text())
             catalog_path = BASE_DIR / "data" / "us_recurring_competitions.json"
@@ -53,14 +60,18 @@ def create_app(test_config=None):
                         ON CONFLICT(franchise_id, season_number) DO UPDATE SET
                             title=excluded.title, year=excluded.year
                     """, (franchise_id, season["number"], season["title"], season["year"]))
-                db.execute("DELETE FROM competition_instances WHERE variation_name = 'Starter appearance record'")
+                db.execute("""
+                    DELETE FROM competition_instances
+                    WHERE variation_name IN ('Starter appearance record', 'Recurring format appearance')
+                       OR verification_status = 'source indexed'
+                """)
                 for item in catalog["competitions"]:
                     db.execute("""
                         INSERT OR IGNORE INTO competitions
                         (name, category, format, description, verification_status)
-                        VALUES (?, 'Recurring format', 'See sourced competition record', ?, 'partially verified')
+                        VALUES (?, 'Competition format', 'See sourced competition record', ?, 'partially verified')
                     """, (item["name"],
-                          "A recurring competition format documented across Big Brother US seasons."))
+                          "A competition format documented in the Big Brother US competition history."))
                     competition_id = db.execute(
                         "SELECT id FROM competitions WHERE name = ?", (item["name"],)
                     ).fetchone()[0]
@@ -73,19 +84,20 @@ def create_app(test_config=None):
                             VALUES (?, ?, ?, 'community-maintained reference', ?)
                         """, (competition_id, f"Big Brother Wiki: {item['name']}", item["source_url"],
                               f"Season mapping derived from {catalog['source']} and U.S. season competition tables."))
-                    for season_number in item["seasons"]:
-                        season_id = db.execute("""
-                            SELECT id FROM seasons WHERE franchise_id = ? AND season_number = ?
-                        """, (franchise_id, season_number)).fetchone()[0]
-                        if not db.execute("""
-                            SELECT 1 FROM competition_instances
-                            WHERE competition_id = ? AND season_id = ?
-                        """, (competition_id, season_id)).fetchone():
-                            db.execute("""
-                                INSERT INTO competition_instances
-                                (competition_id, season_id, variation_name, verification_status)
-                                VALUES (?, ?, 'Recurring format appearance', 'partially verified')
-                            """, (competition_id, season_id))
+                for appearance in catalog.get("appearances", []):
+                    competition_id = db.execute(
+                        "SELECT id FROM competitions WHERE name = ?", (appearance["competition"],)
+                    ).fetchone()[0]
+                    season_id = db.execute("""
+                        SELECT id FROM seasons WHERE franchise_id = ? AND season_number = ?
+                    """, (franchise_id, appearance["season"])).fetchone()[0]
+                    db.execute("""
+                        INSERT INTO competition_instances
+                        (competition_id, season_id, week, day, competition_type,
+                         variation_name, outcome_notes, verification_status)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, 'source indexed')
+                    """, (competition_id, season_id, appearance["week"], appearance["day"],
+                          appearance["type"], appearance["variation"], appearance["result"]))
 
     app.extensions["connect_db"] = connect
     app.extensions["initialize_database"] = initialize_database
@@ -148,7 +160,7 @@ def create_app(test_config=None):
                 JOIN seasons s ON s.id = ci.season_id
                 JOIN franchises f ON f.id = s.franchise_id
                 WHERE ci.competition_id = ?
-                ORDER BY s.season_number DESC
+                ORDER BY s.season_number DESC, CAST(ci.week AS INTEGER), ci.day
             """, (competition_id,)).fetchall()
             sources = db.execute("SELECT * FROM sources WHERE competition_id = ? ORDER BY title", (competition_id,)).fetchall()
         return render_template("competition.html", competition=competition, appearances=appearances, sources=sources)
@@ -195,10 +207,10 @@ def create_app(test_config=None):
                     return render_template("appearance_form.html", competition=competition, seasons=seasons), 400
                 db.execute("""
                     INSERT INTO competition_instances
-                    (competition_id, season_id, episode, competition_type, variation_name, rules_notes, winner, outcome_notes, verification_status)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    (competition_id, season_id, week, day, episode, competition_type, variation_name, rules_notes, winner, outcome_notes, verification_status)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (competition_id, season_id) + tuple(request.form.get(field, "").strip() for field in (
-                    "episode", "competition_type", "variation_name", "rules_notes", "winner",
+                    "week", "day", "episode", "competition_type", "variation_name", "rules_notes", "winner",
                     "outcome_notes", "verification_status"
                 )))
                 db.commit()
@@ -230,7 +242,8 @@ def create_app(test_config=None):
             appearances = db.execute("""
                 SELECT ci.*, c.name, c.category, c.skills FROM competition_instances ci
                 JOIN competitions c ON c.id = ci.competition_id
-                WHERE ci.season_id = ? ORDER BY COALESCE(ci.episode, 999), c.name
+                WHERE ci.season_id = ?
+                ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
             """, (season_id,)).fetchall()
         return render_template("season.html", season=season, appearances=appearances)
 

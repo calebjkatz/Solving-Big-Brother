@@ -42,12 +42,25 @@ class BigBrotherStatsTests(unittest.TestCase):
     def test_full_recurring_catalog_is_loaded(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
-            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0], 80)
-            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0], 450)
+            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0], 400)
+            self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0], 900)
             seasons = db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0]
             self.assertEqual(seasons, 26)
             season_one = db.execute("SELECT 1 FROM seasons WHERE season_number = 1").fetchone()
             self.assertIsNone(season_one)
+            typed = db.execute("""
+                SELECT COUNT(*) FROM competition_instances
+                WHERE week != '' AND competition_type != ''
+            """).fetchone()[0]
+            self.assertGreaterEqual(typed, 900)
+            otev_27 = db.execute("""
+                SELECT ci.week, ci.competition_type, ci.variation_name
+                FROM competition_instances ci
+                JOIN competitions c ON c.id = ci.competition_id
+                JOIN seasons s ON s.id = ci.season_id
+                WHERE c.name = 'OTEV' AND s.season_number = 27
+            """).fetchone()
+            self.assertEqual(tuple(otev_27), ("6", "POV", "OTEV the Hog Father"))
 
     def test_add_competition(self):
         response = self.client.post("/competitions/new", data={
