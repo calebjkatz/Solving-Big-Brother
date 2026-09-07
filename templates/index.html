@@ -1,14 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <section class="hero">
-  <p class="eyebrow">Competition intelligence archive</p>
-  <h1>Every repeat. Every variation.<br><em>A better way to study the game.</em></h1>
-  <p>Track recurring competitions across seasons, compare mechanics, and turn results into evidence-backed strategy.</p>
+  <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> Competition intelligence archive</p><h1>Study the comp.<br><em>Solve the game.</em></h1><p>Track recurring competitions across seasons, compare mechanics, and turn results into evidence-backed strategy.</p></div>
+  <div class="hero-monitor" aria-hidden="true"><div class="monitor-head"><span>CAM 04</span><span class="rec"><i></i> REC</span></div><div class="monitor-eye"><span></span></div><div class="monitor-grid"></div><p>Competition analysis feed</p></div>
 </section>
 <section class="stats">
-  <div><strong>{{ stats.competitions }}</strong><span>competition families</span></div>
-  <div><strong>{{ stats.appearances }}</strong><span>season appearances</span></div>
-  <div><strong>{{ stats.seasons }}</strong><span>seasons represented</span></div>
+  <div><small>Dataset 01</small><strong>{{ stats.competitions }}</strong><span>competition families</span></div>
+  <div><small>Dataset 02</small><strong>{{ stats.appearances }}</strong><span>season appearances</span></div>
+  <div><small>Dataset 03</small><strong>{{ stats.seasons }}</strong><span>seasons represented</span></div>
 </section>
 <form class="filters" method="get">
   <input type="search" name="q" value="{{ filters.get('q', '') }}" placeholder="Search name, alias, or description">
@@ -20,7 +19,7 @@
 <section class="card-grid">
 {% for competition in competitions %}
   <a class="card" href="{{ url_for('competition_detail', competition_id=competition.id) }}">
-    <div class="card-top"><span class="pill">{{ competition.category }}</span><span>{{ competition.appearance_count }} appearance{{ '' if competition.appearance_count == 1 else 's' }}</span></div>
+    <div class="card-top"><span class="pill">{{ competition.category }}</span><span class="feed-label"><i></i>{{ competition.appearance_count }} appearance{{ '' if competition.appearance_count == 1 else 's' }}</span></div>
     <h3>{{ competition.name }}</h3><p>{{ competition.description }}</p>
     <div class="tags">{% for tag in format_tags(competition.skills) %}<span>{{ tag }}</span>{% endfor %}</div>
     <div class="seasons">Tracked seasons: {{ competition.seasons or 'None yet' }}</div>

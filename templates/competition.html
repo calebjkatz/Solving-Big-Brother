@@ -2,7 +2,7 @@
 {% block title %}{{ competition.name }} · Big Brother Stats{% endblock %}
 {% block content %}
 <a class="back" href="{{ url_for('index') }}">← Competition directory</a>
-<section class="detail-hero"><div><span class="pill">{{ competition.category }}</span><h1>{{ competition.name }}</h1><p>{{ competition.description }}</p></div><div class="status">{{ competition.verification_status }}</div></section>
+<section class="detail-hero"><div><span class="pill">{{ competition.category }}</span><h1>{{ competition.name }}</h1><p>{{ competition.description }}</p></div><div class="status dossier-stamp">{{ competition.verification_status }}</div></section>
 <div class="detail-grid">
   <article class="panel"><p class="eyebrow">Format</p><h2>How it works</h2><p>{{ competition.format or 'Not recorded' }}</p><h3>Aliases</h3><p>{{ competition.aliases or 'None recorded' }}</p><h3>Skills tested</h3><div class="tags">{% for tag in format_tags(competition.skills) %}<span>{{ tag }}</span>{% endfor %}</div></article>
   <article class="panel strategy"><p class="eyebrow">Strategic read</p><h2>Best approach</h2><p>{{ competition.strategy or 'Analysis not recorded yet.' }}</p><h3>Evidence note</h3><p>{{ competition.strategy_evidence or 'No supporting evidence recorded.' }}</p></article>

@@ -13,13 +13,14 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="{{ url_for('index') }}"><span>BB</span> Big Brother Stats</a>
+    <a class="brand" href="{{ url_for('index') }}"><span class="brand-eye" aria-hidden="true"><i></i></span><span class="brand-copy"><b>Big Brother</b><small>Competition Intelligence</small></span></a>
     <nav><a href="{{ url_for('index') }}">Competitions</a><a href="{{ url_for('seasons') }}">Seasons</a>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_competition') }}">Add competition</a>{% endif %}</nav>
   </header>
+  <div class="signal-bar" aria-hidden="true"><span><i></i> Archive online</span><span>US // Civilian Series</span><span>Research build 01</span></div>
   <main>
     {% for category, message in get_flashed_messages(with_categories=true) %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}
     {% block content %}{% endblock %}
   </main>
-  <footer>Independent research database · U.S. civilian seasons · Not affiliated with CBS or the Big Brother franchise</footer>
+  <footer><span class="footer-mark">BB // CI</span><span>Independent research database · U.S. civilian seasons</span><span>Not affiliated with CBS or the Big Brother franchise</span></footer>
 </body>
 </html>

@@ -17,7 +17,8 @@ class BigBrotherStatsTests(unittest.TestCase):
     def test_directory_has_seed_data_and_filters(self):
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Every repeat. Every variation.", response.data)
+        self.assertIn(b"Study the comp.", response.data)
+        self.assertIn(b"Competition analysis feed", response.data)
         self.assertIn(b"OTEV", response.data)
         self.assertIn(b"BB Comics", response.data)
 
