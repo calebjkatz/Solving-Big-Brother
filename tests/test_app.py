@@ -50,6 +50,31 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Red \xe2\x98\x85", response.data)
         self.assertIn(b"BB25", response.data)
 
+    def test_every_non_hoh_competition_has_documented_players(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            missing = db.execute("""
+                SELECT COUNT(*)
+                FROM competition_instances ci
+                WHERE LOWER(ci.competition_type) NOT LIKE '%hoh%'
+                  AND NOT EXISTS (
+                      SELECT 1 FROM competition_participants cp
+                      WHERE cp.instance_id = ci.id
+                        AND cp.notes LIKE '%participant%'
+                  )
+            """).fetchone()[0]
+            self.assertEqual(missing, 0)
+
+            invalid_winners = db.execute("""
+                SELECT COUNT(*)
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE LOWER(ci.competition_type) NOT LIKE '%hoh%'
+                  AND cp.placement = 1
+                  AND cp.notes NOT LIKE '%participant%'
+            """).fetchone()[0]
+            self.assertEqual(invalid_winners, 0)
+
     def test_season_index_and_detail(self):
         response = self.client.get("/seasons")
         self.assertEqual(response.status_code, 200)

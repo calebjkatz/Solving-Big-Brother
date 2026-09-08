@@ -150,7 +150,12 @@ def create_app(test_config=None):
                                 (instance_id, houseguest_id, placement, notes)
                                 VALUES (?, ?, 1, 'source indexed winner')
                                 ON CONFLICT(instance_id, houseguest_id) DO UPDATE SET
-                                    placement=1, notes='source indexed winner'
+                                    placement=1,
+                                    notes=CASE
+                                        WHEN competition_participants.notes LIKE '%participant%'
+                                        THEN 'source indexed winner and participant'
+                                        ELSE 'source indexed winner'
+                                    END
                             """, (instance_id, houseguest["id"]))
 
     app.extensions["connect_db"] = connect
@@ -242,7 +247,7 @@ def create_app(test_config=None):
                   AND EXISTS (
                       SELECT 1 FROM competition_participants documented
                       WHERE documented.instance_id = cp.instance_id
-                        AND documented.notes = 'source indexed participant'
+                        AND documented.notes LIKE '%participant%'
                   )
                 ORDER BY cp.placement IS NOT NULL DESC, h.name COLLATE NOCASE
             """, (competition_id,)).fetchall()
