@@ -22,6 +22,9 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"OTEV", response.data)
         self.assertIn(b"BB Comics", response.data)
         self.assertIn(b"Pressure Cooker", response.data)
+        self.assertNotIn(b"All categories", response.data)
+        self.assertIn(b"All families", response.data)
+        self.assertIn(b"Recurring families", response.data)
         self.assertIn(
             b"Tracked seasons: 7,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
             response.data,

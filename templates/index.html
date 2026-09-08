@@ -11,7 +11,6 @@
 </section>
 <form class="filters" method="get">
   <input type="search" name="q" value="{{ filters.get('q', '') }}" placeholder="Search name, alias, or description">
-  <select name="category"><option value="">All categories</option>{% for row in categories %}<option {% if filters.get('category') == row.category %}selected{% endif %}>{{ row.category }}</option>{% endfor %}</select>
   <select name="skill"><option value="">All skills</option>{% for item in skill_options %}<option {% if filters.get('skill') == item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select>
   <select name="frequency"><option value="">All families</option><option value="recurring" {% if recurring_only %}selected{% endif %}>Recurring families</option></select>
   <button>Filter</button>
