@@ -12403,8 +12403,10 @@
       "day": "nan",
       "type": "Coaches Competition",
       "variation": "Big Brother Derby",
-      "result": "Ian is Saved",
-      "winners": [],
+      "result": "Mike wins the Coaches Competition and saves Ian",
+      "winners": [
+        "Mike"
+      ],
       "event_key": "bb14-event-03",
       "participants": [
         "Britney",
@@ -12472,8 +12474,10 @@
       "day": "14.0",
       "type": "Coaches Competition",
       "variation": "Phat Stacks",
-      "result": "Ashley is Saved",
-      "winners": [],
+      "result": "Janelle wins the Coaches Competition and saves Ashley",
+      "winners": [
+        "Janelle"
+      ],
       "event_key": "bb14-event-06",
       "participants": [
         "Britney",
@@ -12538,8 +12542,10 @@
       "day": "21.0",
       "type": "Coaches Competition",
       "variation": "Feel The Burn",
-      "result": "Wil is Saved",
-      "winners": [],
+      "result": "Janelle wins the Coaches Competition and saves Wil",
+      "winners": [
+        "Janelle"
+      ],
       "event_key": "bb14-event-09",
       "participants": [
         "Britney",

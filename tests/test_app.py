@@ -229,6 +229,31 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertEqual(events, 13)
             self.assertEqual(winner_credits, 26)
 
+    def test_coaches_competitions_credit_the_winning_coach(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            winners = db.execute("""
+                SELECT h.name, COUNT(DISTINCT ci.source_event_key)
+                FROM competition_instances ci
+                JOIN competition_participants cp ON cp.instance_id = ci.id
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                WHERE ci.competition_type = 'Coaches Competition'
+                  AND cp.placement = 1
+                GROUP BY h.name
+            """).fetchall()
+            self.assertEqual(dict(winners), {"Janelle": 2, "Mike": 1})
+
+            results = [row[0] for row in db.execute("""
+                SELECT outcome_notes FROM competition_instances
+                WHERE competition_type = 'Coaches Competition'
+                ORDER BY week
+            """).fetchall()]
+            self.assertEqual(results, [
+                "Mike wins the Coaches Competition and saves Ian",
+                "Janelle wins the Coaches Competition and saves Ashley",
+                "Janelle wins the Coaches Competition and saves Wil",
+            ])
+
     def test_season_competition_shows_spaced_family_name(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
