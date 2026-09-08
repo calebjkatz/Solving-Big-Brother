@@ -376,39 +376,54 @@ def create_app(test_config=None):
                 GROUP BY COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)
                 ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
             """, (houseguest_id,)).fetchall()
-            type_counts = db.execute("""
+            type_stats = db.execute("""
                 SELECT ci.competition_type,
-                       COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)) AS total
+                       COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%' THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS played,
+                       COUNT(DISTINCT CASE WHEN cp.placement = 1 THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
-                WHERE cp.houseguest_id = ? AND cp.placement = 1
-                GROUP BY ci.competition_type ORDER BY total DESC
+                WHERE cp.houseguest_id = ? AND cp.notes LIKE '%participant%'
+                GROUP BY ci.competition_type ORDER BY played DESC, ci.competition_type
             """, (houseguest_id,)).fetchall()
+            season_played = db.execute("""
+                SELECT COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id))
+                FROM competition_participants cp
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE cp.houseguest_id = ? AND cp.notes LIKE '%participant%'
+            """, (houseguest_id,)).fetchone()[0]
             other_seasons = db.execute("""
                 SELECT other.id, other.name, s.season_number, s.year,
-                       COUNT(DISTINCT CASE WHEN cp.id IS NOT NULL THEN
-                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins
+                       COUNT(DISTINCT CASE WHEN cp.placement = 1 THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins,
+                       COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%' THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS played
                 FROM houseguests other
                 JOIN seasons s ON s.id = other.season_id
-                LEFT JOIN competition_participants cp
-                  ON cp.houseguest_id = other.id AND cp.placement = 1
+                LEFT JOIN competition_participants cp ON cp.houseguest_id = other.id
                 LEFT JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE other.person_key = ?
                 GROUP BY other.id ORDER BY s.season_number
             """, (player["person_key"],)).fetchall()
-            career_types = db.execute("""
+            career_stats = db.execute("""
                 SELECT ci.competition_type,
-                       COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)) AS total
+                       COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%' THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS played,
+                       COUNT(DISTINCT CASE WHEN cp.placement = 1 THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins
                 FROM houseguests career
-                JOIN competition_participants cp ON cp.houseguest_id = career.id AND cp.placement = 1
+                JOIN competition_participants cp ON cp.houseguest_id = career.id
                 JOIN competition_instances ci ON ci.id = cp.instance_id
-                WHERE career.person_key = ?
-                GROUP BY ci.competition_type ORDER BY total DESC
+                WHERE career.person_key = ? AND cp.notes LIKE '%participant%'
+                GROUP BY ci.competition_type ORDER BY played DESC, ci.competition_type
             """, (player["person_key"],)).fetchall()
             career_total = sum(row["wins"] for row in other_seasons)
+            career_played = sum(row["played"] for row in other_seasons)
         return render_template("houseguest.html", player=player, wins=wins,
-                               type_counts=type_counts, other_seasons=other_seasons,
-                               career_types=career_types, career_total=career_total)
+                               type_stats=type_stats, season_played=season_played,
+                               other_seasons=other_seasons, career_stats=career_stats,
+                               career_total=career_total, career_played=career_played)
 
     @app.get("/seasons/<int:season_id>")
     def season_detail(season_id):

@@ -194,6 +194,34 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertEqual(distinct_events, 12)
         response = self.client.get(f"/houseguests/{jag['id']}")
         self.assertIn(b'<strong>12</strong>', response.data)
+        self.assertIn(b'<strong>37.5%</strong>', response.data)
+        self.assertIn(b'12 wins in 32 competitions played', response.data)
+
+    def test_houseguest_profile_shows_win_rates_by_competition_type(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            jag_id = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.name = 'Jag' AND s.season_number = 25
+            """).fetchone()[0]
+        response = self.client.get(f"/houseguests/{jag_id}")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b"Competition efficiency", response.data)
+        self.assertIn(b"Win rate", response.data)
+        self.assertIn(b"POV", response.data)
+        self.assertRegex(response.data.decode(), r"POV</span><b>\d+\.\d%</b><small>\d+/\d+</small>")
+
+    def test_returning_player_profile_shows_combined_win_rate(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            janelle_id = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.person_key = 'Janelle Pierzina' AND s.season_number = 6
+            """).fetchone()[0]
+        response = self.client.get(f"/houseguests/{janelle_id}")
+        self.assertIn(b"Combined performance", response.data)
+        self.assertIn(b"% win rate", response.data)
+        self.assertRegex(response.data.decode(), r"BB14</span><b>\d+ wins? \u00b7 \d+\.\d%")
 
     def test_ai_arena_and_block_buster_safety_results_count_as_wins(self):
         connect = self.app.extensions["connect_db"]
