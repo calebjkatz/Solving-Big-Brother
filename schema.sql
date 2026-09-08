@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS competitions (
     skills TEXT NOT NULL DEFAULT '',
     strategy TEXT NOT NULL DEFAULT '',
     strategy_evidence TEXT NOT NULL DEFAULT '',
+    image_url TEXT NOT NULL DEFAULT '',
+    image_source TEXT NOT NULL DEFAULT '',
     verification_status TEXT NOT NULL DEFAULT 'needs verification',
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP

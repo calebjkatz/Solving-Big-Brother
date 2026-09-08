@@ -56,6 +56,32 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"Season appearances", response.data)
 
+    def test_competition_photos_render_with_sourced_fallbacks(self):
+        response = self.client.get("/?q=In+The+Balance")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(b'class="competition-card-image"', response.data)
+        self.assertIn(b"In_The_Balance.png", response.data)
+
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            competition = db.execute("""
+                SELECT id, image_url, image_source FROM competitions
+                WHERE name = 'In The Balance'
+            """).fetchone()
+            self.assertTrue(competition["image_url"])
+            self.assertTrue(competition["image_source"])
+            sourced = db.execute("""
+                SELECT COUNT(*) FROM competitions WHERE image_url != ''
+            """).fetchone()[0]
+            self.assertGreaterEqual(sourced, 116)
+        detail = self.client.get(f"/competitions/{competition['id']}")
+        self.assertIn(b'class="competition-detail-image"', detail.data)
+        self.assertIn(b"Competition image source", detail.data)
+
+        fallback = self.client.get('/?q=%22Food+Pyramid')
+        self.assertIn(b'class="competition-card-image"', fallback.data)
+        self.assertIn(b'<span>&#34;Food Pyramid</span>', fallback.data)
+
     def test_bb25_week_four_veto_lists_all_players(self):
         with self.app.app_context():
             connect = self.app.extensions["connect_db"]

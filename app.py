@@ -43,6 +43,14 @@ def create_app(test_config=None):
                 db.execute("ALTER TABLE competition_instances ADD COLUMN day TEXT NOT NULL DEFAULT ''")
             if "source_event_key" not in instance_columns:
                 db.execute("ALTER TABLE competition_instances ADD COLUMN source_event_key TEXT NOT NULL DEFAULT ''")
+            competition_columns = {
+                row["name"] for row in db.execute("PRAGMA table_info(competitions)")
+            }
+            for column in ("image_url", "image_source"):
+                if column not in competition_columns:
+                    db.execute(
+                        f"ALTER TABLE competitions ADD COLUMN {column} TEXT NOT NULL DEFAULT ''"
+                    )
             houseguest_columns = {
                 row["name"] for row in db.execute("PRAGMA table_info(houseguests)")
             }
@@ -79,11 +87,17 @@ def create_app(test_config=None):
                 """)
                 for item in catalog["competitions"]:
                     db.execute("""
-                        INSERT OR IGNORE INTO competitions
-                        (name, category, format, description, verification_status)
-                        VALUES (?, 'Competition format', 'See sourced competition record', ?, 'partially verified')
+                        INSERT INTO competitions
+                        (name, category, format, description, image_url, image_source,
+                         verification_status)
+                        VALUES (?, 'Competition format', 'See sourced competition record', ?, ?, ?,
+                                'partially verified')
+                        ON CONFLICT(name) DO UPDATE SET
+                            image_url=excluded.image_url,
+                            image_source=excluded.image_source
                     """, (item["name"],
-                          "A competition format documented in the Big Brother US competition history."))
+                          "A competition format documented in the Big Brother US competition history.",
+                          item.get("image_url", ""), item.get("image_source", "")))
                     competition_id = db.execute(
                         "SELECT id FROM competitions WHERE name = ?", (item["name"],)
                     ).fetchone()[0]
