@@ -3967,7 +3967,21 @@
       "winners": [
         "Mike"
       ],
-      "event_key": "bb2-event-03"
+      "event_key": "bb2-event-03",
+      "participants": [
+        "Autumn",
+        "Bunky",
+        "Hardy",
+        "Justin",
+        "Kent",
+        "Krista",
+        "Mike",
+        "Monica",
+        "Nicole",
+        "Shannon",
+        "Sheryl",
+        "Will"
+      ]
     },
     {
       "competition": "Dirty Dozen",
@@ -4028,7 +4042,18 @@
       "winners": [
         "Krista"
       ],
-      "event_key": "bb2-event-06"
+      "event_key": "bb2-event-06",
+      "participants": [
+        "Autumn",
+        "Bunky",
+        "Hardy",
+        "Kent",
+        "Krista",
+        "Monica",
+        "Nicole",
+        "Shannon",
+        "Will"
+      ]
     },
     {
       "competition": "Pound of Flesh",
@@ -4090,7 +4115,16 @@
       "winners": [
         "Hardy"
       ],
-      "event_key": "bb2-event-09"
+      "event_key": "bb2-event-09",
+      "participants": [
+        "Bunky",
+        "Hardy",
+        "Kent",
+        "Monica",
+        "Nicole",
+        "Shannon",
+        "Will"
+      ]
     },
     {
       "competition": "Catch of the Day",
@@ -4148,7 +4182,15 @@
       "winners": [
         "Kent"
       ],
-      "event_key": "bb2-event-12"
+      "event_key": "bb2-event-12",
+      "participants": [
+        "Bunky",
+        "Kent",
+        "Krista",
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "\"Food Pyramid",
@@ -4202,7 +4244,15 @@
       "winners": [
         "Hardy"
       ],
-      "event_key": "bb2-event-15"
+      "event_key": "bb2-event-15",
+      "participants": [
+        "Bunky",
+        "Hardy",
+        "Krista",
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "The Perfect Meal",
@@ -4257,7 +4307,14 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb2-event-18"
+      "event_key": "bb2-event-18",
+      "participants": [
+        "Bunky",
+        "Krista",
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "A Is For Apple",
@@ -4348,7 +4405,13 @@
       "winners": [
         "Hardy"
       ],
-      "event_key": "bb2-event-23"
+      "event_key": "bb2-event-23",
+      "participants": [
+        "Bunky",
+        "Hardy",
+        "Monica",
+        "Will"
+      ]
     },
     {
       "competition": "Big Brother Jenga",
@@ -4399,7 +4462,12 @@
       "winners": [
         "Monica"
       ],
-      "event_key": "bb2-event-26"
+      "event_key": "bb2-event-26",
+      "participants": [
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "Shop 'til You Drop",
@@ -4481,7 +4549,12 @@
       "winners": [
         "Will"
       ],
-      "event_key": "bb2-event-31"
+      "event_key": "bb2-event-31",
+      "participants": [
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "Final HoH Part 2",
@@ -4494,7 +4567,12 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb2-event-32"
+      "event_key": "bb2-event-32",
+      "participants": [
+        "Monica",
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "Final HoH Part 3",
@@ -4507,7 +4585,11 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb2-event-33"
+      "event_key": "bb2-event-33",
+      "participants": [
+        "Nicole",
+        "Will"
+      ]
     },
     {
       "competition": "Untitled",
@@ -4572,7 +4654,20 @@
       "winners": [
         "Lisa"
       ],
-      "event_key": "bb3-event-03"
+      "event_key": "bb3-event-03",
+      "participants": [
+        "Amy",
+        "Chiara",
+        "Danielle",
+        "Eric",
+        "Gerry",
+        "Jason",
+        "Josh",
+        "Lisa",
+        "Marcellas",
+        "Roddy",
+        "Tonya"
+      ]
     },
     {
       "competition": "Saving Face",
@@ -4642,7 +4737,19 @@
       "winners": [
         "Marcellas"
       ],
-      "event_key": "bb3-event-06"
+      "event_key": "bb3-event-06",
+      "participants": [
+        "Amy",
+        "Chiara",
+        "Danielle",
+        "Eric",
+        "Gerry",
+        "Jason",
+        "Josh",
+        "Marcellas",
+        "Roddy",
+        "Tonya"
+      ]
     },
     {
       "competition": "Architectural Digestion",
@@ -4704,7 +4811,18 @@
       "winners": [
         "Roddy"
       ],
-      "event_key": "bb3-event-09"
+      "event_key": "bb3-event-09",
+      "participants": [
+        "Amy",
+        "Chiara",
+        "Danielle",
+        "Eric",
+        "Gerry",
+        "Jason",
+        "Josh",
+        "Lisa",
+        "Roddy"
+      ]
     },
     {
       "competition": "Gastronomic Batik",
@@ -4764,7 +4882,17 @@
       "winners": [
         "Gerry"
       ],
-      "event_key": "bb3-event-12"
+      "event_key": "bb3-event-12",
+      "participants": [
+        "Chiara",
+        "Danielle",
+        "Eric",
+        "Gerry",
+        "Jason",
+        "Josh",
+        "Lisa",
+        "Marcellas"
+      ]
     },
     {
       "competition": "\"I Can Eat Anything Better Than You",
@@ -4822,7 +4950,16 @@
       "winners": [
         "Chiara"
       ],
-      "event_key": "bb3-event-15"
+      "event_key": "bb3-event-15",
+      "participants": [
+        "Chiara",
+        "Danielle",
+        "Jason",
+        "Josh",
+        "Lisa",
+        "Marcellas",
+        "Roddy"
+      ]
     },
     {
       "competition": "Ballast",
@@ -4878,7 +5015,16 @@
       "winners": [
         "Amy"
       ],
-      "event_key": "bb3-event-18"
+      "event_key": "bb3-event-18",
+      "participants": [
+        "Amy",
+        "Danielle",
+        "Gerry",
+        "Jason",
+        "Lisa",
+        "Marcellas",
+        "Roddy"
+      ]
     },
     {
       "competition": "Whirlwind Booth",
@@ -4956,7 +5102,15 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb3-event-22"
+      "event_key": "bb3-event-22",
+      "participants": [
+        "Danielle",
+        "Gerry",
+        "Jason",
+        "Lisa",
+        "Marcellas",
+        "Roddy"
+      ]
     },
     {
       "competition": "Making the Donuts",
@@ -5011,7 +5165,14 @@
       "winners": [
         "Marcellas"
       ],
-      "event_key": "bb3-event-25"
+      "event_key": "bb3-event-25",
+      "participants": [
+        "Amy",
+        "Danielle",
+        "Lisa",
+        "Marcellas",
+        "Roddy"
+      ]
     },
     {
       "competition": "Sweet Surprise",
@@ -5064,7 +5225,13 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb3-event-28"
+      "event_key": "bb3-event-28",
+      "participants": [
+        "Amy",
+        "Danielle",
+        "Jason",
+        "Lisa"
+      ]
     },
     {
       "competition": "Dinner Party From Hell",
@@ -5114,7 +5281,12 @@
       "winners": [
         "Danielle"
       ],
-      "event_key": "bb3-event-31"
+      "event_key": "bb3-event-31",
+      "participants": [
+        "Amy",
+        "Danielle",
+        "Lisa"
+      ]
     },
     {
       "competition": "Untitled",
@@ -5183,7 +5355,12 @@
       "winners": [
         "Lisa"
       ],
-      "event_key": "bb3-event-35"
+      "event_key": "bb3-event-35",
+      "participants": [
+        "Danielle",
+        "Jason",
+        "Lisa"
+      ]
     },
     {
       "competition": "Household Chores",
@@ -5196,7 +5373,11 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb3-event-36"
+      "event_key": "bb3-event-36",
+      "participants": [
+        "Danielle",
+        "Jason"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -5209,7 +5390,11 @@
       "winners": [
         "Lisa"
       ],
-      "event_key": "bb3-event-37"
+      "event_key": "bb3-event-37",
+      "participants": [
+        "Jason",
+        "Lisa"
+      ]
     },
     {
       "competition": "X Marks The Spot",
@@ -5248,7 +5433,21 @@
       "winners": [
         "Nathan"
       ],
-      "event_key": "bb4-event-02"
+      "event_key": "bb4-event-02",
+      "participants": [
+        "Alison",
+        "Amanda",
+        "Dana",
+        "David",
+        "Erika",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Justin",
+        "Michelle",
+        "Nathan",
+        "Robert"
+      ]
     },
     {
       "competition": "Spuds",
@@ -5314,7 +5513,19 @@
       "winners": [
         "Jee"
       ],
-      "event_key": "bb4-event-05"
+      "event_key": "bb4-event-05",
+      "participants": [
+        "Alison",
+        "Dana",
+        "David",
+        "Erika",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Justin",
+        "Michelle",
+        "Robert"
+      ]
     },
     {
       "competition": "Clash Of The Casseroles",
@@ -5376,7 +5587,18 @@
       "winners": [
         "Dana"
       ],
-      "event_key": "bb4-event-08"
+      "event_key": "bb4-event-08",
+      "participants": [
+        "Alison",
+        "Dana",
+        "David",
+        "Erika",
+        "Jack",
+        "Jun",
+        "Justin",
+        "Nathan",
+        "Robert"
+      ]
     },
     {
       "competition": "Paratroopers",
@@ -5462,7 +5684,17 @@
       "winners": [
         "Alison"
       ],
-      "event_key": "bb4-event-12"
+      "event_key": "bb4-event-12",
+      "participants": [
+        "Alison",
+        "Erika",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Justin",
+        "Nathan",
+        "Robert"
+      ]
     },
     {
       "competition": "Laying Pipe",
@@ -5520,7 +5752,16 @@
       "winners": [
         "Justin"
       ],
-      "event_key": "bb4-event-15"
+      "event_key": "bb4-event-15",
+      "participants": [
+        "Erika",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Justin",
+        "Nathan",
+        "Robert"
+      ]
     },
     {
       "competition": "50 Ways To Cook A Houseguest",
@@ -5597,7 +5838,15 @@
       "winners": [
         "Erika"
       ],
-      "event_key": "bb4-event-19"
+      "event_key": "bb4-event-19",
+      "participants": [
+        "Alison",
+        "Erika",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Robert"
+      ]
     },
     {
       "competition": "Clambake From Hell",
@@ -5651,7 +5900,14 @@
       "winners": [
         "Jee"
       ],
-      "event_key": "bb4-event-22"
+      "event_key": "bb4-event-22",
+      "participants": [
+        "Alison",
+        "Jack",
+        "Jee",
+        "Jun",
+        "Robert"
+      ]
     },
     {
       "competition": "An Offer You Can't Refuse",
@@ -5706,7 +5962,13 @@
       "winners": [
         "Jun"
       ],
-      "event_key": "bb4-event-25"
+      "event_key": "bb4-event-25",
+      "participants": [
+        "Alison",
+        "Erika",
+        "Jun",
+        "Robert"
+      ]
     },
     {
       "competition": "Big Brother Ball Room",
@@ -5755,7 +6017,12 @@
       "winners": [
         "Robert"
       ],
-      "event_key": "bb4-event-28"
+      "event_key": "bb4-event-28",
+      "participants": [
+        "Alison",
+        "Erika",
+        "Robert"
+      ]
     },
     {
       "competition": "Mexotic Dinner",
@@ -5824,7 +6091,12 @@
       "winners": [
         "Alison"
       ],
-      "event_key": "bb4-event-32"
+      "event_key": "bb4-event-32",
+      "participants": [
+        "Alison",
+        "Jun",
+        "Robert"
+      ]
     },
     {
       "competition": "Runaway Jury",
@@ -5853,7 +6125,11 @@
       "winners": [
         "Jun"
       ],
-      "event_key": "bb4-event-34"
+      "event_key": "bb4-event-34",
+      "participants": [
+        "Jun",
+        "Robert"
+      ]
     },
     {
       "competition": "Exact Match",
@@ -5866,7 +6142,11 @@
       "winners": [
         "Alison"
       ],
-      "event_key": "bb4-event-35"
+      "event_key": "bb4-event-35",
+      "participants": [
+        "Alison",
+        "Jun"
+      ]
     },
     {
       "competition": "Hungry Hungry Helix",
@@ -5905,7 +6185,21 @@
       "winners": [
         "Jase"
       ],
-      "event_key": "bb5-event-02"
+      "event_key": "bb5-event-02",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Drew",
+        "Holly",
+        "Jase",
+        "Karen",
+        "Lori",
+        "Marvin",
+        "Michael",
+        "Mike",
+        "Nakomis",
+        "Scott"
+      ]
     },
     {
       "competition": "Margarita Madness",
@@ -5972,7 +6266,20 @@
       "winners": [
         "Marvin"
       ],
-      "event_key": "bb5-event-05"
+      "event_key": "bb5-event-05",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Drew",
+        "Holly",
+        "Karen",
+        "Lori",
+        "Marvin",
+        "Michael",
+        "Nakomis",
+        "Scott",
+        "Will"
+      ]
     },
     {
       "competition": "Catapoultry",
@@ -6037,7 +6344,19 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb5-event-08"
+      "event_key": "bb5-event-08",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Drew",
+        "Holly",
+        "Jase",
+        "Karen",
+        "Michael",
+        "Nakomis",
+        "Scott",
+        "Will"
+      ]
     },
     {
       "competition": "Alphabet Soup",
@@ -6100,7 +6419,18 @@
       "winners": [
         "Diane"
       ],
-      "event_key": "bb5-event-11"
+      "event_key": "bb5-event-11",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Jase",
+        "Karen",
+        "Marvin",
+        "Michael",
+        "Nakomis",
+        "Scott",
+        "Will"
+      ]
     },
     {
       "competition": "Close to 20",
@@ -6138,7 +6468,18 @@
       "winners": [
         "Nakomis"
       ],
-      "event_key": "bb5-event-13"
+      "event_key": "bb5-event-13",
+      "participants": [
+        "Adria",
+        "Drew",
+        "Jase",
+        "Karen",
+        "Marvin",
+        "Michael",
+        "Nakomis",
+        "Natalie",
+        "Will"
+      ]
     },
     {
       "competition": "Fast Times and Custard Pie",
@@ -6198,7 +6539,17 @@
       "winners": [
         "Adria"
       ],
-      "event_key": "bb5-event-16"
+      "event_key": "bb5-event-16",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Drew",
+        "Karen",
+        "Marvin",
+        "Michael",
+        "Natalie",
+        "Will"
+      ]
     },
     {
       "competition": "Backyard Burger Bonanza",
@@ -6282,7 +6633,16 @@
       "winners": [
         "Nakomis"
       ],
-      "event_key": "bb5-event-20"
+      "event_key": "bb5-event-20",
+      "participants": [
+        "Diane",
+        "Drew",
+        "Karen",
+        "Marvin",
+        "Michael",
+        "Nakomis",
+        "Natalie"
+      ]
     },
     {
       "competition": "Smoothies from Hell",
@@ -6362,7 +6722,15 @@
       "winners": [
         "Marvin"
       ],
-      "event_key": "bb5-event-24"
+      "event_key": "bb5-event-24",
+      "participants": [
+        "Adria",
+        "Diane",
+        "Drew",
+        "Karen",
+        "Marvin",
+        "Michael"
+      ]
     },
     {
       "competition": "Break the Ice",
@@ -6397,7 +6765,14 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb5-event-26"
+      "event_key": "bb5-event-26",
+      "participants": [
+        "Diane",
+        "Drew",
+        "Karen",
+        "Michael",
+        "Nakomis"
+      ]
     },
     {
       "competition": "Bounced",
@@ -6431,7 +6806,13 @@
       "winners": [
         "Nakomis"
       ],
-      "event_key": "bb5-event-28"
+      "event_key": "bb5-event-28",
+      "participants": [
+        "Diane",
+        "Karen",
+        "Michael",
+        "Nakomis"
+      ]
     },
     {
       "competition": "Caged",
@@ -6464,7 +6845,12 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb5-event-30"
+      "event_key": "bb5-event-30",
+      "participants": [
+        "Diane",
+        "Drew",
+        "Michael"
+      ]
     },
     {
       "competition": "Trashin' the Fashion",
@@ -6513,7 +6899,12 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb5-event-33"
+      "event_key": "bb5-event-33",
+      "participants": [
+        "Diane",
+        "Drew",
+        "Michael"
+      ]
     },
     {
       "competition": "Twisted Twosomes",
@@ -6526,7 +6917,11 @@
       "winners": [
         "Michael"
       ],
-      "event_key": "bb5-event-34"
+      "event_key": "bb5-event-34",
+      "participants": [
+        "Diane",
+        "Michael"
+      ]
     },
     {
       "competition": "Encore Presentation",
@@ -6539,7 +6934,11 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb5-event-35"
+      "event_key": "bb5-event-35",
+      "participants": [
+        "Drew",
+        "Michael"
+      ]
     },
     {
       "competition": "Wipe Out",
@@ -6552,7 +6951,23 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb6-event-01"
+      "event_key": "bb6-event-01",
+      "participants": [
+        "April",
+        "Ashlea",
+        "Beau",
+        "Eric",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Kaysar",
+        "Maggie",
+        "Michael",
+        "Rachel",
+        "Sarah"
+      ]
     },
     {
       "competition": "Wipe Out",
@@ -6621,7 +7036,21 @@
       "winners": [
         "Eric"
       ],
-      "event_key": "bb6-event-04"
+      "event_key": "bb6-event-04",
+      "participants": [
+        "April",
+        "Beau",
+        "Eric",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Kaysar",
+        "Maggie",
+        "Michael",
+        "Sarah"
+      ]
     },
     {
       "competition": "Snack Shack from Hell",
@@ -6688,7 +7117,20 @@
       "winners": [
         "Kaysar"
       ],
-      "event_key": "bb6-event-07"
+      "event_key": "bb6-event-07",
+      "participants": [
+        "April",
+        "Beau",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Kaysar",
+        "Maggie",
+        "Rachel",
+        "Sarah"
+      ]
     },
     {
       "competition": "Will Spell for Food",
@@ -6753,7 +7195,19 @@
       "winners": [
         "Maggie"
       ],
-      "event_key": "bb6-event-10"
+      "event_key": "bb6-event-10",
+      "participants": [
+        "April",
+        "Beau",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Maggie",
+        "Rachel",
+        "Sarah"
+      ]
     },
     {
       "competition": "Matching the Munchies",
@@ -6839,7 +7293,18 @@
       "winners": [
         "Howie"
       ],
-      "event_key": "bb6-event-14"
+      "event_key": "bb6-event-14",
+      "participants": [
+        "April",
+        "Beau",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Rachel",
+        "Sarah"
+      ]
     },
     {
       "competition": "Conveyer Belch",
@@ -6900,7 +7365,18 @@
       "winners": [
         "Jennifer"
       ],
-      "event_key": "bb6-event-17"
+      "event_key": "bb6-event-17",
+      "participants": [
+        "April",
+        "Beau",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Jennifer",
+        "Kaysar",
+        "Maggie",
+        "Rachel"
+      ]
     },
     {
       "competition": "Coast for the Most",
@@ -6938,7 +7414,17 @@
       "winners": [
         "Janelle"
       ],
-      "event_key": "bb6-event-19"
+      "event_key": "bb6-event-19",
+      "participants": [
+        "April",
+        "Beau",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Maggie",
+        "Rachel"
+      ]
     },
     {
       "competition": "Goal For It",
@@ -6975,7 +7461,16 @@
       "winners": [
         "Beau"
       ],
-      "event_key": "bb6-event-21"
+      "event_key": "bb6-event-21",
+      "participants": [
+        "April",
+        "Beau",
+        "Howie",
+        "Ivette",
+        "James",
+        "Maggie",
+        "Rachel"
+      ]
     },
     {
       "competition": "Get Your Pairings",
@@ -7011,7 +7506,15 @@
       "winners": [
         "April"
       ],
-      "event_key": "bb6-event-23"
+      "event_key": "bb6-event-23",
+      "participants": [
+        "April",
+        "Howie",
+        "Ivette",
+        "James",
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Playing Dirty",
@@ -7046,7 +7549,14 @@
       "winners": [
         "Howie"
       ],
-      "event_key": "bb6-event-25"
+      "event_key": "bb6-event-25",
+      "participants": [
+        "Beau",
+        "Howie",
+        "Ivette",
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Roll Me a Veto",
@@ -7080,7 +7590,13 @@
       "winners": [
         "Ivette"
       ],
-      "event_key": "bb6-event-27"
+      "event_key": "bb6-event-27",
+      "participants": [
+        "April",
+        "Ivette",
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Morph 'O' Matic",
@@ -7113,7 +7629,12 @@
       "winners": [
         "Janelle"
       ],
-      "event_key": "bb6-event-29"
+      "event_key": "bb6-event-29",
+      "participants": [
+        "April",
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -7145,7 +7666,12 @@
       "winners": [
         "Ivette"
       ],
-      "event_key": "bb6-event-31"
+      "event_key": "bb6-event-31",
+      "participants": [
+        "Ivette",
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Pad-Locked",
@@ -7158,7 +7684,11 @@
       "winners": [
         "Janelle"
       ],
-      "event_key": "bb6-event-32"
+      "event_key": "bb6-event-32",
+      "participants": [
+        "Janelle",
+        "Maggie"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -7171,7 +7701,11 @@
       "winners": [
         "Ivette"
       ],
-      "event_key": "bb6-event-33"
+      "event_key": "bb6-event-33",
+      "participants": [
+        "Ivette",
+        "Janelle"
+      ]
     },
     {
       "competition": "Falling Stars",
@@ -7185,7 +7719,23 @@
         "Janelle",
         "Jase"
       ],
-      "event_key": "bb7-event-01"
+      "event_key": "bb7-event-01",
+      "participants": [
+        "Alison",
+        "Danielle",
+        "Diane",
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Janelle",
+        "Jase",
+        "Kaysar",
+        "Marcellas",
+        "Mike",
+        "Nakomis",
+        "Will"
+      ]
     },
     {
       "competition": "One Man's Trash Is Another Man's Veto",
@@ -7219,7 +7769,22 @@
       "winners": [
         "Kaysar"
       ],
-      "event_key": "bb7-event-03"
+      "event_key": "bb7-event-03",
+      "participants": [
+        "Danielle",
+        "Diane",
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Janelle",
+        "Jase",
+        "Kaysar",
+        "Marcellas",
+        "Mike",
+        "Nakomis",
+        "Will"
+      ]
     },
     {
       "competition": "Slop 'Til You Drop",
@@ -7278,7 +7843,20 @@
       "winners": [
         "James"
       ],
-      "event_key": "bb7-event-06"
+      "event_key": "bb7-event-06",
+      "participants": [
+        "Danielle",
+        "Diane",
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Janelle",
+        "Jase",
+        "Marcellas",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Pull Some Strings",
@@ -7337,7 +7915,19 @@
       "winners": [
         "Janelle"
       ],
-      "event_key": "bb7-event-09"
+      "event_key": "bb7-event-09",
+      "participants": [
+        "Danielle",
+        "Diane",
+        "Erika",
+        "George",
+        "Howie",
+        "Janelle",
+        "Kaysar",
+        "Marcellas",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Food Fight",
@@ -7425,7 +8015,18 @@
       "winners": [
         "Danielle"
       ],
-      "event_key": "bb7-event-13"
+      "event_key": "bb7-event-13",
+      "participants": [
+        "Danielle",
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Kaysar",
+        "Marcellas",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "How Bad Do You Want It?",
@@ -7459,7 +8060,17 @@
       "winners": [
         "Erika"
       ],
-      "event_key": "bb7-event-15"
+      "event_key": "bb7-event-15",
+      "participants": [
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Janelle",
+        "Marcellas",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "The Ghosts of Big Brother Past\" (Redo)",
@@ -7470,7 +8081,16 @@
       "variation": "The Ghosts of Big Brother Past\" (Redo)",
       "result": "Erika is dethroned",
       "winners": [],
-      "event_key": "bb7-event-16"
+      "event_key": "bb7-event-16",
+      "participants": [
+        "George",
+        "Howie",
+        "James",
+        "Janelle",
+        "Marcellas",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Big Brother Bakery",
@@ -7547,7 +8167,16 @@
       "winners": [
         "George"
       ],
-      "event_key": "bb7-event-20"
+      "event_key": "bb7-event-20",
+      "participants": [
+        "Danielle",
+        "Erika",
+        "George",
+        "Howie",
+        "James",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Gnome Is Where the Veto Is",
@@ -7581,7 +8210,15 @@
       "winners": [
         "Mike"
       ],
-      "event_key": "bb7-event-22"
+      "event_key": "bb7-event-22",
+      "participants": [
+        "Danielle",
+        "Erika",
+        "James",
+        "Janelle",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "OTEV",
@@ -7615,7 +8252,14 @@
       "winners": [
         "Erika"
       ],
-      "event_key": "bb7-event-24"
+      "event_key": "bb7-event-24",
+      "participants": [
+        "Danielle",
+        "Erika",
+        "George",
+        "Janelle",
+        "Will"
+      ]
     },
     {
       "competition": "Birds and the Bees",
@@ -7668,7 +8312,13 @@
       "winners": [
         "Janelle"
       ],
-      "event_key": "bb7-event-27"
+      "event_key": "bb7-event-27",
+      "participants": [
+        "George",
+        "Janelle",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Feeling Knotty",
@@ -7701,7 +8351,12 @@
       "winners": [
         "Mike"
       ],
-      "event_key": "bb7-event-29"
+      "event_key": "bb7-event-29",
+      "participants": [
+        "Erika",
+        "Mike",
+        "Will"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -7733,7 +8388,12 @@
       "winners": [
         "Erika"
       ],
-      "event_key": "bb7-event-31"
+      "event_key": "bb7-event-31",
+      "participants": [
+        "Erika",
+        "Janelle",
+        "Mike"
+      ]
     },
     {
       "competition": "It's Time to Reflect",
@@ -7746,7 +8406,11 @@
       "winners": [
         "Mike"
       ],
-      "event_key": "bb7-event-32"
+      "event_key": "bb7-event-32",
+      "participants": [
+        "Janelle",
+        "Mike"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -7759,7 +8423,11 @@
       "winners": [
         "Mike"
       ],
-      "event_key": "bb7-event-33"
+      "event_key": "bb7-event-33",
+      "participants": [
+        "Erika",
+        "Mike"
+      ]
     },
     {
       "competition": "Mushroom Madness",
@@ -7772,7 +8440,19 @@
       "winners": [
         "Kail"
       ],
-      "event_key": "bb8-event-01"
+      "event_key": "bb8-event-01",
+      "participants": [
+        "Amber",
+        "Carol",
+        "Daniele",
+        "Eric",
+        "Jameka",
+        "Jen",
+        "Joe",
+        "Kail",
+        "Mike",
+        "Zach"
+      ]
     },
     {
       "competition": "Butter Me Up",
@@ -7832,7 +8512,21 @@
       "winners": [
         "Jen"
       ],
-      "event_key": "bb8-event-04"
+      "event_key": "bb8-event-04",
+      "participants": [
+        "Amber",
+        "Daniele",
+        "Dick",
+        "Dustin",
+        "Eric",
+        "Jameka",
+        "Jen",
+        "Jessica",
+        "Joe",
+        "Mike",
+        "Nick",
+        "Zach"
+      ]
     },
     {
       "competition": "Name That Pie",
@@ -7891,7 +8585,20 @@
       "winners": [
         "Dick"
       ],
-      "event_key": "bb8-event-07"
+      "event_key": "bb8-event-07",
+      "participants": [
+        "Amber",
+        "Daniele",
+        "Dick",
+        "Dustin",
+        "Eric",
+        "Jameka",
+        "Jessica",
+        "Kail",
+        "Mike",
+        "Nick",
+        "Zach"
+      ]
     },
     {
       "competition": "Mission InPastaBowl",
@@ -7949,7 +8656,19 @@
       "winners": [
         "Dustin"
       ],
-      "event_key": "bb8-event-10"
+      "event_key": "bb8-event-10",
+      "participants": [
+        "Amber",
+        "Daniele",
+        "Dustin",
+        "Eric",
+        "Jameka",
+        "Jen",
+        "Jessica",
+        "Kail",
+        "Nick",
+        "Zach"
+      ]
     },
     {
       "competition": "Humpty Scramble",
@@ -8007,7 +8726,18 @@
       "winners": [
         "Daniele"
       ],
-      "event_key": "bb8-event-13"
+      "event_key": "bb8-event-13",
+      "participants": [
+        "Amber",
+        "Daniele",
+        "Dick",
+        "Eric",
+        "Jameka",
+        "Jen",
+        "Jessica",
+        "Kail",
+        "Zach"
+      ]
     },
     {
       "competition": "How Bad Do You Want It?",
@@ -8041,7 +8771,16 @@
       "winners": [
         "Jessica"
       ],
-      "event_key": "bb8-event-15"
+      "event_key": "bb8-event-15",
+      "participants": [
+        "Amber",
+        "Dick",
+        "Dustin",
+        "Eric",
+        "Jen",
+        "Jessica",
+        "Zach"
+      ]
     },
     {
       "competition": "For Those About to Slop",
@@ -8096,7 +8835,15 @@
       "winners": [
         "Daniele"
       ],
-      "event_key": "bb8-event-18"
+      "event_key": "bb8-event-18",
+      "participants": [
+        "Amber",
+        "Daniele",
+        "Dick",
+        "Eric",
+        "Jen",
+        "Zach"
+      ]
     },
     {
       "competition": "Slop Pong",
@@ -8151,7 +8898,14 @@
       "winners": [
         "Jessica"
       ],
-      "event_key": "bb8-event-21"
+      "event_key": "bb8-event-21",
+      "participants": [
+        "Amber",
+        "Dick",
+        "Eric",
+        "Jessica",
+        "Zach"
+      ]
     },
     {
       "competition": "Foam Party",
@@ -8210,7 +8964,13 @@
       "winners": [
         "Zach"
       ],
-      "event_key": "bb8-event-24"
+      "event_key": "bb8-event-24",
+      "participants": [
+        "Daniele",
+        "Dick",
+        "Eric",
+        "Zach"
+      ]
     },
     {
       "competition": "Morph 'O' Matic",
@@ -8244,7 +9004,12 @@
       "winners": [
         "Dick"
       ],
-      "event_key": "bb8-event-26"
+      "event_key": "bb8-event-26",
+      "participants": [
+        "Daniele",
+        "Dick",
+        "Eric"
+      ]
     },
     {
       "competition": "Niagara Balls",
@@ -8277,7 +9042,12 @@
       "winners": [
         "Zach"
       ],
-      "event_key": "bb8-event-28"
+      "event_key": "bb8-event-28",
+      "participants": [
+        "Daniele",
+        "Jameka",
+        "Zach"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -8309,7 +9079,12 @@
       "winners": [
         "Zach"
       ],
-      "event_key": "bb8-event-30"
+      "event_key": "bb8-event-30",
+      "participants": [
+        "Daniele",
+        "Dick",
+        "Zach"
+      ]
     },
     {
       "competition": "Memory Dip",
@@ -8322,7 +9097,11 @@
       "winners": [
         "Dick"
       ],
-      "event_key": "bb8-event-31"
+      "event_key": "bb8-event-31",
+      "participants": [
+        "Daniele",
+        "Dick"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -8335,7 +9114,11 @@
       "winners": [
         "Dick"
       ],
-      "event_key": "bb8-event-32"
+      "event_key": "bb8-event-32",
+      "participants": [
+        "Dick",
+        "Zach"
+      ]
     },
     {
       "competition": "Falling For You",
@@ -8377,7 +9160,22 @@
         "Alex",
         "Amanda"
       ],
-      "event_key": "bb9-event-02"
+      "event_key": "bb9-event-02",
+      "participants": [
+        "Adam",
+        "Alex",
+        "Allison",
+        "Amanda",
+        "Chelsia",
+        "James",
+        "Joshuah",
+        "Matt",
+        "Natalie",
+        "Neil",
+        "Parker",
+        "Ryan",
+        "Sheila"
+      ]
     },
     {
       "competition": "In Sickness and in Health",
@@ -8414,7 +9212,21 @@
         "James",
         "Chelsia"
       ],
-      "event_key": "bb9-event-04"
+      "event_key": "bb9-event-04",
+      "participants": [
+        "Adam",
+        "Alex",
+        "Allison",
+        "Amanda",
+        "Chelsia",
+        "James",
+        "Joshuah",
+        "Matt",
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "What a Catch!",
@@ -8477,7 +9289,19 @@
         "Sharon",
         "Joshuah"
       ],
-      "event_key": "bb9-event-07"
+      "event_key": "bb9-event-07",
+      "participants": [
+        "Adam",
+        "Allison",
+        "Chelsia",
+        "James",
+        "Joshuah",
+        "Matt",
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "Big Aspara-Guess!",
@@ -8538,7 +9362,18 @@
       "winners": [
         "Ryan"
       ],
-      "event_key": "bb9-event-10"
+      "event_key": "bb9-event-10",
+      "participants": [
+        "Adam",
+        "Chelsia",
+        "James",
+        "Joshuah",
+        "Matt",
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "A Little 'Fon Will 'Due' Ya!",
@@ -8593,7 +9428,17 @@
       "winners": [
         "James"
       ],
-      "event_key": "bb9-event-13"
+      "event_key": "bb9-event-13",
+      "participants": [
+        "Adam",
+        "Chelsia",
+        "James",
+        "Joshuah",
+        "Matt",
+        "Natalie",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "Berry Balanced",
@@ -8627,7 +9472,16 @@
       "winners": [
         "Adam"
       ],
-      "event_key": "bb9-event-15"
+      "event_key": "bb9-event-15",
+      "participants": [
+        "Adam",
+        "Chelsia",
+        "Joshuah",
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "Big Brother Blackjack",
@@ -8687,7 +9541,15 @@
       "winners": [
         "Natalie"
       ],
-      "event_key": "bb9-event-18"
+      "event_key": "bb9-event-18",
+      "participants": [
+        "James",
+        "Joshuah",
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "To Slop or Not to Slop",
@@ -8740,7 +9602,14 @@
       "winners": [
         "Adam"
       ],
-      "event_key": "bb9-event-21"
+      "event_key": "bb9-event-21",
+      "participants": [
+        "Adam",
+        "James",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "A True Big Brother Mash",
@@ -8793,7 +9662,13 @@
       "winners": [
         "Sheila"
       ],
-      "event_key": "bb9-event-24"
+      "event_key": "bb9-event-24",
+      "participants": [
+        "Natalie",
+        "Ryan",
+        "Sharon",
+        "Sheila"
+      ]
     },
     {
       "competition": "PoTV",
@@ -8826,7 +9701,12 @@
       "winners": [
         "Ryan"
       ],
-      "event_key": "bb9-event-26"
+      "event_key": "bb9-event-26",
+      "participants": [
+        "Adam",
+        "Ryan",
+        "Sharon"
+      ]
     },
     {
       "competition": "What Happens In Vegas...",
@@ -8878,7 +9758,12 @@
       "winners": [
         "Ryan"
       ],
-      "event_key": "bb9-event-29"
+      "event_key": "bb9-event-29",
+      "participants": [
+        "Adam",
+        "Ryan",
+        "Sheila"
+      ]
     },
     {
       "competition": "Who's the Guinea Pig Now?",
@@ -8891,7 +9776,11 @@
       "winners": [
         "Adam"
       ],
-      "event_key": "bb9-event-30"
+      "event_key": "bb9-event-30",
+      "participants": [
+        "Adam",
+        "Sheila"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -8904,7 +9793,11 @@
       "winners": [
         "Ryan"
       ],
-      "event_key": "bb9-event-31"
+      "event_key": "bb9-event-31",
+      "participants": [
+        "Adam",
+        "Ryan"
+      ]
     },
     {
       "competition": "Wheel Of First Impressions",
@@ -8917,7 +9810,22 @@
       "winners": [
         "Jerry"
       ],
-      "event_key": "bb10-event-01"
+      "event_key": "bb10-event-01",
+      "participants": [
+        "Angie",
+        "April",
+        "Brian",
+        "Dan",
+        "Jerry",
+        "Jessie",
+        "Keesha",
+        "Libra",
+        "Memphis",
+        "Michelle",
+        "Ollie",
+        "Renny",
+        "Steven"
+      ]
     },
     {
       "competition": "Buggin' Out",
@@ -8976,7 +9884,20 @@
       "winners": [
         "Jessie"
       ],
-      "event_key": "bb10-event-04"
+      "event_key": "bb10-event-04",
+      "participants": [
+        "Angie",
+        "April",
+        "Dan",
+        "Jessie",
+        "Keesha",
+        "Libra",
+        "Memphis",
+        "Michelle",
+        "Ollie",
+        "Renny",
+        "Steven"
+      ]
     },
     {
       "competition": "Stop Your Wining!",
@@ -9035,7 +9956,19 @@
       "winners": [
         "Keesha"
       ],
-      "event_key": "bb10-event-07"
+      "event_key": "bb10-event-07",
+      "participants": [
+        "Angie",
+        "April",
+        "Dan",
+        "Jerry",
+        "Keesha",
+        "Libra",
+        "Memphis",
+        "Michelle",
+        "Ollie",
+        "Renny"
+      ]
     },
     {
       "competition": "BB Valley High Sock Hop",
@@ -9092,7 +10025,18 @@
       "winners": [
         "April"
       ],
-      "event_key": "bb10-event-10"
+      "event_key": "bb10-event-10",
+      "participants": [
+        "April",
+        "Dan",
+        "Jerry",
+        "Jessie",
+        "Libra",
+        "Memphis",
+        "Michelle",
+        "Ollie",
+        "Renny"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -9126,7 +10070,17 @@
       "winners": [
         "Michelle"
       ],
-      "event_key": "bb10-event-12"
+      "event_key": "bb10-event-12",
+      "participants": [
+        "Dan",
+        "Jerry",
+        "Keesha",
+        "Libra",
+        "Memphis",
+        "Michelle",
+        "Ollie",
+        "Renny"
+      ]
     },
     {
       "competition": "In the News",
@@ -9182,7 +10136,16 @@
       "winners": [
         "Renny"
       ],
-      "event_key": "bb10-event-15"
+      "event_key": "bb10-event-15",
+      "participants": [
+        "April",
+        "Dan",
+        "Jerry",
+        "Keesha",
+        "Memphis",
+        "Ollie",
+        "Renny"
+      ]
     },
     {
       "competition": "Big Brother Rock, Paper, Scissors",
@@ -9236,7 +10199,15 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb10-event-18"
+      "event_key": "bb10-event-18",
+      "participants": [
+        "Dan",
+        "Jerry",
+        "Keesha",
+        "Memphis",
+        "Michelle",
+        "Ollie"
+      ]
     },
     {
       "competition": "One Giant Leap",
@@ -9270,7 +10241,14 @@
       "winners": [
         "Keesha"
       ],
-      "event_key": "bb10-event-20"
+      "event_key": "bb10-event-20",
+      "participants": [
+        "Jerry",
+        "Keesha",
+        "Memphis",
+        "Ollie",
+        "Renny"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -9304,7 +10282,13 @@
       "winners": [
         "Jerry"
       ],
-      "event_key": "bb10-event-22"
+      "event_key": "bb10-event-22",
+      "participants": [
+        "Dan",
+        "Jerry",
+        "Memphis",
+        "Renny"
+      ]
     },
     {
       "competition": "Rock A Bye Veto",
@@ -9337,7 +10321,12 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb10-event-24"
+      "event_key": "bb10-event-24",
+      "participants": [
+        "Dan",
+        "Keesha",
+        "Memphis"
+      ]
     },
     {
       "competition": "Luxury Competition",
@@ -9393,7 +10382,12 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb10-event-27"
+      "event_key": "bb10-event-27",
+      "participants": [
+        "Dan",
+        "Jerry",
+        "Memphis"
+      ]
     },
     {
       "competition": "BB Knockout",
@@ -9406,7 +10400,11 @@
       "winners": [
         "Memphis"
       ],
-      "event_key": "bb10-event-28"
+      "event_key": "bb10-event-28",
+      "participants": [
+        "Jerry",
+        "Memphis"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -9419,7 +10417,11 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb10-event-29"
+      "event_key": "bb10-event-29",
+      "participants": [
+        "Dan",
+        "Memphis"
+      ]
     },
     {
       "competition": "The Wedgie",
@@ -9430,7 +10432,22 @@
       "variation": "The Wedgie",
       "result": "Jessie enters the game and becomes HOH",
       "winners": [],
-      "event_key": "bb11-event-01"
+      "event_key": "bb11-event-01",
+      "participants": [
+        "Braden",
+        "Casey",
+        "Chima",
+        "Jeff",
+        "Jessie",
+        "Jordan",
+        "Kevin",
+        "Laura",
+        "Lydia",
+        "Michele",
+        "Natalie",
+        "Ronnie",
+        "Russell"
+      ]
     },
     {
       "competition": "Big Brother Rave",
@@ -9489,7 +10506,20 @@
       "winners": [
         "Ronnie"
       ],
-      "event_key": "bb11-event-04"
+      "event_key": "bb11-event-04",
+      "participants": [
+        "Casey",
+        "Chima",
+        "Jeff",
+        "Jordan",
+        "Kevin",
+        "Laura",
+        "Lydia",
+        "Michele",
+        "Natalie",
+        "Ronnie",
+        "Russell"
+      ]
     },
     {
       "competition": "Houseguest Description",
@@ -9604,7 +10634,19 @@
       "winners": [
         "Jessie"
       ],
-      "event_key": "bb11-event-08"
+      "event_key": "bb11-event-08",
+      "participants": [
+        "Casey",
+        "Chima",
+        "Jeff",
+        "Jessie",
+        "Jordan",
+        "Kevin",
+        "Lydia",
+        "Michele",
+        "Natalie",
+        "Russell"
+      ]
     },
     {
       "competition": "Shootout",
@@ -9661,7 +10703,18 @@
       "winners": [
         "Russell"
       ],
-      "event_key": "bb11-event-11"
+      "event_key": "bb11-event-11",
+      "participants": [
+        "Chima",
+        "Jeff",
+        "Jordan",
+        "Kevin",
+        "Lydia",
+        "Michele",
+        "Natalie",
+        "Ronnie",
+        "Russell"
+      ]
     },
     {
       "competition": "Dizzy Discs",
@@ -9695,7 +10748,17 @@
       "winners": [
         "Chima"
       ],
-      "event_key": "bb11-event-13"
+      "event_key": "bb11-event-13",
+      "participants": [
+        "Chima",
+        "Jeff",
+        "Jessie",
+        "Jordan",
+        "Kevin",
+        "Lydia",
+        "Michele",
+        "Natalie"
+      ]
     },
     {
       "competition": "The Goods",
@@ -9775,7 +10838,17 @@
       "winners": [
         "Michele"
       ],
-      "event_key": "bb11-event-17"
+      "event_key": "bb11-event-17",
+      "participants": [
+        "Chima",
+        "Jeff",
+        "Jordan",
+        "Kevin",
+        "Lydia",
+        "Michele",
+        "Natalie",
+        "Russell"
+      ]
     },
     {
       "competition": "Knockout",
@@ -9788,7 +10861,15 @@
       "winners": [
         "Jordan"
       ],
-      "event_key": "bb11-event-18"
+      "event_key": "bb11-event-18",
+      "participants": [
+        "Jeff",
+        "Jordan",
+        "Kevin",
+        "Lydia",
+        "Natalie",
+        "Russell"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -9843,7 +10924,14 @@
       "winners": [
         "Jeff"
       ],
-      "event_key": "bb11-event-20"
+      "event_key": "bb11-event-20",
+      "participants": [
+        "Jeff",
+        "Kevin",
+        "Michele",
+        "Natalie",
+        "Russell"
+      ]
     },
     {
       "competition": "Big Top Drop",
@@ -9877,7 +10965,13 @@
       "winners": [
         "Kevin"
       ],
-      "event_key": "bb11-event-22"
+      "event_key": "bb11-event-22",
+      "participants": [
+        "Jordan",
+        "Kevin",
+        "Michele",
+        "Natalie"
+      ]
     },
     {
       "competition": "Slippery Slope",
@@ -9910,7 +11004,12 @@
       "winners": [
         "Natalie"
       ],
-      "event_key": "bb11-event-24"
+      "event_key": "bb11-event-24",
+      "participants": [
+        "Jordan",
+        "Michele",
+        "Natalie"
+      ]
     },
     {
       "competition": "Veto Block Party",
@@ -9941,7 +11040,12 @@
       "winners": [
         "Kevin"
       ],
-      "event_key": "bb11-event-26"
+      "event_key": "bb11-event-26",
+      "participants": [
+        "Jordan",
+        "Kevin",
+        "Natalie"
+      ]
     },
     {
       "competition": "Log Roll",
@@ -9954,7 +11058,11 @@
       "winners": [
         "Jordan"
       ],
-      "event_key": "bb11-event-27"
+      "event_key": "bb11-event-27",
+      "participants": [
+        "Jordan",
+        "Natalie"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -9967,7 +11075,11 @@
       "winners": [
         "Jordan"
       ],
-      "event_key": "bb11-event-28"
+      "event_key": "bb11-event-28",
+      "participants": [
+        "Jordan",
+        "Kevin"
+      ]
     },
     {
       "competition": "Hot Dog! We Have a Weiner",
@@ -9980,7 +11092,21 @@
       "winners": [
         "Hayden"
       ],
-      "event_key": "bb12-event-01"
+      "event_key": "bb12-event-01",
+      "participants": [
+        "Annie",
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Kathy",
+        "Kristen",
+        "Lane",
+        "Matt",
+        "Monet",
+        "Rachel",
+        "Ragan"
+      ]
     },
     {
       "competition": "Sweet Tooth",
@@ -10039,7 +11165,20 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb12-event-04"
+      "event_key": "bb12-event-04",
+      "participants": [
+        "Andrew",
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Kathy",
+        "Kristen",
+        "Lane",
+        "Matt",
+        "Monet",
+        "Rachel",
+        "Ragan"
+      ]
     },
     {
       "competition": "Majority Rules",
@@ -10098,7 +11237,19 @@
       "winners": [
         "Matt"
       ],
-      "event_key": "bb12-event-07"
+      "event_key": "bb12-event-07",
+      "participants": [
+        "Andrew",
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Kathy",
+        "Kristen",
+        "Lane",
+        "Matt",
+        "Ragan"
+      ]
     },
     {
       "competition": "The Wall",
@@ -10132,7 +11283,18 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb12-event-09"
+      "event_key": "bb12-event-09",
+      "participants": [
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Kathy",
+        "Kristen",
+        "Lane",
+        "Rachel",
+        "Ragan"
+      ]
     },
     {
       "competition": "Knockout",
@@ -10194,7 +11356,17 @@
       "winners": [
         "Matt"
       ],
-      "event_key": "bb12-event-12"
+      "event_key": "bb12-event-12",
+      "participants": [
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Kathy",
+        "Lane",
+        "Matt",
+        "Ragan"
+      ]
     },
     {
       "competition": "Lover's Lane",
@@ -10228,7 +11400,16 @@
       "winners": [
         "Brendon"
       ],
-      "event_key": "bb12-event-14"
+      "event_key": "bb12-event-14",
+      "participants": [
+        "Brendon",
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Kathy",
+        "Lane",
+        "Ragan"
+      ]
     },
     {
       "competition": "Ready Set Zing!",
@@ -10262,7 +11443,15 @@
       "winners": [
         "Britney"
       ],
-      "event_key": "bb12-event-16"
+      "event_key": "bb12-event-16",
+      "participants": [
+        "Britney",
+        "Enzo",
+        "Hayden",
+        "Lane",
+        "Matt",
+        "Ragan"
+      ]
     },
     {
       "competition": "The Good, the Bad, and the Ugly",
@@ -10315,7 +11504,14 @@
       "winners": [
         "Hayden"
       ],
-      "event_key": "bb12-event-19"
+      "event_key": "bb12-event-19",
+      "participants": [
+        "Brendon",
+        "Enzo",
+        "Hayden",
+        "Lane",
+        "Ragan"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -10349,7 +11545,13 @@
       "winners": [
         "Lane"
       ],
-      "event_key": "bb12-event-21"
+      "event_key": "bb12-event-21",
+      "participants": [
+        "Britney",
+        "Enzo",
+        "Lane",
+        "Ragan"
+      ]
     },
     {
       "competition": "Shootout",
@@ -10382,7 +11584,12 @@
       "winners": [
         "Hayden"
       ],
-      "event_key": "bb12-event-23"
+      "event_key": "bb12-event-23",
+      "participants": [
+        "Britney",
+        "Enzo",
+        "Hayden"
+      ]
     },
     {
       "competition": "Caged Eggs",
@@ -10433,7 +11640,12 @@
       "winners": [
         "Hayden"
       ],
-      "event_key": "bb12-event-26"
+      "event_key": "bb12-event-26",
+      "participants": [
+        "Enzo",
+        "Hayden",
+        "Lane"
+      ]
     },
     {
       "competition": "Swing, Slam, Dunk",
@@ -10446,7 +11658,11 @@
       "winners": [
         "Lane"
       ],
-      "event_key": "bb12-event-27"
+      "event_key": "bb12-event-27",
+      "participants": [
+        "Enzo",
+        "Lane"
+      ]
     },
     {
       "competition": "Morph 'O' Matic",
@@ -10459,7 +11675,11 @@
       "winners": [
         "Hayden"
       ],
-      "event_key": "bb12-event-28"
+      "event_key": "bb12-event-28",
+      "participants": [
+        "Hayden",
+        "Lane"
+      ]
     },
     {
       "competition": "Going Banana's",
@@ -10472,7 +11692,22 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb13-event-01"
+      "event_key": "bb13-event-01",
+      "participants": [
+        "Adam",
+        "Brendon",
+        "Cassi",
+        "Dick",
+        "Dominic",
+        "Jeff",
+        "Jordan",
+        "Kalia",
+        "Keith",
+        "Lawon",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Cows On The Moon",
@@ -10531,7 +11766,19 @@
       "winners": [
         "Jordan"
       ],
-      "event_key": "bb13-event-04"
+      "event_key": "bb13-event-04",
+      "participants": [
+        "Adam",
+        "Brendon",
+        "Cassi",
+        "Dominic",
+        "Jeff",
+        "Jordan",
+        "Kalia",
+        "Lawon",
+        "Porsche",
+        "Shelly"
+      ]
     },
     {
       "competition": "Golf Invitational",
@@ -10610,7 +11857,18 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb13-event-07"
+      "event_key": "bb13-event-07",
+      "participants": [
+        "Adam",
+        "Brendon",
+        "Dominic",
+        "Jeff",
+        "Kalia",
+        "Lawon",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Same Name",
@@ -10671,7 +11929,18 @@
       "winners": [
         "Daniele"
       ],
-      "event_key": "bb13-event-10"
+      "event_key": "bb13-event-10",
+      "participants": [
+        "Adam",
+        "Brendon",
+        "Daniele",
+        "Jeff",
+        "Jordan",
+        "Kalia",
+        "Lawon",
+        "Porsche",
+        "Shelly"
+      ]
     },
     {
       "competition": "The Wall",
@@ -10704,7 +11973,17 @@
       "winners": [
         "Kalia"
       ],
-      "event_key": "bb13-event-12"
+      "event_key": "bb13-event-12",
+      "participants": [
+        "Adam",
+        "Jeff",
+        "Jordan",
+        "Kalia",
+        "Lawon",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Knockout",
@@ -10773,7 +12052,17 @@
       "winners": [
         "Daniele"
       ],
-      "event_key": "bb13-event-16"
+      "event_key": "bb13-event-16",
+      "participants": [
+        "Adam",
+        "Brendon",
+        "Daniele",
+        "Jeff",
+        "Jordan",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -10806,7 +12095,16 @@
       "winners": [
         "Jeff"
       ],
-      "event_key": "bb13-event-18"
+      "event_key": "bb13-event-18",
+      "participants": [
+        "Adam",
+        "Jeff",
+        "Jordan",
+        "Kalia",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Slippery Slope",
@@ -10840,7 +12138,15 @@
       "winners": [
         "Kalia"
       ],
-      "event_key": "bb13-event-20"
+      "event_key": "bb13-event-20",
+      "participants": [
+        "Adam",
+        "Jordan",
+        "Kalia",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Before or After",
@@ -10874,7 +12180,14 @@
       "winners": [
         "Porsche"
       ],
-      "event_key": "bb13-event-22"
+      "event_key": "bb13-event-22",
+      "participants": [
+        "Adam",
+        "Jordan",
+        "Porsche",
+        "Rachel",
+        "Shelly"
+      ]
     },
     {
       "competition": "Roll It Down",
@@ -10908,7 +12221,13 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb13-event-24"
+      "event_key": "bb13-event-24",
+      "participants": [
+        "Adam",
+        "Jordan",
+        "Kalia",
+        "Rachel"
+      ]
     },
     {
       "competition": "Rollin' in the Dough",
@@ -10941,7 +12260,12 @@
       "winners": [
         "Adam"
       ],
-      "event_key": "bb13-event-26"
+      "event_key": "bb13-event-26",
+      "participants": [
+        "Adam",
+        "Jordan",
+        "Porsche"
+      ]
     },
     {
       "competition": "Big Brother Jukebox",
@@ -10973,7 +12297,12 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb13-event-28"
+      "event_key": "bb13-event-28",
+      "participants": [
+        "Adam",
+        "Porsche",
+        "Rachel"
+      ]
     },
     {
       "competition": "Underwater Maze",
@@ -10986,7 +12315,11 @@
       "winners": [
         "Porsche"
       ],
-      "event_key": "bb13-event-29"
+      "event_key": "bb13-event-29",
+      "participants": [
+        "Adam",
+        "Porsche"
+      ]
     },
     {
       "competition": "Memory Dip",
@@ -10999,7 +12332,11 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb13-event-30"
+      "event_key": "bb13-event-30",
+      "participants": [
+        "Porsche",
+        "Rachel"
+      ]
     },
     {
       "competition": "Teddy Bear Madness",
@@ -11012,7 +12349,24 @@
       "winners": [
         "Willie"
       ],
-      "event_key": "bb14-event-01"
+      "event_key": "bb14-event-01",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Ian",
+        "Janelle",
+        "Jenn",
+        "Jodi",
+        "Joe",
+        "JoJo",
+        "Kara",
+        "Mike",
+        "Shane",
+        "Wil",
+        "Willie"
+      ]
     },
     {
       "competition": "Teddy Bear Madness",
@@ -11023,7 +12377,24 @@
       "variation": "Teddy Bear Madness",
       "result": "Team Dan are nominated",
       "winners": [],
-      "event_key": "bb14-event-01"
+      "event_key": "bb14-event-01",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Ian",
+        "Janelle",
+        "Jenn",
+        "Jodi",
+        "Joe",
+        "JoJo",
+        "Kara",
+        "Mike",
+        "Shane",
+        "Wil",
+        "Willie"
+      ]
     },
     {
       "competition": "Big Brother Derby",
@@ -11078,7 +12449,21 @@
       "winners": [
         "Frank"
       ],
-      "event_key": "bb14-event-05"
+      "event_key": "bb14-event-05",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Ian",
+        "Janelle",
+        "Jenn",
+        "Joe",
+        "JoJo",
+        "Mike",
+        "Shane",
+        "Wil"
+      ]
     },
     {
       "competition": "Phat Stacks",
@@ -11132,7 +12517,19 @@
       "winners": [
         "Shane"
       ],
-      "event_key": "bb14-event-08"
+      "event_key": "bb14-event-08",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Ian",
+        "Janelle",
+        "Jenn",
+        "Joe",
+        "Mike",
+        "Shane",
+        "Wil"
+      ]
     },
     {
       "competition": "Feel The Burn",
@@ -11186,7 +12583,20 @@
       "winners": [
         "Danielle"
       ],
-      "event_key": "bb14-event-11"
+      "event_key": "bb14-event-11",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Ian",
+        "Janelle",
+        "Jenn",
+        "Joe",
+        "Mike",
+        "Shane",
+        "Wil"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -11220,7 +12630,18 @@
       "winners": [
         "Frank"
       ],
-      "event_key": "bb14-event-13"
+      "event_key": "bb14-event-13",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Frank",
+        "Ian",
+        "Jenn",
+        "Joe",
+        "Mike",
+        "Shane",
+        "Wil"
+      ]
     },
     {
       "competition": "Ex-Squeeze Me?",
@@ -11298,7 +12719,17 @@
       "winners": [
         "Shane"
       ],
-      "event_key": "bb14-event-16"
+      "event_key": "bb14-event-16",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Ian",
+        "Jenn",
+        "Joe",
+        "Mike",
+        "Shane"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -11331,7 +12762,16 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-18"
+      "event_key": "bb14-event-18",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Ian",
+        "Jenn",
+        "Joe"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -11364,7 +12804,16 @@
       "winners": [
         "Frank"
       ],
-      "event_key": "bb14-event-20"
+      "event_key": "bb14-event-20",
+      "participants": [
+        "Britney",
+        "Dan",
+        "Danielle",
+        "Frank",
+        "Jenn",
+        "Joe",
+        "Shane"
+      ]
     },
     {
       "competition": "Pandora's Crane Game",
@@ -11420,7 +12869,15 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-23"
+      "event_key": "bb14-event-23",
+      "participants": [
+        "Dan",
+        "Danielle",
+        "Ian",
+        "Jenn",
+        "Joe",
+        "Shane"
+      ]
     },
     {
       "competition": "OTEV",
@@ -11454,7 +12911,14 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb14-event-25"
+      "event_key": "bb14-event-25",
+      "participants": [
+        "Dan",
+        "Danielle",
+        "Jenn",
+        "Joe",
+        "Shane"
+      ]
     },
     {
       "competition": "Item Maze",
@@ -11488,7 +12952,13 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-27"
+      "event_key": "bb14-event-27",
+      "participants": [
+        "Danielle",
+        "Ian",
+        "Jenn",
+        "Shane"
+      ]
     },
     {
       "competition": "Roll It Down",
@@ -11501,7 +12971,13 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-27"
+      "event_key": "bb14-event-27",
+      "participants": [
+        "Danielle",
+        "Ian",
+        "Jenn",
+        "Shane"
+      ]
     },
     {
       "competition": "Time Flies",
@@ -11534,7 +13010,12 @@
       "winners": [
         "Danielle"
       ],
-      "event_key": "bb14-event-29"
+      "event_key": "bb14-event-29",
+      "participants": [
+        "Dan",
+        "Danielle",
+        "Shane"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -11566,7 +13047,12 @@
       "winners": [
         "Dan"
       ],
-      "event_key": "bb14-event-31"
+      "event_key": "bb14-event-31",
+      "participants": [
+        "Dan",
+        "Danielle",
+        "Ian"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -11579,7 +13065,11 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-32"
+      "event_key": "bb14-event-32",
+      "participants": [
+        "Danielle",
+        "Ian"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -11592,7 +13082,11 @@
       "winners": [
         "Ian"
       ],
-      "event_key": "bb14-event-33"
+      "event_key": "bb14-event-33",
+      "participants": [
+        "Dan",
+        "Ian"
+      ]
     },
     {
       "competition": "Get A Grip",
@@ -11605,7 +13099,25 @@
       "winners": [
         "McCrae"
       ],
-      "event_key": "bb15-event-01"
+      "event_key": "bb15-event-01",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Andy",
+        "Candice",
+        "David",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Howard",
+        "Jeremy",
+        "Jessie",
+        "Judd",
+        "Kaitlin",
+        "McCrae",
+        "Nick",
+        "Spencer"
+      ]
     },
     {
       "competition": "Cooler and The Gang",
@@ -11667,7 +13179,23 @@
       "winners": [
         "Aaryn"
       ],
-      "event_key": "bb15-event-04"
+      "event_key": "bb15-event-04",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Howard",
+        "Jeremy",
+        "Jessie",
+        "Judd",
+        "Kaitlin",
+        "Nick",
+        "Spencer"
+      ]
     },
     {
       "competition": "In The Balance",
@@ -11701,7 +13229,22 @@
       "winners": [
         "Helen"
       ],
-      "event_key": "bb15-event-06"
+      "event_key": "bb15-event-06",
+      "participants": [
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Howard",
+        "Jeremy",
+        "Jessie",
+        "Judd",
+        "Kaitlin",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Scary Dairy",
@@ -11761,7 +13304,21 @@
       "winners": [
         "Judd"
       ],
-      "event_key": "bb15-event-09"
+      "event_key": "bb15-event-09",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Howard",
+        "Jessie",
+        "Judd",
+        "Kaitlin",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Weight Gain",
@@ -11820,7 +13377,20 @@
       "winners": [
         "Aaryn"
       ],
-      "event_key": "bb15-event-12"
+      "event_key": "bb15-event-12",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Howard",
+        "Jessie",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Unexpectedly Unforgettable",
@@ -11879,7 +13449,19 @@
       "winners": [
         "GinaMarie"
       ],
-      "event_key": "bb15-event-15"
+      "event_key": "bb15-event-15",
+      "participants": [
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Jessie",
+        "Judd",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -11913,7 +13495,18 @@
       "winners": [
         "Aaryn"
       ],
-      "event_key": "bb15-event-17"
+      "event_key": "bb15-event-17",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Andy",
+        "Elissa",
+        "Helen",
+        "Jessie",
+        "Judd",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Nailed It",
@@ -11947,7 +13540,17 @@
       "winners": [
         "Andy"
       ],
-      "event_key": "bb15-event-19"
+      "event_key": "bb15-event-19",
+      "participants": [
+        "Amanda",
+        "Andy",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Jessie",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -11981,7 +13584,16 @@
       "winners": [
         "Aaryn"
       ],
-      "event_key": "bb15-event-21"
+      "event_key": "bb15-event-21",
+      "participants": [
+        "Aaryn",
+        "Amanda",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -12036,7 +13648,19 @@
       "winners": [
         "Elissa"
       ],
-      "event_key": "bb15-event-24"
+      "event_key": "bb15-event-24",
+      "participants": [
+        "Amanda",
+        "Andy",
+        "Candice",
+        "Elissa",
+        "GinaMarie",
+        "Helen",
+        "Jessie",
+        "Judd",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Off The Wall",
@@ -12108,7 +13732,15 @@
       "winners": [
         "GinaMarie"
       ],
-      "event_key": "bb15-event-27"
+      "event_key": "bb15-event-27",
+      "participants": [
+        "Amanda",
+        "Andy",
+        "GinaMarie",
+        "Judd",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "10K",
@@ -12164,7 +13796,14 @@
       "winners": [
         "McCrae"
       ],
-      "event_key": "bb15-event-30"
+      "event_key": "bb15-event-30",
+      "participants": [
+        "Andy",
+        "Elissa",
+        "Judd",
+        "McCrae",
+        "Spencer"
+      ]
     },
     {
       "competition": "Item Maze",
@@ -12198,7 +13837,13 @@
       "winners": [
         "Spencer"
       ],
-      "event_key": "bb15-event-32"
+      "event_key": "bb15-event-32",
+      "participants": [
+        "Andy",
+        "GinaMarie",
+        "Judd",
+        "Spencer"
+      ]
     },
     {
       "competition": "Time Flies",
@@ -12231,7 +13876,12 @@
       "winners": [
         "Andy"
       ],
-      "event_key": "bb15-event-34"
+      "event_key": "bb15-event-34",
+      "participants": [
+        "Andy",
+        "GinaMarie",
+        "McCrae"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -12263,7 +13913,12 @@
       "winners": [
         "GinaMarie"
       ],
-      "event_key": "bb15-event-36"
+      "event_key": "bb15-event-36",
+      "participants": [
+        "Andy",
+        "GinaMarie",
+        "Spencer"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -12276,7 +13931,11 @@
       "winners": [
         "Andy"
       ],
-      "event_key": "bb15-event-37"
+      "event_key": "bb15-event-37",
+      "participants": [
+        "Andy",
+        "Spencer"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -12289,7 +13948,11 @@
       "winners": [
         "Andy"
       ],
-      "event_key": "bb15-event-38"
+      "event_key": "bb15-event-38",
+      "participants": [
+        "Andy",
+        "GinaMarie"
+      ]
     },
     {
       "competition": "Log Roll",
@@ -12302,7 +13965,17 @@
       "winners": [
         "Frankie"
       ],
-      "event_key": "bb16-event-01"
+      "event_key": "bb16-event-01",
+      "participants": [
+        "Amber",
+        "Cody",
+        "Devin",
+        "Donny",
+        "Frankie",
+        "Joey",
+        "Nicole",
+        "Paola"
+      ]
     },
     {
       "competition": "Over the Coals",
@@ -12315,7 +13988,17 @@
       "winners": [
         "Caleb"
       ],
-      "event_key": "bb16-event-02"
+      "event_key": "bb16-event-02",
+      "participants": [
+        "Brittany",
+        "Caleb",
+        "Christine",
+        "Derrick",
+        "Hayden",
+        "Jocasta",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Drinks On Us",
@@ -12390,7 +14073,22 @@
         "Amber",
         "Devin"
       ],
-      "event_key": "bb16-event-06"
+      "event_key": "bb16-event-06",
+      "participants": [
+        "Amber",
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Devin",
+        "Donny",
+        "Frankie",
+        "Hayden",
+        "Jocasta",
+        "Nicole",
+        "Paola",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "We Did What?!",
@@ -12444,7 +14142,21 @@
         "Derrick",
         "Nicole"
       ],
-      "event_key": "bb16-event-09"
+      "event_key": "bb16-event-09",
+      "participants": [
+        "Amber",
+        "Caleb",
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Frankie",
+        "Hayden",
+        "Jocasta",
+        "Nicole",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Faster Than A Speeding Veto",
@@ -12518,7 +14230,20 @@
         "Cody",
         "Frankie"
       ],
-      "event_key": "bb16-event-13"
+      "event_key": "bb16-event-13",
+      "participants": [
+        "Amber",
+        "Caleb",
+        "Christine",
+        "Cody",
+        "Donny",
+        "Frankie",
+        "Hayden",
+        "Jocasta",
+        "Nicole",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Knight Moves",
@@ -12572,7 +14297,20 @@
         "Frankie",
         "Zach"
       ],
-      "event_key": "bb16-event-16"
+      "event_key": "bb16-event-16",
+      "participants": [
+        "Amber",
+        "Caleb",
+        "Christine",
+        "Derrick",
+        "Donny",
+        "Frankie",
+        "Hayden",
+        "Jocasta",
+        "Nicole",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Wedding Cake Take",
@@ -12627,7 +14365,19 @@
         "Nicole",
         "Donny"
       ],
-      "event_key": "bb16-event-19"
+      "event_key": "bb16-event-19",
+      "participants": [
+        "Caleb",
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Hayden",
+        "Jocasta",
+        "Nicole",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Domino Effect",
@@ -12681,7 +14431,18 @@
       "winners": [
         "Caleb"
       ],
-      "event_key": "bb16-event-22"
+      "event_key": "bb16-event-22",
+      "participants": [
+        "Caleb",
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Frankie",
+        "Hayden",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -12716,7 +14477,17 @@
         "Christine",
         "Nicole"
       ],
-      "event_key": "bb16-event-24"
+      "event_key": "bb16-event-24",
+      "participants": [
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Frankie",
+        "Nicole",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "Pull Some Strings",
@@ -12791,7 +14562,16 @@
         "Derrick",
         "Frankie"
       ],
-      "event_key": "bb16-event-28"
+      "event_key": "bb16-event-28",
+      "participants": [
+        "Caleb",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Frankie",
+        "Victoria",
+        "Zach"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -12862,7 +14642,16 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb16-event-32"
+      "event_key": "bb16-event-32",
+      "participants": [
+        "Caleb",
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Donny",
+        "Nicole",
+        "Victoria"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -12896,7 +14685,15 @@
       "winners": [
         "Caleb"
       ],
-      "event_key": "bb16-event-34"
+      "event_key": "bb16-event-34",
+      "participants": [
+        "Caleb",
+        "Christine",
+        "Derrick",
+        "Frankie",
+        "Nicole",
+        "Victoria"
+      ]
     },
     {
       "competition": "Sequence Explosion",
@@ -12930,7 +14727,14 @@
       "winners": [
         "Derrick"
       ],
-      "event_key": "bb16-event-36"
+      "event_key": "bb16-event-36",
+      "participants": [
+        "Christine",
+        "Cody",
+        "Derrick",
+        "Frankie",
+        "Victoria"
+      ]
     },
     {
       "competition": "Item Maze",
@@ -12964,7 +14768,13 @@
       "winners": [
         "Frankie"
       ],
-      "event_key": "bb16-event-38"
+      "event_key": "bb16-event-38",
+      "participants": [
+        "Caleb",
+        "Cody",
+        "Frankie",
+        "Victoria"
+      ]
     },
     {
       "competition": "Morph 'O' Matic",
@@ -12997,7 +14807,13 @@
       "winners": [
         "Caleb"
       ],
-      "event_key": "bb16-event-40"
+      "event_key": "bb16-event-40",
+      "participants": [
+        "Caleb",
+        "Cody",
+        "Frankie",
+        "Victoria"
+      ]
     },
     {
       "competition": "Hide and Go Veto",
@@ -13057,7 +14873,12 @@
       "winners": [
         "Derrick"
       ],
-      "event_key": "bb16-event-43"
+      "event_key": "bb16-event-43",
+      "participants": [
+        "Cody",
+        "Derrick",
+        "Victoria"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -13089,7 +14910,12 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb16-event-45"
+      "event_key": "bb16-event-45",
+      "participants": [
+        "Cody",
+        "Derrick",
+        "Victoria"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -13102,7 +14928,11 @@
       "winners": [
         "Derrick"
       ],
-      "event_key": "bb16-event-46"
+      "event_key": "bb16-event-46",
+      "participants": [
+        "Derrick",
+        "Victoria"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -13115,7 +14945,11 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb16-event-47"
+      "event_key": "bb16-event-47",
+      "participants": [
+        "Cody",
+        "Derrick"
+      ]
     },
     {
       "competition": "The Wall",
@@ -13128,7 +14962,16 @@
       "winners": [
         "James"
       ],
-      "event_key": "bb17-event-01"
+      "event_key": "bb17-event-01",
+      "participants": [
+        "Audrey",
+        "Austin",
+        "Clay",
+        "Jace",
+        "James",
+        "Meg",
+        "Shelli"
+      ]
     },
     {
       "competition": "Get A Grip",
@@ -13141,7 +14984,16 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb17-event-02"
+      "event_key": "bb17-event-02",
+      "participants": [
+        "Becky",
+        "Jackie",
+        "Jason",
+        "Jeff",
+        "John",
+        "Liz",
+        "Steve"
+      ]
     },
     {
       "competition": "Du-BOB",
@@ -13196,7 +15048,22 @@
         "Becky",
         "Shelli"
       ],
-      "event_key": "bb17-event-05"
+      "event_key": "bb17-event-05",
+      "participants": [
+        "Audrey",
+        "Becky",
+        "Clay",
+        "Da'Vonne",
+        "Jackie",
+        "Jason",
+        "Jeff",
+        "John",
+        "Liz",
+        "Meg",
+        "Shelli",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Give Me Props",
@@ -13251,7 +15118,22 @@
         "Vanessa",
         "Austin"
       ],
-      "event_key": "bb17-event-08"
+      "event_key": "bb17-event-08",
+      "participants": [
+        "Audrey",
+        "Austin",
+        "Becky",
+        "Clay",
+        "Jackie",
+        "James",
+        "Jason",
+        "Jeff",
+        "John",
+        "Liz",
+        "Meg",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Gronk's A-maze-ing Foam Party",
@@ -13324,7 +15206,20 @@
         "Liz",
         "Shelli"
       ],
-      "event_key": "bb17-event-12"
+      "event_key": "bb17-event-12",
+      "participants": [
+        "Audrey",
+        "Becky",
+        "Clay",
+        "Jackie",
+        "James",
+        "Jason",
+        "John",
+        "Liz",
+        "Meg",
+        "Shelli",
+        "Steve"
+      ]
     },
     {
       "competition": "Grunge BOB",
@@ -13379,7 +15274,19 @@
         "Vanessa",
         "Jackie"
       ],
-      "event_key": "bb17-event-15"
+      "event_key": "bb17-event-15",
+      "participants": [
+        "Becky",
+        "Clay",
+        "Jackie",
+        "James",
+        "Jason",
+        "John",
+        "Liz",
+        "Meg",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Splashy Headlines",
@@ -13433,7 +15340,19 @@
       "winners": [
         "James"
       ],
-      "event_key": "bb17-event-18"
+      "event_key": "bb17-event-18",
+      "participants": [
+        "Becky",
+        "Clay",
+        "Jackie",
+        "James",
+        "John",
+        "Julia",
+        "Liz",
+        "Meg",
+        "Shelli",
+        "Steve"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -13467,7 +15386,18 @@
       "winners": [
         "Becky"
       ],
-      "event_key": "bb17-event-20"
+      "event_key": "bb17-event-20",
+      "participants": [
+        "Becky",
+        "Jackie",
+        "John",
+        "Julia",
+        "Liz",
+        "Meg",
+        "Shelli",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -13500,7 +15430,17 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-22"
+      "event_key": "bb17-event-22",
+      "participants": [
+        "Jackie",
+        "James",
+        "John",
+        "Julia",
+        "Liz",
+        "Meg",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Roll It Down",
@@ -13534,7 +15474,16 @@
       "winners": [
         "Liz"
       ],
-      "event_key": "bb17-event-24"
+      "event_key": "bb17-event-24",
+      "participants": [
+        "Becky",
+        "James",
+        "John",
+        "Julia",
+        "Liz",
+        "Meg",
+        "Vanessa"
+      ]
     },
     {
       "competition": "OTEV",
@@ -13567,7 +15516,16 @@
       "winners": [
         "Austin"
       ],
-      "event_key": "bb17-event-26"
+      "event_key": "bb17-event-26",
+      "participants": [
+        "Austin",
+        "James",
+        "John",
+        "Julia",
+        "Meg",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Morph 'O' Matic",
@@ -13620,7 +15578,19 @@
       "winners": [
         "Vanessa"
       ],
-      "event_key": "bb17-event-28"
+      "event_key": "bb17-event-28",
+      "participants": [
+        "Becky",
+        "Jackie",
+        "James",
+        "John",
+        "Julia",
+        "Liz",
+        "Meg",
+        "Shelli",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Dizzyland",
@@ -13670,7 +15640,14 @@
       "winners": [
         "Liz"
       ],
-      "event_key": "bb17-event-31"
+      "event_key": "bb17-event-31",
+      "participants": [
+        "James",
+        "John",
+        "Julia",
+        "Liz",
+        "Steve"
+      ]
     },
     {
       "competition": "Shootout",
@@ -13703,7 +15680,13 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-33"
+      "event_key": "bb17-event-33",
+      "participants": [
+        "John",
+        "Julia",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Bowlerina",
@@ -13737,7 +15720,12 @@
       "winners": [
         "Vanessa"
       ],
-      "event_key": "bb17-event-35"
+      "event_key": "bb17-event-35",
+      "participants": [
+        "John",
+        "Liz",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Under the Rainbow",
@@ -13785,7 +15773,12 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-38"
+      "event_key": "bb17-event-38",
+      "participants": [
+        "John",
+        "Liz",
+        "Steve"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -13817,7 +15810,12 @@
       "winners": [
         "Vanessa"
       ],
-      "event_key": "bb17-event-40"
+      "event_key": "bb17-event-40",
+      "participants": [
+        "Liz",
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -13830,7 +15828,11 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-41"
+      "event_key": "bb17-event-41",
+      "participants": [
+        "Liz",
+        "Steve"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -13843,7 +15845,11 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-41"
+      "event_key": "bb17-event-41",
+      "participants": [
+        "Liz",
+        "Steve"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -13856,7 +15862,11 @@
       "winners": [
         "Steve"
       ],
-      "event_key": "bb17-event-42"
+      "event_key": "bb17-event-42",
+      "participants": [
+        "Steve",
+        "Vanessa"
+      ]
     },
     {
       "competition": "Ride the Rocket",
@@ -13959,7 +15969,13 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb18-event-05"
+      "event_key": "bb18-event-05",
+      "participants": [
+        "Corey",
+        "Glenn",
+        "Nicole",
+        "Tiffany"
+      ]
     },
     {
       "competition": "Take It Off",
@@ -14023,7 +16039,22 @@
       "winners": [
         "Paulie"
       ],
-      "event_key": "bb18-event-08"
+      "event_key": "bb18-event-08",
+      "participants": [
+        "Bridgette",
+        "Bronte",
+        "Corey",
+        "Da'Vonne",
+        "Frank",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Paul",
+        "Paulie",
+        "Tiffany",
+        "Victor",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Berry Balanced",
@@ -14101,7 +16132,21 @@
       "winners": [
         "Bridgette"
       ],
-      "event_key": "bb18-event-12"
+      "event_key": "bb18-event-12",
+      "participants": [
+        "Bridgette",
+        "Bronte",
+        "Corey",
+        "Da'Vonne",
+        "Frank",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Tiffany",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Kiss My Ace",
@@ -14178,7 +16223,20 @@
       "winners": [
         "Paulie"
       ],
-      "event_key": "bb18-event-16"
+      "event_key": "bb18-event-16",
+      "participants": [
+        "Corey",
+        "Da'Vonne",
+        "Frank",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Paulie",
+        "Tiffany",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Euro Trippin'",
@@ -14269,7 +16327,20 @@
       "winners": [
         "James"
       ],
-      "event_key": "bb18-event-21"
+      "event_key": "bb18-event-21",
+      "participants": [
+        "Bridgette",
+        "Corey",
+        "Da'Vonne",
+        "Frank",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Victor",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "OTEV",
@@ -14303,7 +16374,19 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb18-event-23"
+      "event_key": "bb18-event-23",
+      "participants": [
+        "Bridgette",
+        "Corey",
+        "Da'Vonne",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Paulie",
+        "Victor",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Ready, Set, Woah",
@@ -14337,7 +16420,18 @@
       "winners": [
         "Victor"
       ],
-      "event_key": "bb18-event-25"
+      "event_key": "bb18-event-25",
+      "participants": [
+        "Bridgette",
+        "Corey",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paulie",
+        "Victor",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Hide and Go Veto",
@@ -14371,7 +16465,17 @@
       "winners": [
         "Corey"
       ],
-      "event_key": "bb18-event-27"
+      "event_key": "bb18-event-27",
+      "participants": [
+        "Bridgette",
+        "Corey",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Paulie"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -14405,7 +16509,16 @@
       "winners": [
         "Victor"
       ],
-      "event_key": "bb18-event-29"
+      "event_key": "bb18-event-29",
+      "participants": [
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Paulie",
+        "Victor"
+      ]
     },
     {
       "competition": "Zingbot Competition",
@@ -14504,7 +16617,15 @@
       "winners": [
         "Michelle"
       ],
-      "event_key": "bb18-event-33"
+      "event_key": "bb18-event-33",
+      "participants": [
+        "Corey",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -14517,7 +16638,15 @@
       "winners": [
         "Natalie"
       ],
-      "event_key": "bb18-event-34"
+      "event_key": "bb18-event-34",
+      "participants": [
+        "Corey",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "America's Care Package",
@@ -14530,7 +16659,10 @@
       "winners": [
         "Michelle"
       ],
-      "event_key": "bb18-event-35"
+      "event_key": "bb18-event-35",
+      "participants": [
+        "Michelle"
+      ]
     },
     {
       "competition": "BB Storm Watch",
@@ -14582,7 +16714,20 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb18-event-38"
+      "event_key": "bb18-event-38",
+      "participants": [
+        "Bridgette",
+        "Corey",
+        "Da'Vonne",
+        "James",
+        "Michelle",
+        "Natalie",
+        "Nicole",
+        "Paul",
+        "Paulie",
+        "Victor",
+        "Zakiyah"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -14616,7 +16761,14 @@
       "winners": [
         "Victor"
       ],
-      "event_key": "bb18-event-40"
+      "event_key": "bb18-event-40",
+      "participants": [
+        "Corey",
+        "James",
+        "Natalie",
+        "Paul",
+        "Victor"
+      ]
     },
     {
       "competition": "Take A Crack At Being Mac",
@@ -14650,7 +16802,13 @@
       "winners": [
         "Corey"
       ],
-      "event_key": "bb18-event-42"
+      "event_key": "bb18-event-42",
+      "participants": [
+        "Corey",
+        "James",
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -14683,7 +16841,12 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb18-event-44"
+      "event_key": "bb18-event-44",
+      "participants": [
+        "James",
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -14715,7 +16878,12 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb18-event-46"
+      "event_key": "bb18-event-46",
+      "participants": [
+        "James",
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -14728,7 +16896,11 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb18-event-47"
+      "event_key": "bb18-event-47",
+      "participants": [
+        "James",
+        "Nicole"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -14741,7 +16913,11 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb18-event-48"
+      "event_key": "bb18-event-48",
+      "participants": [
+        "Nicole",
+        "Paul"
+      ]
     },
     {
       "competition": "Garden of Temptation",
@@ -14797,7 +16973,24 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb19-event-03"
+      "event_key": "bb19-event-03",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Cody",
+        "Dominique",
+        "Elena",
+        "Jason",
+        "Jessica",
+        "Jillian",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Megan",
+        "Paul",
+        "Ramses",
+        "Raven"
+      ]
     },
     {
       "competition": "Hourglass",
@@ -14831,7 +17024,21 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb19-event-05"
+      "event_key": "bb19-event-05",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Dominique",
+        "Elena",
+        "Jason",
+        "Jessica",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Ramses",
+        "Raven"
+      ]
     },
     {
       "competition": "Item Maze",
@@ -14864,7 +17071,19 @@
       "winners": [
         "Alex"
       ],
-      "event_key": "bb19-event-07"
+      "event_key": "bb19-event-07",
+      "participants": [
+        "Alex",
+        "Dominique",
+        "Elena",
+        "Jason",
+        "Jessica",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Ramses",
+        "Raven"
+      ]
     },
     {
       "competition": "Temple of Temptation",
@@ -14960,7 +17179,20 @@
       "winners": [
         "Jessica"
       ],
-      "event_key": "bb19-event-12"
+      "event_key": "bb19-event-12",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Elena",
+        "Jason",
+        "Jessica",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Ramses",
+        "Raven"
+      ]
     },
     {
       "competition": "Sequence Explosion",
@@ -14993,7 +17225,19 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb19-event-14"
+      "event_key": "bb19-event-14",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Cody",
+        "Elena",
+        "Jason",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Bowlerina",
@@ -15044,7 +17288,20 @@
       "winners": [
         "Josh"
       ],
-      "event_key": "bb19-event-17"
+      "event_key": "bb19-event-17",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Cody",
+        "Elena",
+        "Jason",
+        "Jessica",
+        "Josh",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Raven"
+      ]
     },
     {
       "competition": "The Haunting",
@@ -15117,7 +17374,19 @@
       "winners": [
         "Alex"
       ],
-      "event_key": "bb19-event-21"
+      "event_key": "bb19-event-21",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Cody",
+        "Elena",
+        "Jason",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Where Were You?",
@@ -15173,7 +17442,17 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb19-event-24"
+      "event_key": "bb19-event-24",
+      "participants": [
+        "Christmas",
+        "Elena",
+        "Jason",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Fitting In",
@@ -15206,7 +17485,16 @@
       "winners": [
         "Christmas"
       ],
-      "event_key": "bb19-event-26"
+      "event_key": "bb19-event-26",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Kevin",
+        "Mark",
+        "Matt",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Slippery Slope",
@@ -15259,7 +17547,15 @@
       "winners": [
         "Jason"
       ],
-      "event_key": "bb19-event-28"
+      "event_key": "bb19-event-28",
+      "participants": [
+        "Alex",
+        "Jason",
+        "Kevin",
+        "Matt",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Hide and Go Veto",
@@ -15292,7 +17588,14 @@
       "winners": [
         "Christmas"
       ],
-      "event_key": "bb19-event-30"
+      "event_key": "bb19-event-30",
+      "participants": [
+        "Alex",
+        "Christmas",
+        "Kevin",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Punch, Slap, Kick",
@@ -15326,7 +17629,13 @@
       "winners": [
         "Alex"
       ],
-      "event_key": "bb19-event-32"
+      "event_key": "bb19-event-32",
+      "participants": [
+        "Alex",
+        "Kevin",
+        "Paul",
+        "Raven"
+      ]
     },
     {
       "competition": "Big Top Drop",
@@ -15360,7 +17669,13 @@
       "winners": [
         "Josh"
       ],
-      "event_key": "bb19-event-34"
+      "event_key": "bb19-event-34",
+      "participants": [
+        "Christmas",
+        "Josh",
+        "Kevin",
+        "Paul"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -15391,7 +17706,12 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb19-event-36"
+      "event_key": "bb19-event-36",
+      "participants": [
+        "Christmas",
+        "Kevin",
+        "Paul"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -15422,7 +17742,11 @@
       "winners": [
         "Paul"
       ],
-      "event_key": "bb19-event-38"
+      "event_key": "bb19-event-38",
+      "participants": [
+        "Christmas",
+        "Paul"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -15435,7 +17759,11 @@
       "winners": [
         "Josh"
       ],
-      "event_key": "bb19-event-39"
+      "event_key": "bb19-event-39",
+      "participants": [
+        "Christmas",
+        "Josh"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -15448,7 +17776,11 @@
       "winners": [
         "Josh"
       ],
-      "event_key": "bb19-event-40"
+      "event_key": "bb19-event-40",
+      "participants": [
+        "Josh",
+        "Paul"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -15552,7 +17884,17 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb20-event-06"
+      "event_key": "bb20-event-06",
+      "participants": [
+        "Angela",
+        "Bayleigh",
+        "JC",
+        "Kaitlyn",
+        "Sam",
+        "Steve",
+        "Tyler",
+        "Winston"
+      ]
     },
     {
       "competition": "Going Viral",
@@ -15586,7 +17928,23 @@
       "winners": [
         "Kaitlyn"
       ],
-      "event_key": "bb20-event-08"
+      "event_key": "bb20-event-08",
+      "participants": [
+        "Angela",
+        "Bayleigh",
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaitlyn",
+        "Kaycee",
+        "Rachel",
+        "Rockstar",
+        "Sam",
+        "Scottie",
+        "Swaggy C",
+        "Winston"
+      ]
     },
     {
       "competition": "HouseguestsOnly.com",
@@ -15620,7 +17978,22 @@
       "winners": [
         "Scottie"
       ],
-      "event_key": "bb20-event-10"
+      "event_key": "bb20-event-10",
+      "participants": [
+        "Angela",
+        "Bayleigh",
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Rachel",
+        "Rockstar",
+        "Sam",
+        "Scottie",
+        "Tyler",
+        "Winston"
+      ]
     },
     {
       "competition": "Giddy Up",
@@ -15654,7 +18027,21 @@
       "winners": [
         "Sam"
       ],
-      "event_key": "bb20-event-12"
+      "event_key": "bb20-event-12",
+      "participants": [
+        "Angela",
+        "Bayleigh",
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaitlyn",
+        "Kaycee",
+        "Rachel",
+        "Rockstar",
+        "Sam",
+        "Tyler"
+      ]
     },
     {
       "competition": "Punch, Slap, Kick",
@@ -15702,7 +18089,20 @@
       "winners": [
         "Bayleigh"
       ],
-      "event_key": "bb20-event-15"
+      "event_key": "bb20-event-15",
+      "participants": [
+        "Angela",
+        "Bayleigh",
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Rachel",
+        "Rockstar",
+        "Scottie",
+        "Tyler"
+      ]
     },
     {
       "competition": "Goober Driver",
@@ -15736,7 +18136,19 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb20-event-17"
+      "event_key": "bb20-event-17",
+      "participants": [
+        "Angela",
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Rockstar",
+        "Sam",
+        "Scottie",
+        "Tyler"
+      ]
     },
     {
       "competition": "Crack the Code",
@@ -15817,7 +18229,18 @@
       "winners": [
         "Haleigh"
       ],
-      "event_key": "bb20-event-20"
+      "event_key": "bb20-event-20",
+      "participants": [
+        "Brett",
+        "Faysal",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Rockstar",
+        "Sam",
+        "Scottie",
+        "Tyler"
+      ]
     },
     {
       "competition": "Hack the House",
@@ -15876,7 +18299,17 @@
       "winners": [
         "Faysal"
       ],
-      "event_key": "bb20-event-23"
+      "event_key": "bb20-event-23",
+      "participants": [
+        "Angela",
+        "Brett",
+        "Faysal",
+        "JC",
+        "Kaycee",
+        "Sam",
+        "Scottie",
+        "Tyler"
+      ]
     },
     {
       "competition": "Zingbot Competition",
@@ -15931,7 +18364,16 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb20-event-25"
+      "event_key": "bb20-event-25",
+      "participants": [
+        "Angela",
+        "Brett",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Sam",
+        "Tyler"
+      ]
     },
     {
       "competition": "Item Catching",
@@ -15982,7 +18424,16 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb20-event-28"
+      "event_key": "bb20-event-28",
+      "participants": [
+        "Brett",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Sam",
+        "Scottie",
+        "Tyler"
+      ]
     },
     {
       "competition": "Seesaw",
@@ -16016,7 +18467,15 @@
       "winners": [
         "Kaycee"
       ],
-      "event_key": "bb20-event-30"
+      "event_key": "bb20-event-30",
+      "participants": [
+        "Angela",
+        "Brett",
+        "Haleigh",
+        "JC",
+        "Kaycee",
+        "Sam"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -16050,7 +18509,14 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb20-event-32"
+      "event_key": "bb20-event-32",
+      "participants": [
+        "Angela",
+        "Brett",
+        "JC",
+        "Sam",
+        "Tyler"
+      ]
     },
     {
       "competition": "Perfect Shot",
@@ -16084,7 +18550,13 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb20-event-34"
+      "event_key": "bb20-event-34",
+      "participants": [
+        "Angela",
+        "JC",
+        "Kaycee",
+        "Sam"
+      ]
     },
     {
       "competition": "The Maze",
@@ -16117,7 +18589,12 @@
       "winners": [
         "JC"
       ],
-      "event_key": "bb20-event-36"
+      "event_key": "bb20-event-36",
+      "participants": [
+        "JC",
+        "Kaycee",
+        "Tyler"
+      ]
     },
     {
       "competition": "Pull Some Strings",
@@ -16149,7 +18626,12 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb20-event-38"
+      "event_key": "bb20-event-38",
+      "participants": [
+        "JC",
+        "Kaycee",
+        "Tyler"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -16162,7 +18644,11 @@
       "winners": [
         "Kaycee"
       ],
-      "event_key": "bb20-event-39"
+      "event_key": "bb20-event-39",
+      "participants": [
+        "JC",
+        "Kaycee"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -16175,7 +18661,11 @@
       "winners": [
         "Kaycee"
       ],
-      "event_key": "bb20-event-39"
+      "event_key": "bb20-event-39",
+      "participants": [
+        "JC",
+        "Kaycee"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -16188,7 +18678,11 @@
       "winners": [
         "Kaycee"
       ],
-      "event_key": "bb20-event-40"
+      "event_key": "bb20-event-40",
+      "participants": [
+        "Kaycee",
+        "Tyler"
+      ]
     },
     {
       "competition": "The Search for Camp BB",
@@ -16218,7 +18712,23 @@
       "winners": [
         "Christie"
       ],
-      "event_key": "bb21-event-02"
+      "event_key": "bb21-event-02",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Isabella",
+        "Jack",
+        "Jessica",
+        "Kathryn",
+        "Kemi",
+        "Nick",
+        "Nicole",
+        "Ovi",
+        "Sam",
+        "Tommy"
+      ]
     },
     {
       "competition": "HouseguestsOnly.com",
@@ -16272,7 +18782,22 @@
       "winners": [
         "Jack"
       ],
-      "event_key": "bb21-event-05"
+      "event_key": "bb21-event-05",
+      "participants": [
+        "Analyse",
+        "Cliff",
+        "Holly",
+        "Isabella",
+        "Jack",
+        "Jackson",
+        "Jessica",
+        "Kathryn",
+        "Kemi",
+        "Nick",
+        "Nicole",
+        "Sam",
+        "Tommy"
+      ]
     },
     {
       "competition": "Chaos \"For Goodness Snakes",
@@ -16326,7 +18851,21 @@
       "winners": [
         "Nick"
       ],
-      "event_key": "bb21-event-08"
+      "event_key": "bb21-event-08",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Isabella",
+        "Jackson",
+        "Jessica",
+        "Kathryn",
+        "Nick",
+        "Nicole",
+        "Sam",
+        "Tommy"
+      ]
     },
     {
       "competition": "Panic \"Madagascar Mayhem",
@@ -16396,7 +18935,21 @@
       "winners": [
         "Cliff"
       ],
-      "event_key": "bb21-event-12"
+      "event_key": "bb21-event-12",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Isabella",
+        "Jack",
+        "Jackson",
+        "Jessica",
+        "Kathryn",
+        "Nicole",
+        "Sam",
+        "Tommy"
+      ]
     },
     {
       "competition": "Take It Off",
@@ -16432,7 +18985,20 @@
       "winners": [
         "Holly"
       ],
-      "event_key": "bb21-event-14"
+      "event_key": "bb21-event-14",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Holly",
+        "Jack",
+        "Jackson",
+        "Jessica",
+        "Kathryn",
+        "Nick",
+        "Nicole",
+        "Sam",
+        "Tommy"
+      ]
     },
     {
       "competition": "Counting Sheep",
@@ -16466,7 +19032,19 @@
       "winners": [
         "Jessica"
       ],
-      "event_key": "bb21-event-16"
+      "event_key": "bb21-event-16",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Jack",
+        "Jackson",
+        "Jessica",
+        "Kathryn",
+        "Nick",
+        "Nicole",
+        "Tommy"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -16500,7 +19078,18 @@
       "winners": [
         "Tommy"
       ],
-      "event_key": "bb21-event-18"
+      "event_key": "bb21-event-18",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Jackson",
+        "Kathryn",
+        "Nick",
+        "Nicole",
+        "Tommy"
+      ]
     },
     {
       "competition": "Caged Eggs",
@@ -16568,7 +19157,17 @@
       "winners": [
         "Jackson"
       ],
-      "event_key": "bb21-event-22"
+      "event_key": "bb21-event-22",
+      "participants": [
+        "Analyse",
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Jackson",
+        "Jessica",
+        "Nick",
+        "Nicole"
+      ]
     },
     {
       "competition": "In The Balance",
@@ -16602,7 +19201,16 @@
       "winners": [
         "Holly"
       ],
-      "event_key": "bb21-event-24"
+      "event_key": "bb21-event-24",
+      "participants": [
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Jessica",
+        "Nick",
+        "Nicole",
+        "Tommy"
+      ]
     },
     {
       "competition": "Pull Some Strings",
@@ -16657,7 +19265,15 @@
       "winners": [
         "Jackson"
       ],
-      "event_key": "bb21-event-26"
+      "event_key": "bb21-event-26",
+      "participants": [
+        "Christie",
+        "Cliff",
+        "Jackson",
+        "Jessica",
+        "Nicole",
+        "Tommy"
+      ]
     },
     {
       "competition": "Hide and Go Veto",
@@ -16691,7 +19307,14 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb21-event-28"
+      "event_key": "bb21-event-28",
+      "participants": [
+        "Christie",
+        "Cliff",
+        "Holly",
+        "Nicole",
+        "Tommy"
+      ]
     },
     {
       "competition": "What The Bleep?",
@@ -16725,7 +19348,13 @@
       "winners": [
         "Jackson"
       ],
-      "event_key": "bb21-event-30"
+      "event_key": "bb21-event-30",
+      "participants": [
+        "Cliff",
+        "Holly",
+        "Jackson",
+        "Tommy"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -16758,7 +19387,12 @@
       "winners": [
         "Nicole"
       ],
-      "event_key": "bb21-event-32"
+      "event_key": "bb21-event-32",
+      "participants": [
+        "Cliff",
+        "Holly",
+        "Nicole"
+      ]
     },
     {
       "competition": "Change of $cenery",
@@ -16809,7 +19443,12 @@
       "winners": [
         "Jackson"
       ],
-      "event_key": "bb21-event-35"
+      "event_key": "bb21-event-35",
+      "participants": [
+        "Holly",
+        "Jackson",
+        "Nicole"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -16822,7 +19461,11 @@
       "winners": [
         "Holly"
       ],
-      "event_key": "bb21-event-36"
+      "event_key": "bb21-event-36",
+      "participants": [
+        "Holly",
+        "Nicole"
+      ]
     },
     {
       "competition": "Sky High Memory",
@@ -16835,7 +19478,11 @@
       "winners": [
         "Holly"
       ],
-      "event_key": "bb21-event-36"
+      "event_key": "bb21-event-36",
+      "participants": [
+        "Holly",
+        "Nicole"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -16848,7 +19495,11 @@
       "winners": [
         "Jackson"
       ],
-      "event_key": "bb21-event-37"
+      "event_key": "bb21-event-37",
+      "participants": [
+        "Holly",
+        "Jackson"
+      ]
     },
     {
       "competition": "Only One Path",
@@ -16861,7 +19512,25 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-01"
+      "event_key": "bb22-event-01",
+      "participants": [
+        "Bayleigh",
+        "Christmas",
+        "Cody",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Enzo",
+        "Ian",
+        "Janelle",
+        "Kaysar",
+        "Keesha",
+        "Kevin",
+        "Memphis",
+        "Nicole A",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Don't Miss A Beat",
@@ -16912,7 +19581,23 @@
       "winners": [
         "Memphis"
       ],
-      "event_key": "bb22-event-04"
+      "event_key": "bb22-event-04",
+      "participants": [
+        "Bayleigh",
+        "Christmas",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Enzo",
+        "Ian",
+        "Janelle",
+        "Kaysar",
+        "Kevin",
+        "Memphis",
+        "Nicole A",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "In The Balance",
@@ -16968,7 +19653,22 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb22-event-07"
+      "event_key": "bb22-event-07",
+      "participants": [
+        "Bayleigh",
+        "Christmas",
+        "Cody",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Enzo",
+        "Ian",
+        "Janelle",
+        "Kaysar",
+        "Kevin",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Laser Maze",
@@ -17021,7 +19721,21 @@
       "winners": [
         "Enzo"
       ],
-      "event_key": "bb22-event-10"
+      "event_key": "bb22-event-10",
+      "participants": [
+        "Bayleigh",
+        "Christmas",
+        "Cody",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Enzo",
+        "Ian",
+        "Kaysar",
+        "Kevin",
+        "Memphis",
+        "Nicole F"
+      ]
     },
     {
       "competition": "Pose In Ivy",
@@ -17055,7 +19769,20 @@
       "winners": [
         "Christmas"
       ],
-      "event_key": "bb22-event-12"
+      "event_key": "bb22-event-12",
+      "participants": [
+        "Bayleigh",
+        "Christmas",
+        "Cody",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Ian",
+        "Kevin",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -17137,7 +19864,19 @@
       "winners": [
         "Dani"
       ],
-      "event_key": "bb22-event-15"
+      "event_key": "bb22-event-15",
+      "participants": [
+        "Cody",
+        "Da'Vonne",
+        "Dani",
+        "David",
+        "Enzo",
+        "Ian",
+        "Kevin",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Microbrews",
@@ -17171,7 +19910,18 @@
       "winners": [
         "Memphis"
       ],
-      "event_key": "bb22-event-17"
+      "event_key": "bb22-event-17",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Da'Vonne",
+        "David",
+        "Enzo",
+        "Kevin",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "The Maze",
@@ -17226,7 +19976,18 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-19"
+      "event_key": "bb22-event-19",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Dani",
+        "David",
+        "Enzo",
+        "Kevin",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Shootout",
@@ -17239,7 +20000,18 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-19"
+      "event_key": "bb22-event-19",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Dani",
+        "David",
+        "Enzo",
+        "Kevin",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "OTEV",
@@ -17273,7 +20045,16 @@
       "winners": [
         "Memphis"
       ],
-      "event_key": "bb22-event-21"
+      "event_key": "bb22-event-21",
+      "participants": [
+        "Christmas",
+        "Dani",
+        "David",
+        "Enzo",
+        "Memphis",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Berry Balanced",
@@ -17307,7 +20088,15 @@
       "winners": [
         "Tyler"
       ],
-      "event_key": "bb22-event-23"
+      "event_key": "bb22-event-23",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Dani",
+        "Enzo",
+        "Nicole F",
+        "Tyler"
+      ]
     },
     {
       "competition": "Berry Balanced",
@@ -17341,7 +20130,14 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-25"
+      "event_key": "bb22-event-25",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Enzo",
+        "Memphis",
+        "Nicole F"
+      ]
     },
     {
       "competition": "Snapshot Shuffle",
@@ -17375,7 +20171,13 @@
       "winners": [
         "Nicole F"
       ],
-      "event_key": "bb22-event-27"
+      "event_key": "bb22-event-27",
+      "participants": [
+        "Christmas",
+        "Enzo",
+        "Memphis",
+        "Nicole F"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -17408,7 +20210,12 @@
       "winners": [
         "Enzo"
       ],
-      "event_key": "bb22-event-29"
+      "event_key": "bb22-event-29",
+      "participants": [
+        "Christmas",
+        "Cody",
+        "Enzo"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -17459,7 +20266,12 @@
       "winners": [
         "Nicole F"
       ],
-      "event_key": "bb22-event-32"
+      "event_key": "bb22-event-32",
+      "participants": [
+        "Cody",
+        "Enzo",
+        "Nicole F"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -17472,7 +20284,11 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-33"
+      "event_key": "bb22-event-33",
+      "participants": [
+        "Cody",
+        "Enzo"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -17485,7 +20301,11 @@
       "winners": [
         "Cody"
       ],
-      "event_key": "bb22-event-34"
+      "event_key": "bb22-event-34",
+      "participants": [
+        "Cody",
+        "Nicole F"
+      ]
     },
     {
       "competition": "House of Cards",
@@ -17498,7 +20318,24 @@
       "winners": [
         "Frenchie"
       ],
-      "event_key": "bb23-event-01"
+      "event_key": "bb23-event-01",
+      "participants": [
+        "Alyssa",
+        "Brent",
+        "Britini",
+        "Christian",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Frenchie",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Travis",
+        "Whitney",
+        "Xavier"
+      ]
     },
     {
       "competition": "Do Not Disturb",
@@ -17553,7 +20390,22 @@
       "winners": [
         "Kyland"
       ],
-      "event_key": "bb23-event-04"
+      "event_key": "bb23-event-04",
+      "participants": [
+        "Alyssa",
+        "Brent",
+        "Britini",
+        "Christian",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Whitney",
+        "Xavier"
+      ]
     },
     {
       "competition": "Sequence Explosion",
@@ -17607,7 +20459,21 @@
       "winners": [
         "Xavier"
       ],
-      "event_key": "bb23-event-07"
+      "event_key": "bb23-event-07",
+      "participants": [
+        "Alyssa",
+        "Brent",
+        "Britini",
+        "Christian",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Sarah Beth",
+        "Tiffany",
+        "Whitney",
+        "Xavier"
+      ]
     },
     {
       "competition": "Microchip Mayhem",
@@ -17663,7 +20529,20 @@
       "winners": [
         "Christian"
       ],
-      "event_key": "bb23-event-10"
+      "event_key": "bb23-event-10",
+      "participants": [
+        "Alyssa",
+        "Britini",
+        "Christian",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Whitney"
+      ]
     },
     {
       "competition": "Hourglass",
@@ -17676,7 +20555,20 @@
       "winners": [
         "Christian"
       ],
-      "event_key": "bb23-event-10"
+      "event_key": "bb23-event-10",
+      "participants": [
+        "Alyssa",
+        "Britini",
+        "Christian",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Whitney"
+      ]
     },
     {
       "competition": "Roll It Down",
@@ -17730,7 +20622,19 @@
       "winners": [
         "Derek X"
       ],
-      "event_key": "bb23-event-13"
+      "event_key": "bb23-event-13",
+      "participants": [
+        "Alyssa",
+        "Britini",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -17785,7 +20689,18 @@
       "winners": [
         "Kyland"
       ],
-      "event_key": "bb23-event-15"
+      "event_key": "bb23-event-15",
+      "participants": [
+        "Alyssa",
+        "Britini",
+        "Claire",
+        "Derek F",
+        "Hannah",
+        "Kyland",
+        "Sarah Beth",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "As Close As You Can",
@@ -17860,7 +20775,17 @@
       "winners": [
         "Sarah Beth"
       ],
-      "event_key": "bb23-event-19"
+      "event_key": "bb23-event-19",
+      "participants": [
+        "Alyssa",
+        "Claire",
+        "Derek F",
+        "Derek X",
+        "Hannah",
+        "Sarah Beth",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "Chopping Block Roulette",
@@ -17929,7 +20854,16 @@
       "winners": [
         "Tiffany"
       ],
-      "event_key": "bb23-event-22"
+      "event_key": "bb23-event-22",
+      "participants": [
+        "Alyssa",
+        "Claire",
+        "Derek F",
+        "Hannah",
+        "Kyland",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "Coin of Destiny",
@@ -17957,7 +20891,10 @@
       "variation": "Coin of Destiny (Toss)",
       "result": "Tiffany is dethroned",
       "winners": [],
-      "event_key": "bb23-event-24"
+      "event_key": "bb23-event-24",
+      "participants": [
+        "Claire"
+      ]
     },
     {
       "competition": "Snapshot Shuffle",
@@ -17991,7 +20928,15 @@
       "winners": [
         "Tiffany"
       ],
-      "event_key": "bb23-event-26"
+      "event_key": "bb23-event-26",
+      "participants": [
+        "Alyssa",
+        "Derek F",
+        "Hannah",
+        "Kyland",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "Microbrews",
@@ -18044,7 +20989,14 @@
       "winners": [
         "Hannah"
       ],
-      "event_key": "bb23-event-28"
+      "event_key": "bb23-event-28",
+      "participants": [
+        "Alyssa",
+        "Derek F",
+        "Hannah",
+        "Kyland",
+        "Xavier"
+      ]
     },
     {
       "competition": "Kaitlyn's Puzzle",
@@ -18077,7 +21029,13 @@
       "winners": [
         "Kyland"
       ],
-      "event_key": "bb23-event-30"
+      "event_key": "bb23-event-30",
+      "participants": [
+        "Derek F",
+        "Kyland",
+        "Tiffany",
+        "Xavier"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -18108,7 +21066,12 @@
       "variation": "BB Ballers",
       "result": "Azäh wins HOH",
       "winners": [],
-      "event_key": "bb23-event-32"
+      "event_key": "bb23-event-32",
+      "participants": [
+        "Derek F",
+        "Hannah",
+        "Xavier"
+      ]
     },
     {
       "competition": "What The Bleep?",
@@ -18140,7 +21103,12 @@
       "winners": [
         "Xavier"
       ],
-      "event_key": "bb23-event-34"
+      "event_key": "bb23-event-34",
+      "participants": [
+        "Derek F",
+        "Kyland",
+        "Xavier"
+      ]
     },
     {
       "competition": "Seesaw",
@@ -18189,7 +21157,12 @@
       "winners": [
         "Xavier"
       ],
-      "event_key": "bb23-event-36"
+      "event_key": "bb23-event-36",
+      "participants": [
+        "Azah",
+        "Derek F",
+        "Xavier"
+      ]
     },
     {
       "competition": "Who Did What?",
@@ -18200,7 +21173,11 @@
       "variation": "Four of a Kind",
       "result": "Azäh wins Final HOH Part 2",
       "winners": [],
-      "event_key": "bb23-event-37"
+      "event_key": "bb23-event-37",
+      "participants": [
+        "Azah",
+        "Derek F"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -18213,7 +21190,11 @@
       "winners": [
         "Xavier"
       ],
-      "event_key": "bb23-event-38"
+      "event_key": "bb23-event-38",
+      "participants": [
+        "Azah",
+        "Xavier"
+      ]
     },
     {
       "competition": "Kaitlyn's Puzzle",
@@ -18226,7 +21207,24 @@
       "winners": [
         "Daniel"
       ],
-      "event_key": "bb24-event-01"
+      "event_key": "bb24-event-01",
+      "participants": [
+        "Alyssa",
+        "Ameerah",
+        "Brittany",
+        "Daniel",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Nicole",
+        "Paloma",
+        "Taylor",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "Ren Fest",
@@ -18263,7 +21261,23 @@
       "winners": [
         "Jasmine"
       ],
-      "event_key": "bb24-event-03"
+      "event_key": "bb24-event-03",
+      "participants": [
+        "Alyssa",
+        "Ameerah",
+        "Brittany",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Nicole",
+        "Pooch",
+        "Taylor",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "Relay Race",
@@ -18296,7 +21310,22 @@
       "winners": [
         "Turner"
       ],
-      "event_key": "bb24-event-05"
+      "event_key": "bb24-event-05",
+      "participants": [
+        "Alyssa",
+        "Ameerah",
+        "Brittany",
+        "Daniel",
+        "Indy",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Nicole",
+        "Taylor",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "Faster Than A Speeding Veto",
@@ -18329,7 +21358,21 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-07"
+      "event_key": "bb24-event-07",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Daniel",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Nicole",
+        "Taylor",
+        "Terrance"
+      ]
     },
     {
       "competition": "Shootout",
@@ -18342,7 +21385,21 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-07"
+      "event_key": "bb24-event-07",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Daniel",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Nicole",
+        "Taylor",
+        "Terrance"
+      ]
     },
     {
       "competition": "What Did They Just Do?",
@@ -18378,7 +21435,20 @@
       "winners": [
         "Michael"
       ],
-      "event_key": "bb24-event-09"
+      "event_key": "bb24-event-09",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Daniel",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Taylor",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "OTEV",
@@ -18414,7 +21484,19 @@
       "winners": [
         "Taylor"
       ],
-      "event_key": "bb24-event-11"
+      "event_key": "bb24-event-11",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Indy",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Monte",
+        "Taylor",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -18448,7 +21530,18 @@
       "winners": [
         "Michael"
       ],
-      "event_key": "bb24-event-13"
+      "event_key": "bb24-event-13",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Jasmine",
+        "Joseph",
+        "Kyle",
+        "Michael",
+        "Monte",
+        "Terrance",
+        "Turner"
+      ]
     },
     {
       "competition": "Do You See The VIP?",
@@ -18461,7 +21554,10 @@
       "winners": [
         "Terrance"
       ],
-      "event_key": "bb24-event-14"
+      "event_key": "bb24-event-14",
+      "participants": [
+        "Terrance"
+      ]
     },
     {
       "competition": "Stay or Fold",
@@ -18514,7 +21610,15 @@
       "winners": [
         "Turner"
       ],
-      "event_key": "bb24-event-17"
+      "event_key": "bb24-event-17",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Kyle",
+        "Monte",
+        "Taylor",
+        "Turner"
+      ]
     },
     {
       "competition": "Slippery Slope",
@@ -18548,7 +21652,15 @@
       "winners": [
         "Michael"
       ],
-      "event_key": "bb24-event-19"
+      "event_key": "bb24-event-19",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Michael",
+        "Monte",
+        "Taylor",
+        "Terrance"
+      ]
     },
     {
       "competition": "Zingbot Competition",
@@ -18561,7 +21673,15 @@
       "winners": [
         "Michael"
       ],
-      "event_key": "bb24-event-19"
+      "event_key": "bb24-event-19",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Michael",
+        "Monte",
+        "Taylor",
+        "Terrance"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -18595,7 +21715,14 @@
       "winners": [
         "Turner"
       ],
-      "event_key": "bb24-event-21"
+      "event_key": "bb24-event-21",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Monte",
+        "Taylor",
+        "Turner"
+      ]
     },
     {
       "competition": "Feeling Knotty",
@@ -18629,7 +21756,13 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-23"
+      "event_key": "bb24-event-23",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Monte",
+        "Taylor"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -18642,7 +21775,13 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-23"
+      "event_key": "bb24-event-23",
+      "participants": [
+        "Alyssa",
+        "Brittany",
+        "Monte",
+        "Taylor"
+      ]
     },
     {
       "competition": "Gear Puzzle",
@@ -18674,7 +21813,12 @@
       "winners": [
         "Taylor"
       ],
-      "event_key": "bb24-event-25"
+      "event_key": "bb24-event-25",
+      "participants": [
+        "Brittany",
+        "Taylor",
+        "Turner"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -18706,7 +21850,12 @@
       "winners": [
         "Turner"
       ],
-      "event_key": "bb24-event-27"
+      "event_key": "bb24-event-27",
+      "participants": [
+        "Monte",
+        "Taylor",
+        "Turner"
+      ]
     },
     {
       "competition": "What Competition Was That?",
@@ -18719,7 +21868,11 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-28"
+      "event_key": "bb24-event-28",
+      "participants": [
+        "Monte",
+        "Taylor"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -18732,7 +21885,11 @@
       "winners": [
         "Monte"
       ],
-      "event_key": "bb24-event-29"
+      "event_key": "bb24-event-29",
+      "participants": [
+        "Monte",
+        "Turner"
+      ]
     },
     {
       "competition": "Kaitlyn's Puzzle",
@@ -18813,7 +21970,22 @@
       "winners": [
         "Reilly"
       ],
-      "event_key": "bb25-event-05"
+      "event_key": "bb25-event-05",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Hisam",
+        "Izzy",
+        "Jag",
+        "Luke",
+        "Matt",
+        "Mecole",
+        "Red",
+        "Reilly"
+      ]
     },
     {
       "competition": "Giddy Up",
@@ -18847,7 +22019,23 @@
       "winners": [
         "Hisam"
       ],
-      "event_key": "bb25-event-07"
+      "event_key": "bb25-event-07",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Hisam",
+        "Izzy",
+        "Jag",
+        "Jared",
+        "Matt",
+        "Mecole",
+        "Red"
+      ]
     },
     {
       "competition": "Twisted Tasks",
@@ -18881,7 +22069,22 @@
       "winners": [
         "Felicia"
       ],
-      "event_key": "bb25-event-09"
+      "event_key": "bb25-event-09",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Izzy",
+        "Jag",
+        "Jared",
+        "Matt",
+        "Mecole",
+        "Red"
+      ]
     },
     {
       "competition": "Rollin' in the Dough",
@@ -18915,7 +22118,21 @@
       "winners": [
         "Cameron"
       ],
-      "event_key": "bb25-event-11"
+      "event_key": "bb25-event-11",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Izzy",
+        "Jag",
+        "Jared",
+        "Matt",
+        "Mecole",
+        "Red"
+      ]
     },
     {
       "competition": "Artifact Stack",
@@ -18968,7 +22185,22 @@
       "winners": [
         "Jared"
       ],
-      "event_key": "bb25-event-14"
+      "event_key": "bb25-event-14",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Izzy",
+        "Jag",
+        "Jared",
+        "Matt",
+        "Mecole",
+        "Red"
+      ]
     },
     {
       "competition": "Microbrews",
@@ -19002,7 +22234,20 @@
       "winners": [
         "Cameron"
       ],
-      "event_key": "bb25-event-16"
+      "event_key": "bb25-event-16",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Izzy",
+        "Jag",
+        "Matt",
+        "Mecole"
+      ]
     },
     {
       "competition": "Yankee Swap",
@@ -19057,7 +22302,19 @@
       "winners": [
         "Jared"
       ],
-      "event_key": "bb25-event-18"
+      "event_key": "bb25-event-18",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Jag",
+        "Jared",
+        "Matt",
+        "Mecole"
+      ]
     },
     {
       "competition": "Slippery Slope",
@@ -19091,7 +22348,18 @@
       "winners": [
         "Cory"
       ],
-      "event_key": "bb25-event-20"
+      "event_key": "bb25-event-20",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Jag",
+        "Matt",
+        "Mecole"
+      ]
     },
     {
       "competition": "Somewhere Over The Veto",
@@ -19171,7 +22439,19 @@
       "winners": [
         "Cameron"
       ],
-      "event_key": "bb25-event-25"
+      "event_key": "bb25-event-25",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cameron",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Jag",
+        "Matt",
+        "Mecole"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -19226,7 +22506,17 @@
       "winners": [
         "Bowie Jane"
       ],
-      "event_key": "bb25-event-27"
+      "event_key": "bb25-event-27",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "OTEV",
@@ -19281,7 +22571,16 @@
       "winners": [
         "Jag"
       ],
-      "event_key": "bb25-event-29"
+      "event_key": "bb25-event-29",
+      "participants": [
+        "America",
+        "Blue",
+        "Cirie",
+        "Cory",
+        "Felicia",
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "Dizzy Discs",
@@ -19355,7 +22654,16 @@
       "winners": [
         "Jag"
       ],
-      "event_key": "bb25-event-33"
+      "event_key": "bb25-event-33",
+      "participants": [
+        "America",
+        "Blue",
+        "Bowie Jane",
+        "Cirie",
+        "Felicia",
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "Snapshot Shuffle",
@@ -19389,7 +22697,14 @@
       "winners": [
         "Bowie Jane"
       ],
-      "event_key": "bb25-event-35"
+      "event_key": "bb25-event-35",
+      "participants": [
+        "America",
+        "Bowie Jane",
+        "Cirie",
+        "Felicia",
+        "Matt"
+      ]
     },
     {
       "competition": "Big Top Drop",
@@ -19423,7 +22738,13 @@
       "winners": [
         "Matt"
       ],
-      "event_key": "bb25-event-37"
+      "event_key": "bb25-event-37",
+      "participants": [
+        "Cirie",
+        "Felicia",
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "Coin Stacking",
@@ -19476,7 +22797,12 @@
       "winners": [
         "Bowie Jane"
       ],
-      "event_key": "bb25-event-40"
+      "event_key": "bb25-event-40",
+      "participants": [
+        "Bowie Jane",
+        "Felicia",
+        "Jag"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -19508,7 +22834,12 @@
       "winners": [
         "Matt"
       ],
-      "event_key": "bb25-event-42"
+      "event_key": "bb25-event-42",
+      "participants": [
+        "Bowie Jane",
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "What Competition Was That?",
@@ -19521,7 +22852,11 @@
       "winners": [
         "Jag"
       ],
-      "event_key": "bb25-event-43"
+      "event_key": "bb25-event-43",
+      "participants": [
+        "Bowie Jane",
+        "Jag"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -19534,7 +22869,11 @@
       "winners": [
         "Jag"
       ],
-      "event_key": "bb25-event-44"
+      "event_key": "bb25-event-44",
+      "participants": [
+        "Jag",
+        "Matt"
+      ]
     },
     {
       "competition": "Repeat After Me",
@@ -19579,7 +22918,11 @@
       "variation": "AI Chip Install",
       "result": "Quinn is upgraded",
       "winners": [],
-      "event_key": "bb26-event-03"
+      "event_key": "bb26-event-03",
+      "participants": [
+        "Leah",
+        "Quinn"
+      ]
     },
     {
       "competition": "Facial Recognition",
@@ -19611,7 +22954,10 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb26-event-05"
+      "event_key": "bb26-event-05",
+      "participants": [
+        "Angela"
+      ]
     },
     {
       "competition": "As Close As You Can",
@@ -19624,7 +22970,10 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb26-event-05"
+      "event_key": "bb26-event-05",
+      "participants": [
+        "Angela"
+      ]
     },
     {
       "competition": "Shootout",
@@ -19637,7 +22986,10 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb26-event-05"
+      "event_key": "bb26-event-05",
+      "participants": [
+        "Angela"
+      ]
     },
     {
       "competition": "Spelling Search",
@@ -19684,7 +23036,23 @@
       "winners": [
         "Chelsie"
       ],
-      "event_key": "bb26-event-08"
+      "event_key": "bb26-event-08",
+      "participants": [
+        "Brooklyn",
+        "Cam",
+        "Cedric",
+        "Chelsie",
+        "Joseph",
+        "Kenney",
+        "Kimo",
+        "Leah",
+        "Lisa",
+        "Makensy",
+        "Quinn",
+        "Rubina",
+        "T'kor",
+        "Tucker"
+      ]
     },
     {
       "competition": "Stacking",
@@ -19736,7 +23104,22 @@
       "winners": [
         "Cedric"
       ],
-      "event_key": "bb26-event-11"
+      "event_key": "bb26-event-11",
+      "participants": [
+        "Angela",
+        "Brooklyn",
+        "Cam",
+        "Cedric",
+        "Joseph",
+        "Kenney",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Quinn",
+        "Rubina",
+        "T'kor",
+        "Tucker"
+      ]
     },
     {
       "competition": "Recharge My Core",
@@ -19788,7 +23171,21 @@
       "winners": [
         "Angela"
       ],
-      "event_key": "bb26-event-14"
+      "event_key": "bb26-event-14",
+      "participants": [
+        "Angela",
+        "Brooklyn",
+        "Cam",
+        "Chelsie",
+        "Joseph",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Quinn",
+        "Rubina",
+        "T'kor",
+        "Tucker"
+      ]
     },
     {
       "competition": "Binary Bridge",
@@ -19840,7 +23237,21 @@
       "winners": [
         "Tucker"
       ],
-      "event_key": "bb26-event-17"
+      "event_key": "bb26-event-17",
+      "participants": [
+        "Angela",
+        "Brooklyn",
+        "Cam",
+        "Chelsie",
+        "Joseph",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Quinn",
+        "Rubina",
+        "T'kor",
+        "Tucker"
+      ]
     },
     {
       "competition": "Hide and Go Veto",
@@ -19892,7 +23303,19 @@
       "winners": [
         "T'kor"
       ],
-      "event_key": "bb26-event-20"
+      "event_key": "bb26-event-20",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Chelsie",
+        "Joseph",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Quinn",
+        "Rubina",
+        "T'kor"
+      ]
     },
     {
       "competition": "Slingshot Aim",
@@ -19965,7 +23388,18 @@
       "winners": [
         "Quinn"
       ],
-      "event_key": "bb26-event-23"
+      "event_key": "bb26-event-23",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Chelsie",
+        "Joseph",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Quinn",
+        "Rubina"
+      ]
     },
     {
       "competition": "The Black Box",
@@ -20017,7 +23451,17 @@
       "winners": [
         "Chelsie"
       ],
-      "event_key": "bb26-event-26"
+      "event_key": "bb26-event-26",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Chelsie",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Rubina",
+        "T'kor"
+      ]
     },
     {
       "competition": "OTEV",
@@ -20051,7 +23495,16 @@
       "winners": [
         "Leah"
       ],
-      "event_key": "bb26-event-28"
+      "event_key": "bb26-event-28",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Kimo",
+        "Leah",
+        "Makensy",
+        "Rubina",
+        "T'kor"
+      ]
     },
     {
       "competition": "Fitting In",
@@ -20119,7 +23572,15 @@
       "winners": [
         "Makensy"
       ],
-      "event_key": "bb26-event-32"
+      "event_key": "bb26-event-32",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Chelsie",
+        "Kimo",
+        "Makensy",
+        "Rubina"
+      ]
     },
     {
       "competition": "The Wild Robot",
@@ -20153,7 +23614,14 @@
       "winners": [
         "Chelsie"
       ],
-      "event_key": "bb26-event-34"
+      "event_key": "bb26-event-34",
+      "participants": [
+        "Angela",
+        "Cam",
+        "Chelsie",
+        "Kimo",
+        "Rubina"
+      ]
     },
     {
       "competition": "Roll It Down",
@@ -20187,7 +23655,13 @@
       "winners": [
         "Makensy"
       ],
-      "event_key": "bb26-event-36"
+      "event_key": "bb26-event-36",
+      "participants": [
+        "Cam",
+        "Kimo",
+        "Makensy",
+        "Rubina"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -20220,7 +23694,12 @@
       "winners": [
         "Chelsie"
       ],
-      "event_key": "bb26-event-38"
+      "event_key": "bb26-event-38",
+      "participants": [
+        "Cam",
+        "Chelsie",
+        "Rubina"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -20252,7 +23731,12 @@
       "winners": [
         "Chelsie"
       ],
-      "event_key": "bb26-event-40"
+      "event_key": "bb26-event-40",
+      "participants": [
+        "Cam",
+        "Chelsie",
+        "Makensy"
+      ]
     },
     {
       "competition": "Item Maze",
@@ -20265,7 +23749,11 @@
       "winners": [
         "Makensy"
       ],
-      "event_key": "bb26-event-41"
+      "event_key": "bb26-event-41",
+      "participants": [
+        "Cam",
+        "Makensy"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -20278,7 +23766,11 @@
       "winners": [
         "Makensy"
       ],
-      "event_key": "bb26-event-42"
+      "event_key": "bb26-event-42",
+      "participants": [
+        "Chelsie",
+        "Makensy"
+      ]
     },
     {
       "competition": "Build the Bridge",
@@ -20323,7 +23815,13 @@
       "winners": [
         "Vince"
       ],
-      "event_key": "bb27-event-03"
+      "event_key": "bb27-event-03",
+      "participants": [
+        "Adrian",
+        "Ashley",
+        "Jimmy",
+        "Vince"
+      ]
     },
     {
       "competition": "HouseguestsOnly.com",
@@ -20375,7 +23873,25 @@
       "winners": [
         "Jimmy"
       ],
-      "event_key": "bb27-event-06"
+      "event_key": "bb27-event-06",
+      "participants": [
+        "Adrian",
+        "Amy",
+        "Ashley",
+        "Ava",
+        "Jimmy",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will",
+        "Zach"
+      ]
     },
     {
       "competition": "BB Break In",
@@ -20424,7 +23940,10 @@
       "winners": [
         "Mickey"
       ],
-      "event_key": "bb27-event-09"
+      "event_key": "bb27-event-09",
+      "participants": [
+        "Mickey"
+      ]
     },
     {
       "competition": "Ready, Set, Woah",
@@ -20485,7 +24004,23 @@
       "winners": [
         "Lauren"
       ],
-      "event_key": "bb27-event-13"
+      "event_key": "bb27-event-13",
+      "participants": [
+        "Adrian",
+        "Ashley",
+        "Ava",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will",
+        "Zach"
+      ]
     },
     {
       "competition": "Laser Maze",
@@ -20537,7 +24072,22 @@
       "winners": [
         "Rylie"
       ],
-      "event_key": "bb27-event-16"
+      "event_key": "bb27-event-16",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Jimmy",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will",
+        "Zach"
+      ]
     },
     {
       "competition": "New Rule",
@@ -20550,7 +24100,22 @@
       "winners": [
         "Rylie"
       ],
-      "event_key": "bb27-event-16"
+      "event_key": "bb27-event-16",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Jimmy",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will",
+        "Zach"
+      ]
     },
     {
       "competition": "Binary Bridge",
@@ -20602,7 +24167,21 @@
       "winners": [
         "Ava"
       ],
-      "event_key": "bb27-event-19"
+      "event_key": "bb27-event-19",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will",
+        "Zach"
+      ]
     },
     {
       "competition": "Shootout",
@@ -20675,7 +24254,20 @@
       "winners": [
         "Rachel"
       ],
-      "event_key": "bb27-event-22"
+      "event_key": "bb27-event-22",
+      "participants": [
+        "Ashley",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Rylie",
+        "Vince",
+        "Will"
+      ]
     },
     {
       "competition": "OTEV",
@@ -20727,7 +24319,19 @@
       "winners": [
         "Vince"
       ],
-      "event_key": "bb27-event-25"
+      "event_key": "bb27-event-25",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Katherine",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Mickey",
+        "Morgan",
+        "Vince",
+        "Will"
+      ]
     },
     {
       "competition": "To Drink or to Bluff",
@@ -20779,7 +24383,18 @@
       "winners": [
         "Keanu"
       ],
-      "event_key": "bb27-event-28"
+      "event_key": "bb27-event-28",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Keanu",
+        "Kelley",
+        "Lauren",
+        "Mickey",
+        "Morgan",
+        "Rachel",
+        "Will"
+      ]
     },
     {
       "competition": "Hourglass",
@@ -20853,7 +24468,11 @@
       "variation": "Mastermind's Maniacal Maze",
       "result": "Rachel is evicted",
       "winners": [],
-      "event_key": "bb27-event-32"
+      "event_key": "bb27-event-32",
+      "participants": [
+        "Lauren",
+        "Rachel"
+      ]
     },
     {
       "competition": "Mastermind's Maniacal Maze",
@@ -20866,7 +24485,10 @@
       "winners": [
         "Lauren"
       ],
-      "event_key": "bb27-event-33"
+      "event_key": "bb27-event-33",
+      "participants": [
+        "Lauren"
+      ]
     },
     {
       "competition": "BB Comics",
@@ -20918,7 +24540,15 @@
       "winners": [
         "Vince"
       ],
-      "event_key": "bb27-event-36"
+      "event_key": "bb27-event-36",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Keanu",
+        "Kelley",
+        "Morgan",
+        "Vince"
+      ]
     },
     {
       "competition": "What Did They Just Do?",
@@ -20931,7 +24561,15 @@
       "winners": [
         "Vince"
       ],
-      "event_key": "bb27-event-36"
+      "event_key": "bb27-event-36",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Keanu",
+        "Kelley",
+        "Morgan",
+        "Vince"
+      ]
     },
     {
       "competition": "Seesaw",
@@ -20983,7 +24621,14 @@
       "winners": [
         "Morgan"
       ],
-      "event_key": "bb27-event-39"
+      "event_key": "bb27-event-39",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Keanu",
+        "Lauren",
+        "Morgan"
+      ]
     },
     {
       "competition": "What Did They Just Do?",
@@ -21017,7 +24662,13 @@
       "winners": [
         "Vince"
       ],
-      "event_key": "bb27-event-41"
+      "event_key": "bb27-event-41",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Keanu",
+        "Vince"
+      ]
     },
     {
       "competition": "Microbrews",
@@ -21050,7 +24701,12 @@
       "winners": [
         "Morgan"
       ],
-      "event_key": "bb27-event-43"
+      "event_key": "bb27-event-43",
+      "participants": [
+        "Ashley",
+        "Ava",
+        "Morgan"
+      ]
     },
     {
       "competition": "Cover Your Days",
@@ -21082,7 +24738,12 @@
       "winners": [
         "Morgan"
       ],
-      "event_key": "bb27-event-45"
+      "event_key": "bb27-event-45",
+      "participants": [
+        "Ashley",
+        "Morgan",
+        "Vince"
+      ]
     },
     {
       "competition": "Blockbusters",
@@ -21095,7 +24756,11 @@
       "winners": [
         "Ashley"
       ],
-      "event_key": "bb27-event-46"
+      "event_key": "bb27-event-46",
+      "participants": [
+        "Ashley",
+        "Vince"
+      ]
     },
     {
       "competition": "Jury Statements",
@@ -21108,7 +24773,11 @@
       "winners": [
         "Ashley"
       ],
-      "event_key": "bb27-event-47"
+      "event_key": "bb27-event-47",
+      "participants": [
+        "Ashley",
+        "Morgan"
+      ]
     },
     {
       "competition": "Find the BB-tonium",
@@ -21205,7 +24874,12 @@
       "winners": [
         "Dee"
       ],
-      "event_key": "bb28-event-05"
+      "event_key": "bb28-event-05",
+      "participants": [
+        "Angela",
+        "Dee",
+        "Devens"
+      ]
     },
     {
       "competition": "Back From the Future",
@@ -21257,7 +24931,24 @@
       "winners": [
         "Devens"
       ],
-      "event_key": "bb28-event-08"
+      "event_key": "bb28-event-08",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Chuk",
+        "Devens",
+        "Drew",
+        "Haley",
+        "Jason",
+        "Kamu",
+        "LaTrice",
+        "Lyric",
+        "Mallory",
+        "Melody",
+        "Rome",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21323,7 +25014,23 @@
       "winners": [
         "Kamu"
       ],
-      "event_key": "bb28-event-12"
+      "event_key": "bb28-event-12",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Chuk",
+        "Dee",
+        "Drew",
+        "Haley",
+        "Jason",
+        "Kamu",
+        "LaTrice",
+        "Lyric",
+        "Mallory",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21389,7 +25096,22 @@
       "winners": [
         "Haley"
       ],
-      "event_key": "bb28-event-16"
+      "event_key": "bb28-event-16",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Chuk",
+        "Dee",
+        "Devens",
+        "Drew",
+        "Haley",
+        "LaTrice",
+        "Lyric",
+        "Mallory",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21455,7 +25177,21 @@
       "winners": [
         "LaTrice"
       ],
-      "event_key": "bb28-event-20"
+      "event_key": "bb28-event-20",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Chuk",
+        "Dee",
+        "Devens",
+        "Drew",
+        "Kamu",
+        "LaTrice",
+        "Mallory",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21521,7 +25257,20 @@
       "winners": [
         "Yash"
       ],
-      "event_key": "bb28-event-24"
+      "event_key": "bb28-event-24",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Dee",
+        "Devens",
+        "Drew",
+        "Haley",
+        "Kamu",
+        "Mallory",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21587,7 +25336,19 @@
       "winners": [
         "Dee"
       ],
-      "event_key": "bb28-event-28"
+      "event_key": "bb28-event-28",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Dee",
+        "Devens",
+        "Drew",
+        "Haley",
+        "LaTrice",
+        "Mallory",
+        "Melody",
+        "Taylor"
+      ]
     },
     {
       "competition": "BB Time Capsule",
@@ -21730,7 +25491,17 @@
       "winners": [
         "Drew"
       ],
-      "event_key": "bb28-event-36"
+      "event_key": "bb28-event-36",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Devens",
+        "Drew",
+        "LaTrice",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     },
     {
       "competition": "The Gold, the Bad, and the Ugly",
@@ -21782,7 +25553,16 @@
       "winners": [
         "Barrett"
       ],
-      "event_key": "bb28-event-39"
+      "event_key": "bb28-event-39",
+      "participants": [
+        "Angela",
+        "Barrett",
+        "Dee",
+        "Devens",
+        "Melody",
+        "Taylor",
+        "Yash"
+      ]
     }
   ],
   "houseguests": [

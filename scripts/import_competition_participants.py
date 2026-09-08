@@ -1,4 +1,4 @@
-"""Import sourced non-HOH participation from houseguest competition-history tables."""
+"""Import sourced participation from houseguest competition-history tables."""
 import argparse
 import json
 import re
@@ -30,6 +30,10 @@ OVERRIDES = {
     (11, "bb11-event-06"): {"Casey", "Chima", "Jeff", "Jordan", "Kevin", "Laura", "Lydia", "Michele", "Natalie", "Ronnie", "Russell", "Jessie"},
     (11, "bb11-event-15"): {"Chima", "Jeff", "Jordan", "Kevin", "Lydia", "Michele", "Natalie", "Russell", "Jessie"},
     (15, "bb15-event-25"): {"Candice", "Judd", "Jessie", "Helen"},
+    (16, "bb16-event-01"): {"Amber", "Cody", "Devin", "Donny", "Frankie", "Joey", "Nicole", "Paola"},
+    (16, "bb16-event-02"): {"Brittany", "Caleb", "Christine", "Derrick", "Hayden", "Jocasta", "Victoria", "Zach"},
+    (17, "bb17-event-01"): {"Austin", "Audrey", "Clay", "Jace", "James", "Meg", "Shelli"},
+    (17, "bb17-event-02"): {"Becky", "Jackie", "Jason", "Jeff", "John", "Liz", "Steve"},
     (17, "bb17-event-29"): {"Shelli", "Jackie", "Becky", "John"},
     (18, "bb18-event-04"): {"Corey", "Glenn"},
     (18, "bb18-event-31"): {"Nicole", "Paul", "James", "Corey", "Victor", "Natalie", "Michelle", "Paulie"},
@@ -43,6 +47,9 @@ OVERRIDES = {
     (23, "bb23-event-16"): {"Claire", "Derek F", "Kyland", "Sarah Beth", "Tiffany"},
     (23, "bb23-event-20"): {"Alyssa"},
     (23, "bb23-event-23"): {"Claire", "Derek F"},
+    (23, "bb23-event-36"): {"Azah", "Derek F", "Xavier"},
+    (23, "bb23-event-37"): {"Azah", "Derek F"},
+    (23, "bb23-event-38"): {"Azah", "Xavier"},
     (25, "bb25-event-01"): {"America", "Jared", "Bowie Jane", "Mecole"},
     (25, "bb25-event-02"): {"Matt", "Blue", "Kirsten", "Hisam"},
     (25, "bb25-event-03"): {"Felicia", "Izzy", "Jag", "Cameron"},
@@ -194,15 +201,12 @@ def main(download):
 
     # Rebuild imported lineups from scratch so parser improvements remove stale rows.
     for appearance in catalog["appearances"]:
-        if normalize_type(appearance["type"]) != "hoh":
-            appearance.pop("participants", None)
+        appearance.pop("participants", None)
 
     # One chronological slot for each distinct televised event.
     slots = defaultdict(list)
     seen = set()
     for appearance in catalog["appearances"]:
-        if normalize_type(appearance["type"]) == "hoh":
-            continue
         identity = (appearance["season"], appearance["event_key"])
         if identity in seen:
             continue
@@ -217,7 +221,7 @@ def main(download):
         if not html:
             continue
         for season, week, sequence, label, status in histories(html):
-            if season != player["season"] or normalize_type(label) == "hoh" or not participated(status):
+            if season != player["season"] or not participated(status):
                 continue
             candidates = slots.get((season, week, normalize_type(label)), [])
             if sequence <= len(candidates):
@@ -233,14 +237,13 @@ def main(download):
             )
 
     for appearance in catalog["appearances"]:
-        if normalize_type(appearance["type"]) != "hoh":
-            players = set(event_players.get((appearance["season"], appearance["event_key"]), ()))
-            players.update(appearance.get("winners", []))
-            if players:
-                appearance["participants"] = sorted(players, key=str.casefold)
+        players = set(event_players.get((appearance["season"], appearance["event_key"]), ()))
+        players.update(appearance.get("winners", []))
+        if players:
+            appearance["participants"] = sorted(players, key=str.casefold)
 
     DATA.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n")
-    print(f"Mapped {len(event_players)} non-HOH events; {len(unmatched)} played rows unmatched")
+    print(f"Mapped {len(event_players)} events; {len(unmatched)} played rows unmatched")
     for row in unmatched[:100]:
         print("UNMATCHED", *row)
 

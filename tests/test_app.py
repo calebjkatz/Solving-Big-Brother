@@ -75,6 +75,50 @@ class BigBrotherStatsTests(unittest.TestCase):
             """).fetchone()[0]
             self.assertEqual(invalid_winners, 0)
 
+    def test_every_hoh_competition_has_documented_players(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            missing = db.execute("""
+                SELECT COUNT(*)
+                FROM competition_instances ci
+                WHERE LOWER(ci.competition_type) LIKE '%hoh%'
+                  AND NOT EXISTS (
+                      SELECT 1 FROM competition_participants cp
+                      WHERE cp.instance_id = ci.id
+                        AND cp.notes LIKE '%participant%'
+                  )
+            """).fetchone()[0]
+            self.assertEqual(missing, 0)
+
+            premiere_fields = db.execute("""
+                SELECT ci.source_event_key, COUNT(cp.houseguest_id)
+                FROM competition_instances ci
+                JOIN competition_participants cp ON cp.instance_id = ci.id
+                WHERE ci.source_event_key IN (
+                    'bb16-event-01', 'bb16-event-02',
+                    'bb17-event-01', 'bb17-event-02'
+                ) AND cp.notes LIKE '%participant%'
+                GROUP BY ci.source_event_key
+            """).fetchall()
+            self.assertEqual(dict(premiere_fields), {
+                "bb16-event-01": 8, "bb16-event-02": 8,
+                "bb17-event-01": 7, "bb17-event-02": 7,
+            })
+
+            bb23_final = db.execute("""
+                SELECT ci.source_event_key, COUNT(cp.houseguest_id)
+                FROM competition_instances ci
+                JOIN competition_participants cp ON cp.instance_id = ci.id
+                WHERE ci.source_event_key IN (
+                    'bb23-event-36', 'bb23-event-37', 'bb23-event-38'
+                ) AND cp.notes LIKE '%participant%'
+                GROUP BY ci.source_event_key
+            """).fetchall()
+            self.assertEqual(dict(bb23_final), {
+                "bb23-event-36": 3, "bb23-event-37": 2,
+                "bb23-event-38": 2,
+            })
+
     def test_season_index_and_detail(self):
         response = self.client.get("/seasons")
         self.assertEqual(response.status_code, 200)
