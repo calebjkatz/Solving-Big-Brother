@@ -78,6 +78,22 @@ class BigBrotherStatsTests(unittest.TestCase):
         self.assertIn(b"Weaknesses", profile.data)
         self.assertIn(b"Memory-wall image source", profile.data)
 
+    def test_houseguest_bios_use_full_names_including_game_nicknames(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            rockstar = db.execute("""
+                SELECT h.bio, h.person_key FROM houseguests h
+                JOIN seasons s ON s.id = h.season_id
+                WHERE s.season_number = 20 AND h.name = 'Rockstar'
+            """).fetchone()
+            self.assertEqual(rockstar["person_key"], 'Angie "Rockstar" Lantry')
+            self.assertIn('Angie "Rockstar" Lantry competed', rockstar["bio"])
+            incomplete = db.execute("""
+                SELECT COUNT(*) FROM houseguests
+                WHERE bio NOT LIKE '%' || person_key || '%'
+            """).fetchone()[0]
+            self.assertEqual(incomplete, 0)
+
     def test_returning_player_has_season_and_combined_performance(self):
         connect = self.app.extensions["connect_db"]
         with connect() as db:
