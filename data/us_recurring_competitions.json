@@ -23958,11 +23958,24 @@
       "day": "12",
       "type": "POV",
       "variation": "Caught Creepin",
-      "result": "Keanu is awarded the Veto",
-      "winners": [],
+      "result": "Kaycee Clark wins on Keanu's behalf; Keanu is awarded the Veto",
+      "winners": [
+        "Keanu"
+      ],
       "event_key": "bb27-event-10",
       "participants": [
+        "Adrian",
+        "Ava",
+        "Jimmy",
+        "Keanu",
         "Kelley"
+      ],
+      "guest_participants": [
+        {
+          "season": 20,
+          "name": "Kaycee",
+          "winner": true
+        }
       ]
     },
     {

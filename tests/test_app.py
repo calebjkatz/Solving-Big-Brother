@@ -190,7 +190,7 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertIsNotNone(janelle)
         response = self.client.get(f"/houseguests/{janelle['id']}")
         self.assertIn(b"Combined performance", response.data)
-        self.assertIn(b"across 4 seasons", response.data)
+        self.assertIn(b"across official seasons and guest appearances", response.data)
         for season in (6, 7, 14, 22):
             self.assertIn(f"BB{season}".encode(), response.data)
 
@@ -211,8 +211,39 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertEqual(distinct_events, 12)
         response = self.client.get(f"/houseguests/{jag['id']}")
         self.assertIn(b'<strong>12</strong>', response.data)
-        self.assertIn(b'<strong>37.5%</strong>', response.data)
-        self.assertIn(b'12 wins in 32 competitions played', response.data)
+        self.assertIn(b'<strong>36.7%</strong>', response.data)
+        self.assertIn(b'11 wins in 30 eligible competitions played', response.data)
+        self.assertNotIn(b'<span>Luxury</span>', response.data)
+
+    def test_bb27_guest_veto_credits_keanu_and_kaycee_separately(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            event = db.execute("""
+                SELECT id FROM competition_instances
+                WHERE source_event_key = 'bb27-event-10' LIMIT 1
+            """).fetchone()
+            players = db.execute("""
+                SELECT h.name, cp.placement, cp.notes
+                FROM competition_participants cp
+                JOIN houseguests h ON h.id = cp.houseguest_id
+                WHERE cp.instance_id = ? ORDER BY h.name
+            """, (event["id"],)).fetchall()
+            self.assertEqual([row["name"] for row in players],
+                             ["Adrian", "Ava", "Jimmy", "Kaycee", "Keanu", "Kelley"])
+            self.assertEqual([row["name"] for row in players if row["placement"] == 1],
+                             ["Kaycee", "Keanu"])
+            self.assertIn("career-only guest", next(
+                row["notes"] for row in players if row["name"] == "Kaycee"
+            ))
+
+            kaycee_id = db.execute("""
+                SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
+                WHERE h.name = 'Kaycee' AND s.season_number = 20
+            """).fetchone()[0]
+        response = self.client.get(f"/houseguests/{kaycee_id}")
+        self.assertIn(b'<div class="win-total"><strong>9</strong>', response.data)
+        self.assertIn(b'<strong class="career-total">10</strong>', response.data)
+        self.assertIn(b'10 wins in 28 eligible competitions played', response.data)
 
     def test_houseguest_profile_shows_win_rates_by_competition_type(self):
         connect = self.app.extensions["connect_db"]

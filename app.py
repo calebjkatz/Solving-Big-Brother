@@ -158,6 +158,23 @@ def create_app(test_config=None):
                                         ELSE 'source indexed winner'
                                     END
                             """, (instance_id, houseguest["id"]))
+                    for guest in appearance.get("guest_participants", []):
+                        guest_season_id = db.execute("""
+                            SELECT id FROM seasons
+                            WHERE franchise_id = ? AND season_number = ?
+                        """, (franchise_id, guest["season"])).fetchone()[0]
+                        houseguest = db.execute("""
+                            SELECT id FROM houseguests WHERE season_id = ? AND name = ?
+                        """, (guest_season_id, guest["name"])).fetchone()
+                        if houseguest:
+                            is_winner = bool(guest.get("winner"))
+                            db.execute("""
+                                INSERT OR REPLACE INTO competition_participants
+                                (instance_id, houseguest_id, placement, notes)
+                                VALUES (?, ?, ?, ?)
+                            """, (instance_id, houseguest["id"], 1 if is_winner else None,
+                                  "career-only guest winner and participant" if is_winner
+                                  else "career-only guest participant"))
 
                 # Recurrence follows the underlying format across seasons, not
                 # the themed name used for a particular episode.
@@ -374,7 +391,8 @@ def create_app(test_config=None):
             JOIN seasons s ON s.id = h.season_id
             LEFT JOIN competition_participants cp
               ON cp.houseguest_id = h.id AND cp.placement = 1
-            LEFT JOIN competition_instances ci ON ci.id = cp.instance_id
+            LEFT JOIN competition_instances ci
+              ON ci.id = cp.instance_id AND ci.season_id = h.season_id
             WHERE 1 = 1
         """
         params = []
@@ -410,9 +428,10 @@ def create_app(test_config=None):
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 JOIN competitions c ON c.id = ci.competition_id
                 WHERE cp.houseguest_id = ? AND cp.placement = 1
+                  AND ci.season_id = ?
                 GROUP BY COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id)
                 ORDER BY CAST(ci.week AS INTEGER), CAST(ci.day AS REAL), c.name
-            """, (houseguest_id,)).fetchall()
+            """, (houseguest_id, player["season_id"])).fetchall()
             type_stats = db.execute("""
                 SELECT ci.competition_type,
                        COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%' THEN
@@ -422,24 +441,33 @@ def create_app(test_config=None):
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE cp.houseguest_id = ? AND cp.notes LIKE '%participant%'
+                  AND ci.season_id = ?
+                  AND LOWER(ci.competition_type) NOT IN ('food', 'luxury')
                 GROUP BY ci.competition_type ORDER BY played DESC, ci.competition_type
-            """, (houseguest_id,)).fetchall()
+            """, (houseguest_id, player["season_id"])).fetchall()
             season_played = db.execute("""
                 SELECT COUNT(DISTINCT COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id))
                 FROM competition_participants cp
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE cp.houseguest_id = ? AND cp.notes LIKE '%participant%'
-            """, (houseguest_id,)).fetchone()[0]
+                  AND ci.season_id = ?
+                  AND LOWER(ci.competition_type) NOT IN ('food', 'luxury')
+            """, (houseguest_id, player["season_id"])).fetchone()[0]
             other_seasons = db.execute("""
                 SELECT other.id, other.name, s.season_number, s.year,
                        COUNT(DISTINCT CASE WHEN cp.placement = 1 THEN
                            COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS wins,
-                       COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%' THEN
+                       COUNT(DISTINCT CASE WHEN cp.placement = 1
+                           AND LOWER(ci.competition_type) NOT IN ('food', 'luxury') THEN
+                           COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS rate_wins,
+                       COUNT(DISTINCT CASE WHEN cp.notes LIKE '%participant%'
+                           AND LOWER(ci.competition_type) NOT IN ('food', 'luxury') THEN
                            COALESCE(NULLIF(ci.source_event_key, ''), 'local-' || ci.id) END) AS played
                 FROM houseguests other
                 JOIN seasons s ON s.id = other.season_id
                 LEFT JOIN competition_participants cp ON cp.houseguest_id = other.id
-                LEFT JOIN competition_instances ci ON ci.id = cp.instance_id
+                LEFT JOIN competition_instances ci
+                  ON ci.id = cp.instance_id AND ci.season_id = other.season_id
                 WHERE other.person_key = ?
                 GROUP BY other.id ORDER BY s.season_number
             """, (player["person_key"],)).fetchall()
@@ -453,14 +481,27 @@ def create_app(test_config=None):
                 JOIN competition_participants cp ON cp.houseguest_id = career.id
                 JOIN competition_instances ci ON ci.id = cp.instance_id
                 WHERE career.person_key = ? AND cp.notes LIKE '%participant%'
+                  AND LOWER(ci.competition_type) NOT IN ('food', 'luxury')
                 GROUP BY ci.competition_type ORDER BY played DESC, ci.competition_type
             """, (player["person_key"],)).fetchall()
-            career_total = sum(row["wins"] for row in other_seasons)
-            career_played = sum(row["played"] for row in other_seasons)
+            career_total = db.execute("""
+                SELECT COUNT(DISTINCT COALESCE(
+                    NULLIF(ci.source_event_key, ''), 'local-' || ci.id
+                ))
+                FROM houseguests career
+                JOIN competition_participants cp ON cp.houseguest_id = career.id
+                JOIN competition_instances ci ON ci.id = cp.instance_id
+                WHERE career.person_key = ? AND cp.placement = 1
+            """, (player["person_key"],)).fetchone()[0]
+            career_played = sum(row["played"] for row in career_stats)
+            season_rate_wins = sum(row["wins"] for row in type_stats)
+            career_rate_wins = sum(row["wins"] for row in career_stats)
         return render_template("houseguest.html", player=player, wins=wins,
                                type_stats=type_stats, season_played=season_played,
                                other_seasons=other_seasons, career_stats=career_stats,
-                               career_total=career_total, career_played=career_played)
+                               career_total=career_total, career_played=career_played,
+                               season_rate_wins=season_rate_wins,
+                               career_rate_wins=career_rate_wins)
 
     @app.get("/seasons/<int:season_id>")
     def season_detail(season_id):

@@ -59,6 +59,7 @@ OVERRIDES = {
     (26, "bb26-event-02"): {"Cam", "Chelsie", "Kimo", "Tucker"},
     (26, "bb26-event-03"): {"Leah", "Quinn"},
     (26, "bb26-event-04"): {"Brooklyn", "Cedric", "Kenney", "Lisa", "Matt", "T'kor"},
+    (27, "bb27-event-10"): {"Adrian", "Ava", "Jimmy", "Keanu", "Kelley"},
     (28, "bb28-event-01"): {"Ashley", "Barrett", "Chuk", "Drew", "Haley", "Jason", "Kamu", "LaTrice", "Lyric", "Mallory", "Melody", "Rome", "Taylor", "Yash"},
     (28, "bb28-event-02"): {"LaTrice", "Kamu", "Rome", "Mallory"},
     (28, "bb28-event-03"): {"Drew", "Haley", "Chuk", "Taylor"},
