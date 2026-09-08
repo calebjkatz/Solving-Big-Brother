@@ -122,7 +122,7 @@ class BigBrotherStatsTests(unittest.TestCase):
                   AND ci.competition_type IN ('AI Arena', 'Block Buster')
                 GROUP BY ci.competition_type
             """).fetchall())
-            self.assertEqual(credited, {"AI Arena": 7, "Block Buster": 10})
+            self.assertEqual(credited, {"AI Arena": 7, "Block Buster": 18})
 
             kelley = db.execute("""
                 SELECT h.id FROM houseguests h JOIN seasons s ON s.id = h.season_id
@@ -161,7 +161,25 @@ class BigBrotherStatsTests(unittest.TestCase):
             self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0], 400)
             self.assertGreaterEqual(db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0], 900)
             seasons = db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0]
-            self.assertEqual(seasons, 26)
+            self.assertEqual(seasons, 27)
+
+    def test_bb28_is_loaded_through_barrett_hoh(self):
+        connect = self.app.extensions["connect_db"]
+        with connect() as db:
+            season = db.execute(
+                "SELECT id FROM seasons WHERE season_number = 28"
+            ).fetchone()
+            self.assertIsNotNone(season)
+            self.assertEqual(db.execute(
+                "SELECT COUNT(*) FROM houseguests WHERE season_id = ?", (season["id"],)
+            ).fetchone()[0], 17)
+            latest = db.execute("""
+                SELECT variation_name, competition_type, outcome_notes
+                FROM competition_instances WHERE season_id = ?
+                ORDER BY id DESC LIMIT 1
+            """, (season["id"],)).fetchone()
+            self.assertEqual(tuple(latest),
+                             ("Rainbow Rollers", "HOH", "Barrett wins HOH"))
             season_one = db.execute("SELECT 1 FROM seasons WHERE season_number = 1").fetchone()
             self.assertIsNone(season_one)
             typed = db.execute("""

@@ -11,7 +11,7 @@ A local research app for recurring competitions in the U.S. civilian edition of 
 - Adds new competition families and season appearances through the browser.
 - Exports the competition catalog to CSV.
 - Includes schema support for houseguests, participant results, and sources.
-- Loads a sourced catalog of competition formats across the 26 modern-format U.S. civilian seasons, BB2–BB27.
+- Loads a sourced catalog across the 27 modern-format U.S. civilian seasons, BB2–BB28. The in-progress BB28 data currently runs through Barrett Pfeiffer's Week 9 HOH win.
 - Stores sourced week, day, competition type, themed name, and result data from each season's competition-history table.
 - Provides a searchable Houseguests tab with season rosters, player dossiers, sourced competition wins, win-type summaries, and fields for evidence-backed strengths and weaknesses.
 - Displays each player's season memory-wall image from the sourced Big Brother Wiki cast gallery, with initials as a loading/error fallback.

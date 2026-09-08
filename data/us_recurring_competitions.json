@@ -1,6 +1,6 @@
 {
   "source": "https://bigbrother.fandom.com/wiki/List_of_Recurring_Competitions",
-  "scope": "Big Brother US civilian seasons 2-27",
+  "scope": "Big Brother US civilian seasons 2-28 (season 28 through Barrett's Week 9 HOH win)",
   "seasons": [
     {
       "number": 2,
@@ -131,6 +131,11 @@
       "number": 27,
       "year": 2025,
       "title": "Big Brother 27"
+    },
+    {
+      "number": 28,
+      "year": 2026,
+      "title": "Big Brother 28"
     }
   ],
   "competitions": [
@@ -703,7 +708,8 @@
         17,
         19,
         23,
-        25
+        25,
+        28
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/Bowlerina"
     },
@@ -1292,7 +1298,8 @@
       "seasons": [
         14,
         23,
-        25
+        25,
+        28
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/Feel_The_Burn"
     },
@@ -1907,7 +1914,8 @@
         24,
         25,
         26,
-        27
+        27,
+        28
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/Knockout"
     },
@@ -2215,7 +2223,8 @@
         24,
         25,
         26,
-        27
+        27,
+        28
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/OTEV"
     },
@@ -3194,7 +3203,8 @@
         24,
         25,
         26,
-        27
+        27,
+        28
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/The_Wall"
     },
@@ -3690,6 +3700,209 @@
         27
       ],
       "source_url": "https://bigbrother.fandom.com/wiki/Zingbot_Competition"
+    },
+    {
+      "name": "Find the BB-tonium",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "1988 Long Beach, CA",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "2018 Fiji",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "2010 Las Vegas, NV",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "175 Million BC",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Back From the Future",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Do Over",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Achy Breaky HOH",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "BB Time Capsule",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Flower Power",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Pirate's Booty",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Wrestlegasm 85",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Video Tape Tumble",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Jack the Ripper",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Murder at the Masquerade",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "The Paw Patrol Dino Puzzle",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Saturday Night Veto",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Newton's Apples",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Space Race",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Norse By Norsewest",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "BB Grand Cliptacular",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Stones of Safety",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Fit the Crops",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Deliver the Grapes",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Adorn the Crown",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "2026: A Zing Odyssey",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "The Gold, the Bad, and the Ugly",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Your Game in Ruins",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
+    },
+    {
+      "name": "Rainbow Rollers",
+      "seasons": [
+        28
+      ],
+      "source_url": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)"
     }
   ],
   "appearances": [
@@ -16233,6 +16446,499 @@
         "Ashley"
       ],
       "event_key": "bb27-event-47"
+    },
+    {
+      "competition": "Find the BB-tonium",
+      "season": 28,
+      "week": "1",
+      "day": "1",
+      "type": "Immunity qualifier",
+      "variation": "Find the BB-tonium",
+      "result": "Ashley & Barrett fail to advance",
+      "winners": [],
+      "event_key": "bb28-event-01"
+    },
+    {
+      "competition": "1988 Long Beach, CA",
+      "season": 28,
+      "week": "1",
+      "day": "1",
+      "type": "Immunity",
+      "variation": "1988 Long Beach, CA",
+      "result": "Rome wins Safety",
+      "winners": [
+        "Rome"
+      ],
+      "event_key": "bb28-event-02"
+    },
+    {
+      "competition": "2018 Fiji",
+      "season": 28,
+      "week": "1",
+      "day": "1",
+      "type": "Immunity",
+      "variation": "2018 Fiji",
+      "result": "Chuk wins Safety",
+      "winners": [
+        "Chuk"
+      ],
+      "event_key": "bb28-event-03"
+    },
+    {
+      "competition": "2010 Las Vegas, NV",
+      "season": 28,
+      "week": "1",
+      "day": "1",
+      "type": "Immunity",
+      "variation": "2010 Las Vegas, NV",
+      "result": "Jason wins Safety",
+      "winners": [
+        "Jason"
+      ],
+      "event_key": "bb28-event-04"
+    },
+    {
+      "competition": "175 Million BC",
+      "season": 28,
+      "week": "1",
+      "day": "1",
+      "type": "HOH",
+      "variation": "175 Million BC",
+      "result": "Dee wins HOH",
+      "winners": [
+        "Dee"
+      ],
+      "event_key": "bb28-event-05"
+    },
+    {
+      "competition": "Back From the Future",
+      "season": 28,
+      "week": "1",
+      "day": "5",
+      "type": "POV",
+      "variation": "Back From the Future",
+      "result": "Mallory wins the Veto",
+      "winners": [
+        "Mallory"
+      ],
+      "event_key": "bb28-event-06"
+    },
+    {
+      "competition": "Do Over",
+      "season": 28,
+      "week": "1",
+      "day": "10",
+      "type": "Block Buster",
+      "variation": "Do Over",
+      "result": "Yash is saved",
+      "winners": [
+        "Yash"
+      ],
+      "event_key": "bb28-event-07"
+    },
+    {
+      "competition": "Achy Breaky HOH",
+      "season": 28,
+      "week": "2",
+      "day": "10",
+      "type": "HOH",
+      "variation": "Achy Breaky HOH",
+      "result": "Devens wins HOH",
+      "winners": [
+        "Devens"
+      ],
+      "event_key": "bb28-event-08"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "2",
+      "day": "11",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Angela is punished",
+      "winners": [],
+      "event_key": "bb28-event-09"
+    },
+    {
+      "competition": "Flower Power",
+      "season": 28,
+      "week": "2",
+      "day": "12",
+      "type": "POV",
+      "variation": "Flower Power",
+      "result": "Devens wins the Veto",
+      "winners": [
+        "Devens"
+      ],
+      "event_key": "bb28-event-10"
+    },
+    {
+      "competition": "Pirate's Booty",
+      "season": 28,
+      "week": "2",
+      "day": "17",
+      "type": "Block Buster",
+      "variation": "Pirate's Booty",
+      "result": "Jason is saved",
+      "winners": [
+        "Jason"
+      ],
+      "event_key": "bb28-event-11"
+    },
+    {
+      "competition": "Wrestlegasm 85",
+      "season": 28,
+      "week": "3",
+      "day": "17",
+      "type": "HOH",
+      "variation": "Wrestlegasm 85",
+      "result": "Kamu wins HOH",
+      "winners": [
+        "Kamu"
+      ],
+      "event_key": "bb28-event-12"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "3",
+      "day": "18",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Devens is rewarded",
+      "winners": [],
+      "event_key": "bb28-event-13"
+    },
+    {
+      "competition": "Bowlerina",
+      "season": 28,
+      "week": "3",
+      "day": "19",
+      "type": "POV",
+      "variation": "The Pickle Ball",
+      "result": "Lyric wins the Veto",
+      "winners": [
+        "Lyric"
+      ],
+      "event_key": "bb28-event-14"
+    },
+    {
+      "competition": "Video Tape Tumble",
+      "season": 28,
+      "week": "3",
+      "day": "24",
+      "type": "Block Buster",
+      "variation": "Video Tape Tumble",
+      "result": "Mallory is saved",
+      "winners": [
+        "Mallory"
+      ],
+      "event_key": "bb28-event-15"
+    },
+    {
+      "competition": "Jack the Ripper",
+      "season": 28,
+      "week": "4",
+      "day": "24",
+      "type": "HOH",
+      "variation": "Jack the Ripper",
+      "result": "Haley wins HOH",
+      "winners": [
+        "Haley"
+      ],
+      "event_key": "bb28-event-16"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "4",
+      "day": "25",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Dee is rewarded",
+      "winners": [],
+      "event_key": "bb28-event-17"
+    },
+    {
+      "competition": "Murder at the Masquerade",
+      "season": 28,
+      "week": "4",
+      "day": "26",
+      "type": "POV",
+      "variation": "Murder at the Masquerade",
+      "result": "Taylor wins the Veto",
+      "winners": [
+        "Taylor"
+      ],
+      "event_key": "bb28-event-18"
+    },
+    {
+      "competition": "The Paw Patrol Dino Puzzle",
+      "season": 28,
+      "week": "4",
+      "day": "31",
+      "type": "Block Buster",
+      "variation": "The Paw Patrol Dino Puzzle",
+      "result": "Drew is saved",
+      "winners": [
+        "Drew"
+      ],
+      "event_key": "bb28-event-19"
+    },
+    {
+      "competition": "The Wall",
+      "season": 28,
+      "week": "5",
+      "day": "31",
+      "type": "HOH",
+      "variation": "Sasquatch Watch",
+      "result": "LaTrice wins HOH",
+      "winners": [
+        "LaTrice"
+      ],
+      "event_key": "bb28-event-20"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "5",
+      "day": "32",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Mallory is punished",
+      "winners": [],
+      "event_key": "bb28-event-21"
+    },
+    {
+      "competition": "Saturday Night Veto",
+      "season": 28,
+      "week": "5",
+      "day": "33",
+      "type": "POV",
+      "variation": "Saturday Night Veto",
+      "result": "Kamu wins the Veto",
+      "winners": [
+        "Kamu"
+      ],
+      "event_key": "bb28-event-22"
+    },
+    {
+      "competition": "Newton's Apples",
+      "season": 28,
+      "week": "5",
+      "day": "38",
+      "type": "Block Buster",
+      "variation": "Newton's Apples",
+      "result": "Haley is saved",
+      "winners": [
+        "Haley"
+      ],
+      "event_key": "bb28-event-23"
+    },
+    {
+      "competition": "Knockout",
+      "season": 28,
+      "week": "6",
+      "day": "38",
+      "type": "HOH",
+      "variation": "Bugs in the System",
+      "result": "Yash wins HOH",
+      "winners": [
+        "Yash"
+      ],
+      "event_key": "bb28-event-24"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "6",
+      "day": "39",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Melody is punished",
+      "winners": [],
+      "event_key": "bb28-event-25"
+    },
+    {
+      "competition": "OTEV",
+      "season": 28,
+      "week": "6",
+      "day": "40",
+      "type": "POV",
+      "variation": "OTEV the Belligerent B-Movie Blob",
+      "result": "Yash wins the Veto",
+      "winners": [
+        "Yash"
+      ],
+      "event_key": "bb28-event-26"
+    },
+    {
+      "competition": "Space Race",
+      "season": 28,
+      "week": "6",
+      "day": "45",
+      "type": "Block Buster",
+      "variation": "Space Race",
+      "result": "Angela is saved",
+      "winners": [
+        "Angela"
+      ],
+      "event_key": "bb28-event-27"
+    },
+    {
+      "competition": "Norse By Norsewest",
+      "season": 28,
+      "week": "7",
+      "day": "45",
+      "type": "HOH",
+      "variation": "Norse By Norsewest",
+      "result": "Dee wins HOH",
+      "winners": [
+        "Dee"
+      ],
+      "event_key": "bb28-event-28"
+    },
+    {
+      "competition": "BB Time Capsule",
+      "season": 28,
+      "week": "7",
+      "day": "46",
+      "type": "Time Capsule",
+      "variation": "BB Time Capsule",
+      "result": "Drew is rewarded",
+      "winners": [],
+      "event_key": "bb28-event-29"
+    },
+    {
+      "competition": "Feel The Burn",
+      "season": 28,
+      "week": "7",
+      "day": "47",
+      "type": "POV",
+      "variation": "Feel The Burn",
+      "result": "LaTrice wins the Veto",
+      "winners": [
+        "LaTrice"
+      ],
+      "event_key": "bb28-event-30"
+    },
+    {
+      "competition": "BB Grand Cliptacular",
+      "season": 28,
+      "week": "7",
+      "day": "52",
+      "type": "Block Buster",
+      "variation": "BB Grand Cliptacular",
+      "result": "Drew is saved",
+      "winners": [
+        "Drew"
+      ],
+      "event_key": "bb28-event-31"
+    },
+    {
+      "competition": "Stones of Safety",
+      "season": 28,
+      "week": "8",
+      "day": "52-53",
+      "type": "Immunity",
+      "variation": "Stones of Safety",
+      "result": "Dee wins Safety",
+      "winners": [
+        "Dee"
+      ],
+      "event_key": "bb28-event-32"
+    },
+    {
+      "competition": "Fit the Crops",
+      "season": 28,
+      "week": "8",
+      "day": "52-53",
+      "type": "Hit The Road",
+      "variation": "Fit the Crops",
+      "result": "Drew wins Safety",
+      "winners": [
+        "Drew"
+      ],
+      "event_key": "bb28-event-33"
+    },
+    {
+      "competition": "Deliver the Grapes",
+      "season": 28,
+      "week": "8",
+      "day": "52-53",
+      "type": "Hit The Road",
+      "variation": "Deliver the Grapes",
+      "result": "Barrett wins Safety",
+      "winners": [
+        "Barrett"
+      ],
+      "event_key": "bb28-event-34"
+    },
+    {
+      "competition": "Adorn the Crown",
+      "season": 28,
+      "week": "8",
+      "day": "52-53",
+      "type": "Hit The Road",
+      "variation": "Adorn the Crown",
+      "result": "Yash wins Safety",
+      "winners": [
+        "Yash"
+      ],
+      "event_key": "bb28-event-35"
+    },
+    {
+      "competition": "2026: A Zing Odyssey",
+      "season": 28,
+      "week": "8",
+      "day": "53",
+      "type": "HOH",
+      "variation": "2026: A Zing Odyssey",
+      "result": "Drew wins HOH",
+      "winners": [
+        "Drew"
+      ],
+      "event_key": "bb28-event-36"
+    },
+    {
+      "competition": "The Gold, the Bad, and the Ugly",
+      "season": 28,
+      "week": "8",
+      "day": "54",
+      "type": "POV",
+      "variation": "The Gold, the Bad, and the Ugly",
+      "result": "Yash wins the Veto",
+      "winners": [
+        "Yash"
+      ],
+      "event_key": "bb28-event-37"
+    },
+    {
+      "competition": "Your Game in Ruins",
+      "season": 28,
+      "week": "8",
+      "day": "59",
+      "type": "Block Buster",
+      "variation": "Your Game in Ruins",
+      "result": "Devens is saved",
+      "winners": [
+        "Devens"
+      ],
+      "event_key": "bb28-event-38"
+    },
+    {
+      "competition": "Rainbow Rollers",
+      "season": 28,
+      "week": "9",
+      "day": "59",
+      "type": "HOH",
+      "variation": "Rainbow Rollers",
+      "result": "Barrett wins HOH",
+      "winners": [
+        "Barrett"
+      ],
+      "event_key": "bb28-event-39"
     }
   ],
   "houseguests": [
@@ -20915,6 +21621,210 @@
       "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_27_(US)",
       "person_key": "Zae Frederich",
       "profile_url": "https://bigbrother.fandom.com/wiki/Zae_Frederich"
+    },
+    {
+      "name": "Angela",
+      "season": 28,
+      "bio": "Angela Murray competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/2/24/US28_Small_Angela.jpg/revision/latest/scale-to-width-down/300?cb=20260710012426",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Angela Murray",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Angela_Murray"
+    },
+    {
+      "name": "Barrett",
+      "season": 28,
+      "bio": "Barrett Pfeiffer competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/7/7c/US28_Small_Barrett.jpg/revision/latest/scale-to-width-down/300?cb=20260707171003",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Barrett Pfeiffer",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Barrett_Pfeiffer"
+    },
+    {
+      "name": "Dee",
+      "season": 28,
+      "bio": "Dee Valladares competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/1/11/US28_Small_Dee.jpg/revision/latest/scale-to-width-down/300?cb=20260711020009",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Dee Valladares",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Dee_Valladares"
+    },
+    {
+      "name": "Devens",
+      "season": 28,
+      "bio": "Rick Devens competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/5/5f/US28_Small_Devens.jpg/revision/latest/scale-to-width-down/300?cb=20260710012752",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Rick Devens",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Rick_Devens"
+    },
+    {
+      "name": "Drew",
+      "season": 28,
+      "bio": "Drew Campbell competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/8/88/US28_Small_Drew.jpg/revision/latest/scale-to-width-down/300?cb=20260707172041",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Drew Campbell",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Drew_Campbell"
+    },
+    {
+      "name": "Melody",
+      "season": 28,
+      "bio": "Melody Morris competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/9/99/US28_Small_Melody.jpg/revision/latest/scale-to-width-down/300?cb=20260707174118",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Melody Morris",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Melody_Morris"
+    },
+    {
+      "name": "Taylor",
+      "season": 28,
+      "bio": "Taylor Brown competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/9/98/US28_Small_Taylor.jpg/revision/latest/scale-to-width-down/300?cb=20260707174628",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Taylor Brown",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Taylor_Brown"
+    },
+    {
+      "name": "Yash",
+      "season": 28,
+      "bio": "Yash Patel competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/8/83/US28_Small_Yash.jpg/revision/latest/scale-to-width-down/300?cb=20260707174851",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Yash Patel",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Yash_Patel"
+    },
+    {
+      "name": "LaTrice",
+      "season": 28,
+      "bio": "LaTrice Verrett competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/0/06/US28_Small_LaTrice.jpg/revision/latest/scale-to-width-down/300?cb=20260707173249",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "LaTrice Verrett",
+      "profile_url": "https://bigbrother.fandom.com/wiki/LaTrice_Verrett"
+    },
+    {
+      "name": "Haley",
+      "season": 28,
+      "bio": "Haley Thogmartin competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/d/d9/US28_Small_Haley.jpg/revision/latest/scale-to-width-down/300?cb=20260707172350",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Haley Thogmartin",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Haley_Thogmartin"
+    },
+    {
+      "name": "Mallory",
+      "season": 28,
+      "bio": "Mallory Aurichio competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/9/99/US28_Small_Mallory.jpg/revision/latest/scale-to-width-down/300?cb=20260707173626",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Mallory Aurichio",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Mallory_Aurichio"
+    },
+    {
+      "name": "Kamu",
+      "season": 28,
+      "bio": "Kamu Kirk competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/c/c0/US28_Small_Kamu.jpg/revision/latest/scale-to-width-down/300?cb=20260707173054",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Kamu Kirk",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Kamu_Kirk"
+    },
+    {
+      "name": "Chuk",
+      "season": 28,
+      "bio": "Chuk Anyanwu competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/c/c6/US28_Small_Chuk.jpg/revision/latest/scale-to-width-down/300?cb=20260707171909",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Chuk Anyanwu",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Chuk_Anyanwu"
+    },
+    {
+      "name": "Lyric",
+      "season": 28,
+      "bio": "Lyric Medeiros competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/4/46/US28_Small_Lyric.jpg/revision/latest/scale-to-width-down/300?cb=20260707173442",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Lyric Medeiros",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Lyric_Medeiros"
+    },
+    {
+      "name": "Jason",
+      "season": 28,
+      "bio": "Jason De Puy competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/c/c7/US28_Small_Jason.jpg/revision/latest/scale-to-width-down/300?cb=20260707172712",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Jason De Puy",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Jason_De_Puy"
+    },
+    {
+      "name": "Rome",
+      "season": 28,
+      "bio": "Rome Seymour competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/0/08/US28_Small_Rome.jpg/revision/latest/scale-to-width-down/300?cb=20260707174317",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Rome Seymour",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Rome_Seymour"
+    },
+    {
+      "name": "Ashley",
+      "season": 28,
+      "bio": "Ashley Trail competed on Big Brother 28 in 2026. This profile currently covers results through Barrett's Week 9 HOH win.",
+      "strengths": "Competition strengths will be assessed as more sourced results become available.",
+      "weaknesses": "No evidence-backed weaknesses have been recorded yet.",
+      "notes": "Roster membership and memory-wall image sourced from the season page.",
+      "image_url": "https://static.wikia.nocookie.net/bigbrother/images/d/dc/US28_Small_Ashley.jpg/revision/latest/scale-to-width-down/300?cb=20260707170756",
+      "image_source": "https://bigbrother.fandom.com/wiki/Big_Brother_28_(US)",
+      "person_key": "Ashley Trail",
+      "profile_url": "https://bigbrother.fandom.com/wiki/Ashley_Trail"
     }
   ]
 }
