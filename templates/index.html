@@ -5,7 +5,7 @@
   <div class="hero-monitor" aria-hidden="true"><div class="monitor-head"><span>CAM 04</span><span class="rec"><i></i> REC</span></div><div class="monitor-eye"><span></span></div><div class="monitor-grid"></div><p>Competition analysis feed</p></div>
 </section>
 <section class="stats">
-  <div><small>Dataset 01</small><strong>{{ stats.competitions }}</strong><span>competition families</span></div>
+  <div><small>Dataset 01</small><strong>{{ stats.competitions }}</strong><span>competition families · {{ stats.recurring }} recurring</span></div>
   <div><small>Dataset 02</small><strong>{{ stats.appearances }}</strong><span>season appearances</span></div>
   <div><small>Dataset 03</small><strong>{{ stats.seasons }}</strong><span>seasons represented</span></div>
 </section>
@@ -13,6 +13,7 @@
   <input type="search" name="q" value="{{ filters.get('q', '') }}" placeholder="Search name, alias, or description">
   <select name="category"><option value="">All categories</option>{% for row in categories %}<option {% if filters.get('category') == row.category %}selected{% endif %}>{{ row.category }}</option>{% endfor %}</select>
   <select name="skill"><option value="">All skills</option>{% for item in skill_options %}<option {% if filters.get('skill') == item %}selected{% endif %}>{{ item }}</option>{% endfor %}</select>
+  <select name="frequency"><option value="">All families</option><option value="recurring" {% if recurring_only %}selected{% endif %}>Recurring families</option></select>
   <button>Filter</button>
 </form>
 <div class="section-heading"><div><p class="eyebrow">The archive</p><h2>Competition families</h2></div><a href="{{ url_for('export_competitions') }}">Export CSV ↓</a></div>

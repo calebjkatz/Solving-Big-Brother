@@ -2,6 +2,7 @@ import csv
 import io
 import json
 import os
+import re
 import sqlite3
 from pathlib import Path
 
@@ -158,6 +159,24 @@ def create_app(test_config=None):
                                     END
                             """, (instance_id, houseguest["id"]))
 
+                # Recurrence follows the underlying format across seasons, not
+                # the themed name used for a particular episode.
+                db.execute("""
+                    UPDATE competitions
+                    SET category = CASE
+                        WHEN (
+                            SELECT COUNT(DISTINCT ci.season_id)
+                            FROM competition_instances ci
+                            WHERE ci.competition_id = competitions.id
+                        ) > 1 THEN 'Recurring format'
+                        ELSE 'Competition format'
+                    END
+                    WHERE EXISTS (
+                        SELECT 1 FROM competition_instances ci
+                        WHERE ci.competition_id = competitions.id
+                    )
+                """)
+
     app.extensions["connect_db"] = connect
     app.extensions["initialize_database"] = initialize_database
     initialize_database()
@@ -174,6 +193,13 @@ def create_app(test_config=None):
         query = request.args.get("q", "").strip()
         category = request.args.get("category", "").strip()
         skill = request.args.get("skill", "").strip()
+        frequency = request.args.get("frequency", "").strip()
+        recurring_search = bool(re.fullmatch(
+            r"(?:recurring|reoccurring)\s+(?:competition\s+)?(?:format|formats|family|families)",
+            query,
+            re.IGNORECASE,
+        ))
+        recurring_only = frequency == "recurring" or recurring_search
         sql = """
             SELECT c.*, COUNT(ci.id) AS appearance_count,
                    (
@@ -192,7 +218,7 @@ def create_app(test_config=None):
             WHERE 1 = 1
         """
         params = []
-        if query:
+        if query and not recurring_search:
             sql += " AND (c.name LIKE ? OR c.description LIKE ? OR c.aliases LIKE ?)"
             wildcard = f"%{query}%"
             params.extend([wildcard, wildcard, wildcard])
@@ -202,7 +228,10 @@ def create_app(test_config=None):
         if skill:
             sql += " AND c.skills LIKE ?"
             params.append(f"%{skill}%")
-        sql += " GROUP BY c.id ORDER BY c.name COLLATE NOCASE"
+        sql += " GROUP BY c.id"
+        if recurring_only:
+            sql += " HAVING COUNT(DISTINCT s.season_number) > 1"
+        sql += " ORDER BY c.name COLLATE NOCASE"
         with connect() as db:
             competitions = db.execute(sql, params).fetchall()
             categories = db.execute("SELECT DISTINCT category FROM competitions ORDER BY category").fetchall()
@@ -211,10 +240,18 @@ def create_app(test_config=None):
                 "competitions": db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0],
                 "appearances": db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0],
                 "seasons": db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0],
+                "recurring": db.execute("""
+                    SELECT COUNT(*) FROM (
+                        SELECT ci.competition_id FROM competition_instances ci
+                        GROUP BY ci.competition_id
+                        HAVING COUNT(DISTINCT ci.season_id) > 1
+                    )
+                """).fetchone()[0],
             }
         skill_options = sorted({item.strip() for row in skills for item in (row[0] or "").split(",") if item.strip()})
         return render_template("index.html", competitions=competitions, categories=categories,
-                               skill_options=skill_options, stats=stats, filters=request.args)
+                               skill_options=skill_options, stats=stats, filters=request.args,
+                               recurring_only=recurring_only)
 
     @app.get("/competitions/<int:competition_id>")
     def competition_detail(competition_id):
