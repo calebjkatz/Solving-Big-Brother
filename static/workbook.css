@@ -1,0 +1,10 @@
+.workbook-prose{white-space:pre-line;overflow-wrap:anywhere}
+.workbook-credit{color:var(--muted);font-size:.78rem}
+.event-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:22px;background:var(--panel);border:1px solid var(--line)}
+.event-facts dt{color:var(--muted);font:.65rem 'IBM Plex Mono',monospace;text-transform:uppercase}
+.event-facts dd{margin:8px 0 0}
+.event-photo{flex:0 0 320px;display:grid;gap:8px;max-width:100%;color:var(--muted);font-size:.75rem}
+.event-photo img{width:100%;max-height:230px;object-fit:contain;background:var(--panel);border:1px solid var(--line)}
+.event-players{display:flex;flex-wrap:wrap;gap:12px 24px;padding:0;list-style:none}
+.event-players span{color:var(--amber)}
+@media(max-width:760px){.event-facts{grid-template-columns:repeat(2,minmax(0,1fr))}.event-photo{flex:auto;width:100%}}

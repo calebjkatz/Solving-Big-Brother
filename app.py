@@ -7,10 +7,11 @@ import sqlite3
 from pathlib import Path
 
 from flask import Flask, Response, abort, flash, redirect, render_template, request, url_for
+from workbook_sync import apply_workbook_content, migrate_workbook_columns
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DEFAULT_DATABASE = BASE_DIR / "data" / "big_brother_stats.sqlite3"
+DEFAULT_DATABASE = Path(os.environ.get("BBSTATS_DATABASE", str(BASE_DIR / "data" / "big_brother_stats.sqlite3")))
 
 
 def create_app(test_config=None):
@@ -19,6 +20,7 @@ def create_app(test_config=None):
         SECRET_KEY=os.environ.get("FLASK_SECRET_KEY", "local-development-key"),
         DATABASE=str(DEFAULT_DATABASE),
         PUBLIC_EDITING_ENABLED=os.environ.get("PUBLIC_EDITING_ENABLED", "true").lower() == "true",
+        WORKBOOK_CONTENT=str(BASE_DIR / "data" / "workbook_content.json"),
     )
     if test_config:
         app.config.update(test_config)
@@ -43,6 +45,7 @@ def create_app(test_config=None):
                 db.execute("ALTER TABLE competition_instances ADD COLUMN day TEXT NOT NULL DEFAULT ''")
             if "source_event_key" not in instance_columns:
                 db.execute("ALTER TABLE competition_instances ADD COLUMN source_event_key TEXT NOT NULL DEFAULT ''")
+            migrate_workbook_columns(db)
             competition_columns = {
                 row["name"] for row in db.execute("PRAGMA table_info(competitions)")
             }
@@ -190,6 +193,15 @@ def create_app(test_config=None):
                                   "career-only guest winner and participant" if is_winner
                                   else "career-only guest participant"))
 
+                workbook_path = app.config["WORKBOOK_CONTENT"]
+                workbook = json.loads(Path(workbook_path).read_text()) if workbook_path and Path(workbook_path).exists() else {}
+                app.extensions["workbook_redirects"] = apply_workbook_content(db, workbook)
+                app.extensions["workbook_import"] = {
+                    "imported_at": workbook.get("imported_at", ""),
+                    "sha256": workbook.get("workbook_sha256", ""),
+                    "events": len(workbook.get("events", {})),
+                }
+
                 # Recurrence follows the underlying format across seasons, not
                 # the themed name used for a particular episode.
                 db.execute("""
@@ -214,9 +226,15 @@ def create_app(test_config=None):
 
     @app.context_processor
     def template_helpers():
+        def appearance_url(item):
+            if item["source_event_key"]:
+                return url_for("event_detail", event_key=item["source_event_key"])
+            return url_for("appearance_detail", instance_id=item["id"])
         return {
             "format_tags": lambda value: [tag.strip() for tag in (value or "").split(",") if tag.strip()],
             "editing_enabled": app.config["PUBLIC_EDITING_ENABLED"],
+            "appearance_url": appearance_url,
+            "workbook_import": app.extensions.get("workbook_import", {}),
         }
 
     @app.get("/")
@@ -246,13 +264,16 @@ def create_app(test_config=None):
             FROM competitions c
             LEFT JOIN competition_instances ci ON ci.competition_id = c.id
             LEFT JOIN seasons s ON s.id = ci.season_id
-            WHERE 1 = 1
+            WHERE c.category != 'Season-specific name'
         """
         params = []
         if query and not recurring_search:
-            sql += " AND (c.name LIKE ? OR c.description LIKE ? OR c.aliases LIKE ?)"
+            sql += """ AND (c.name LIKE ? OR c.description LIKE ? OR c.aliases LIKE ?
+                        OR EXISTS (SELECT 1 FROM competition_instances content
+                                   WHERE content.competition_id = c.id
+                                     AND (content.variation_name LIKE ? OR content.rules_notes LIKE ?)))"""
             wildcard = f"%{query}%"
-            params.extend([wildcard, wildcard, wildcard])
+            params.extend([wildcard] * 5)
         if category:
             sql += " AND c.category = ?"
             params.append(category)
@@ -268,7 +289,7 @@ def create_app(test_config=None):
             categories = db.execute("SELECT DISTINCT category FROM competitions ORDER BY category").fetchall()
             skills = db.execute("SELECT skills FROM competitions").fetchall()
             stats = {
-                "competitions": db.execute("SELECT COUNT(*) FROM competitions").fetchone()[0],
+                "competitions": db.execute("SELECT COUNT(*) FROM competitions WHERE category != 'Season-specific name'").fetchone()[0],
                 "appearances": db.execute("SELECT COUNT(*) FROM competition_instances").fetchone()[0],
                 "seasons": db.execute("SELECT COUNT(*) FROM seasons").fetchone()[0],
                 "recurring": db.execute("""
@@ -286,6 +307,9 @@ def create_app(test_config=None):
 
     @app.get("/competitions/<int:competition_id>")
     def competition_detail(competition_id):
+        replacement = app.extensions.get("workbook_redirects", {}).get(competition_id)
+        if replacement:
+            return redirect(url_for("competition_detail", competition_id=replacement))
         with connect() as db:
             competition = db.execute("SELECT * FROM competitions WHERE id = ?", (competition_id,)).fetchone()
             if not competition:
@@ -327,6 +351,45 @@ def create_app(test_config=None):
             participants.setdefault(row["instance_id"], []).append(row)
         return render_template("competition.html", competition=competition, appearances=appearances,
                                sources=sources, winners=winners, participants=participants)
+
+    def render_appearance(where, parameters):
+        with connect() as db:
+            appearances = db.execute(f"""
+                SELECT ci.*, c.name AS family_name, c.image_url AS family_image_url,
+                       c.image_source AS family_image_source, s.season_number, s.year
+                FROM competition_instances ci JOIN competitions c ON c.id = ci.competition_id
+                JOIN seasons s ON s.id = ci.season_id
+                WHERE {where}
+                ORDER BY CASE WHEN c.name = ci.workbook_family THEN 0 ELSE 1 END, ci.id
+            """, parameters).fetchall()
+            if not appearances:
+                abort(404)
+            appearance = appearances[0]
+            ids = [item['id'] for item in appearances]
+            placeholders = ','.join('?' for _ in ids)
+            players = db.execute(f"""
+                SELECT h.id, h.name, MAX(CASE WHEN cp.placement = 1 THEN 1 ELSE 0 END) AS won
+                FROM competition_participants cp JOIN houseguests h ON h.id = cp.houseguest_id
+                WHERE cp.instance_id IN ({placeholders})
+                GROUP BY h.id ORDER BY won DESC, h.name COLLATE NOCASE
+            """, ids).fetchall()
+            sources = db.execute(f"""
+                SELECT MIN(title) AS title, url, MIN(source_type) AS source_type
+                FROM sources WHERE instance_id IN ({placeholders}) GROUP BY url ORDER BY title
+            """, ids).fetchall()
+        families = {item['competition_id']: item['family_name'] for item in appearances}
+        if appearance['workbook_family'].casefold() in ('none', 'n/a'):
+            families = {}
+        return render_template('appearance.html', appearance=appearance, players=players,
+                               winners=[p for p in players if p['won']], families=families, sources=sources)
+
+    @app.get('/events/<event_key>')
+    def event_detail(event_key):
+        return render_appearance('ci.source_event_key = ?', (event_key,))
+
+    @app.get('/appearances/<int:instance_id>')
+    def appearance_detail(instance_id):
+        return render_appearance('ci.id = ?', (instance_id,))
 
     @app.route("/competitions/new", methods=["GET", "POST"])
     def new_competition():

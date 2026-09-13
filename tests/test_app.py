@@ -38,18 +38,19 @@ class BigBrotherStatsTests(unittest.TestCase):
         response = self.client.get("/?frequency=recurring")
         self.assertEqual(response.status_code, 200)
         self.assertIn(b"In The Balance", response.data)
-        self.assertIn(b"Tracked seasons: 15,16,19,21,22,27", response.data)
-        self.assertEqual(response.data.count(b'class="card"'), 103)
+        self.assertIn(b"Tracked seasons: 15,16,19,21,22,27,28", response.data)
+        self.assertIn(b"New Rule", response.data)
+        self.assertEqual(response.data.count(b'class="card"'), 104)
 
         response = self.client.get("/?category=Recurring+format")
         self.assertIn(b"In The Balance", response.data)
-        self.assertEqual(response.data.count(b'class="card"'), 103)
+        self.assertEqual(response.data.count(b'class="card"'), 104)
 
         for spelling in ("recurring formats", "reoccurring formats"):
             response = self.client.get("/", query_string={"q": spelling})
             self.assertEqual(response.status_code, 200)
             self.assertIn(b"In The Balance", response.data)
-            self.assertEqual(response.data.count(b'class="card"'), 103)
+            self.assertEqual(response.data.count(b'class="card"'), 104)
 
     def test_competition_detail_lists_appearances(self):
         response = self.client.get("/competitions/1")

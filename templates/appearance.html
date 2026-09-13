@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}{{ appearance.variation_name }} · BB{{ appearance.season_number }} · Big Brother Stats{% endblock %}
+{% block content %}
+<a class="back" href="{{ url_for('season_detail', season_id=appearance.season_id) }}">← Big Brother {{ appearance.season_number }}</a>
+<section class="detail-hero">
+  <div><p class="eyebrow">BB{{ appearance.season_number }} · Week {{ appearance.week }} · {{ appearance.competition_type }}</p>
+    <h1>{{ appearance.variation_name }}</h1>
+    <div class="tags">{% for family_id, name in families.items() %}<a class="pill" href="{{ url_for('competition_detail', competition_id=family_id) }}">{{ name }}</a>{% else %}<span>No family assigned</span>{% endfor %}</div>
+    {% if appearance.workbook_sheet %}<p class="workbook-credit">Rules and notes from the research workbook · {{ appearance.workbook_sheet }}</p>{% endif %}
+  </div>
+  {% set photo = appearance.image_url or appearance.family_image_url %}
+  {% if photo %}<div class="event-photo"><img src="{{ photo }}" alt="{{ appearance.variation_name }} competition reference image" referrerpolicy="no-referrer" onerror="this.hidden=true"><a href="{{ photo }}" target="_blank" rel="noopener noreferrer">View reference photo ↗</a><small>May show another appearance of this format.</small></div>{% endif %}
+</section>
+<dl class="event-facts">
+  <div><dt>Season</dt><dd>BB{{ appearance.season_number }} ({{ appearance.year }})</dd></div>
+  <div><dt>Week / day</dt><dd>{{ appearance.week or '—' }} / {{ appearance.day or 'Not recorded' }}</dd></div>
+  <div><dt>Competition type</dt><dd>{{ appearance.competition_type }}</dd></div>
+  <div><dt>Winner{% if winners|length > 1 %}s{% endif %}</dt><dd>{% for player in winners %}<a class="player-link" href="{{ url_for('houseguest_detail', houseguest_id=player.id) }}">{{ player.name }}</a>{{ ', ' if not loop.last }}{% else %}{{ appearance.winner or 'No winner recorded' }}{% endfor %}</dd></div>
+</dl>
+<div class="detail-grid">
+  <article class="panel"><p class="eyebrow">This season's version</p><h2>Description &amp; rules</h2><p class="workbook-prose">{{ appearance.rules_notes or 'Rules have not been recorded for this appearance yet.' }}</p></article>
+  <article class="panel strategy"><p class="eyebrow">Research notes</p><h2>Strategy</h2><p class="workbook-prose">{{ appearance.strategy_notes or 'No season-specific strategy has been recorded yet. See the linked family page for any general strategy.' }}</p>{% if appearance.strategy_notes %}<p class="workbook-credit">Workbook analysis, not a guaranteed winning strategy.</p>{% endif %}</article>
+</div>
+<div class="detail-grid">
+  <article class="panel"><h2>Players &amp; result</h2><p class="workbook-prose">{{ appearance.outcome_notes or 'No additional result notes.' }}</p><ul class="event-players">{% for player in players %}<li><a class="player-link" href="{{ url_for('houseguest_detail', houseguest_id=player.id) }}">{{ player.name }}</a>{% if player.won %} <span title="Credited winner">★</span>{% endif %}</li>{% else %}<li>Participants have not been documented.</li>{% endfor %}</ul></article>
+  <article class="panel"><h2>Guests &amp; media</h2><h3>Guest appearances</h3><p class="workbook-prose">{{ appearance.guest_appearances or 'Not recorded in the workbook.' }}</p>{% if appearance.video_url %}<a href="{{ appearance.video_url }}" target="_blank" rel="noopener noreferrer">Watch competition video ↗</a>{% else %}<p>No video link recorded.</p>{% endif %}</article>
+</div>
+<article class="panel sources"><p class="eyebrow">Research trail</p><h2>Sources</h2>{% for source in sources %}<p><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a> · {{ source.source_type }}</p>{% else %}<p>No external source links were attached to this entry. Workbook notes remain provisional.</p>{% endfor %}</article>
+{% endblock %}

@@ -54,6 +54,45 @@ cd "Big Brother Stats"
 python3 -m unittest discover -s tests
 ```
 
+Install `requirements-import.txt` instead of only `requirements.txt` when running the workbook importer or its tests.
+
+## Update the website from Excel
+
+The editing master is `BigBrotherCompetitionDatabase-Recovered.xlsx` on the Desktop.
+Save Excel first: this importer reads the saved file, not unsaved cells in an open window.
+It does not alter the workbook or require the workbook to be uploaded to GitHub/Render.
+
+```bash
+python3 -m pip install -r requirements-import.txt
+python3 scripts/import_workbook.py "/path/to/BigBrotherCompetitionDatabase-Recovered.xlsx" --dry-run
+python3 scripts/import_workbook.py "/path/to/BigBrotherCompetitionDatabase-Recovered.xlsx"
+python3 -m unittest discover -s tests
+```
+
+The generated `data/workbook_content.json` is the deployable content snapshot. Commit it together
+with any app changes and push to the Render-connected branch. Saving Excel alone does **not**
+trigger a site update; Render never accesses a file on the local Desktop.
+
+- **Family Database** updates family descriptions/strategies. The workbook spelling
+  “Sequences & Explosions” maps to the existing “Sequence Explosion” format.
+- **Season tabs** update individual competition rules, strategies, family assignments, media,
+  and guest notes. Click a competition from a season or player page to see its individual record.
+- Source URLs are extracted from Excel cell notes and shown on individual competition pages.
+- Blank cells retain previously imported values and do not clear existing family strategy.
+  Explicit removals require a reviewed change to the snapshot; deleting a worksheet row is not
+  treated as permission to delete an event or its results.
+- Events match by season, week, type, and competition name. Existing family assignments resolve
+  collisions. An unknown, ambiguous, or duplicate event aborts the import before writing changes.
+  Changes to identifying fields or adding new competitions may require reviewing the catalog match.
+- Winners, participants, placement, credited guest wins, and win-rate rules remain in the existing
+  catalog. The workbook import does not replace those records or add duplicate participations.
+- The snapshot contains only the mapped public fields and source links, not the Recovery Notes
+  worksheet or the private filesystem path. The importer does not independently fact-check prose.
+
+For isolated testing, set `BBSTATS_DATABASE` to a temporary SQLite path before importing `app`.
+Without it, the normal local database path is used. `WORKBOOK_CONTENT=None` in `create_app`'s
+test configuration disables the workbook overlay for baseline comparisons.
+
 ## Recommended research workflow
 
 1. Add or select a competition family.

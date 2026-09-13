@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='houseguests.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='career.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='workbook.css') }}">
 </head>
-<body>
+<body data-workbook-sha="{{ workbook_import.get('sha256', '') }}">
   <header class="site-header">
     <a class="brand" href="{{ url_for('index') }}"><span class="brand-eye" aria-hidden="true"><i></i></span><span class="brand-copy"><b>Big Brother</b><small>Competition Intelligence</small></span></a>
     <nav><a href="{{ url_for('index') }}">Competitions</a><a href="{{ url_for('seasons') }}">Seasons</a><a href="{{ url_for('houseguests') }}">Houseguests</a>{% if editing_enabled %}<a class="button small" href="{{ url_for('new_competition') }}">Add competition</a>{% endif %}</nav>
@@ -23,6 +24,6 @@
     {% for category, message in get_flashed_messages(with_categories=true) %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}
     {% block content %}{% endblock %}
   </main>
-  <footer><span class="footer-mark">BB // CI</span><span>Independent research database · U.S. civilian seasons</span><span>Not affiliated with CBS or the Big Brother franchise</span></footer>
+  <footer><span class="footer-mark">BB // CI</span><span>Independent research database · U.S. civilian seasons{% if workbook_import.get('imported_at') %}<br>Workbook content updated {{ workbook_import.imported_at[:10] }}{% endif %}</span><span>Not affiliated with CBS or the Big Brother franchise</span></footer>
 </body>
 </html>
